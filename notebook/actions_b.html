@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actions d’un champ magnétique. Forces de Laplace &#8212; Electromagnétisme</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/em/notebook/actions_b.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Mouvement de particules chargées" href="particules_c.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Electromagnétisme</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../em.html">
+   Electromagnétisme
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="champ_b.html">
+   Champ magnétique. Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="particules_c.html">
+   Mouvement de particules chargées
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Actions d’un champ magnétique. Forces de Laplace
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/actions_b.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/actions_b.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/actions_b.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#position-du-probleme">
+   Position du problème
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#force-de-laplace">
+   Force de Laplace
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modelisation-generale-action-sur-un-circuit">
+     Modélisation générale. Action sur un circuit
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#champ-magnetique-uniforme-action-resultante-sur-un-circuit-indeformable">
+     Champ magnétique uniforme. Action résultante sur un circuit indéformable
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#resultante-des-forces">
+       Résultante des forces
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#moment-resultant-des-forces-de-laplace-en-un-point-o-fixe">
+       Moment résultant des forces de Laplace en un point O fixe
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#consequence-sur-le-mouvement">
+       Conséquence sur le mouvement
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#puissance-des-forces-de-laplace">
+       Puissance des forces de Laplace
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#si-le-champ-n-est-pas-uniforme-hp">
+     Si le champ n’est pas uniforme (HP)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#action-sur-un-dipole-magnetique">
+     Action sur un dipôle magnétique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#utilisation-des-forces-de-laplace-moteur-synchrone">
+     Utilisation des forces de Laplace: Moteur synchrone
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable">
+     Action d’un champ magnétique uniforme sur un circuit déformable
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#travaux-diriges">
+   Travaux dirigés
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="actions-d-un-champ-magnetique-forces-de-laplace">
+<h1>Actions d’un champ magnétique. Forces de Laplace<a class="headerlink" href="#actions-d-un-champ-magnetique-forces-de-laplace" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="position-du-probleme">
+<h2>Position du problème<a class="headerlink" href="#position-du-probleme" title="Permalink to this headline">¶</a></h2>
+<p>Observations:</p>
+<ul class="simple">
+<li><p>Action d’un aimant sur un autre aimant: Il n’y a pas de mouvement — en tout cas visibles à l’échelle macroscopique et pourtant, comme on l’a précisé, l’interaction est d’origine magnétique.</p></li>
+<li><p>Action d’un aimant sur un circuit: Un circuit est localement neutre et c’est l’ensemble du circuit qui est déplacé par le champ magnétique, pas seulement les charges en mouvement.</p></li>
+</ul>
+<p>L’action d’un champ magnétique se généralise à tout objet magnétique par l’étude de l’action d’un champ à des ensemble des particules (pour nous des solides) composant le solide. On pourra distinguer de prime abord deux types d’actions:</p>
+<ul class="simple">
+<li><p>l’action d’un champ magnétique sur un circuit fermé.</p></li>
+<li><p>l’action d’un champ magnétique sur un dipôle magnétique.</p></li>
+</ul>
+<p>Fort heureusement, cette action, ayant pour origine la même interaction fondamentale, aura les mêmes caractéristiques dans les deux cas. On parlera de <strong>force de Laplace</strong>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On définit normalement la force de Laplace comme l’action d’un champ magnétique sur un circuit parcouru par une intensité. On peut alors généraliser les caractéristiques de son action sur un dipôle magnétique au moyen d’une moyen du dipôle en terme de circuit électrique — on a vu qu’une spire, dans l’approximation dipolaire était considérée comme un dipôle magnétostatique.</p>
+</div>
+</details></div>
+<div class="section" id="force-de-laplace">
+<h2>Force de Laplace<a class="headerlink" href="#force-de-laplace" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="modelisation-generale-action-sur-un-circuit">
+<h3>Modélisation générale. Action sur un circuit<a class="headerlink" href="#modelisation-generale-action-sur-un-circuit" title="Permalink to this headline">¶</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Force de Laplace sur un élément infinitésimal</strong></p>
+<p>Soit un circuit <span class="math notranslate nohighlight">\(\Gamma\)</span> parcouru par une intensité I plongé dans un champ magnétique <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span>. Le champ magnétique exerce une action sur le circuit global appelé force de Laplace. Chaque petit élément <span class="math notranslate nohighlight">\(\overrightarrow{dl}\)</span> en un point M du circuit subit une force:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9fafa59c-9892-46b8-b057-45a2d9045c2e">
+<span class="eqno">(20)<a class="headerlink" href="#equation-9fafa59c-9892-46b8-b057-45a2d9045c2e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{dF}(M) = I \overrightarrow{dl} \wedge \overrightarrow{B}(M)
+\end{equation}\]</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Fondamental : Action résultante sur un circuit</strong></p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On rappelle qu’on doit définir la force ET le moment résultant. Comme on a défini les forces appliquées sur chaque “point” du circuit, on peut calculer ces deux éléments.</p>
+</div>
+</details><p>La résultante de toute les actions sur chaque point du circuit sera:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7c590f3d-eb1f-4e2d-bbbd-9b94d7f45413">
+<span class="eqno">(21)<a class="headerlink" href="#equation-7c590f3d-eb1f-4e2d-bbbd-9b94d7f45413" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{F}(\Gamma)= \oint_{M \in \Gamma} I \overrightarrow{dl}(M) \wedge \overrightarrow{B}(M)
+\end{equation}\]</div>
+<p>Le moment résultant en un point A sera:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-afbd98a0-6d65-48e6-ad1f-08391d230152">
+<span class="eqno">(22)<a class="headerlink" href="#equation-afbd98a0-6d65-48e6-ad1f-08391d230152" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{M}_{A}(\overrightarrow{F}(\Gamma))= \oint_{M \in \Gamma} \overrightarrow{AM} \wedge (I \overrightarrow{dl}(M) \wedge \overrightarrow{B}(M))
+\end{equation}\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Les forces de Laplace travaillent</strong></p>
+<ol class="simple">
+<li><p>Pourquoi est-ce surprenant que les forces de Laplace travaillent?</p></li>
+<li><p>Dans un morceau de conducteur parallélépipèdique parcouru par une intensité I (sur sa longueur), déterminer l’influence qualitative d’un champ magnétique B sur la trajectoire des charges.</p></li>
+<li><p>Information: si deux parois sont chargées par des charges opposées, il se crée un champ électrique entre les deux parois dirigés de la paroi négatives vers la paroi positive. Montrer qu’alors, le réseau “fixe” du circuit subit une force qui le déplace dans la direction attendue par les forces de Laplace.</p></li>
+<li><p>Expliquer pourquoi dans ces conditions, les forces de Laplace peuvent “indirectement” travailler.</p></li>
+</ol>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">La déformation du nuage électronique de conduction implique un travail interne dû à l’interaction entre le réseau atomique cristallin et les électrons de conduction. Il existe des modèles permettant de traiter cette interaction comme le modèle de Drüde. On pourrait même montrer qu’en régime stationnaire (I=cste), cette force dérive d’un potentiel! L’énergie potentielle associée en régime stationnaire est proportionnelle à l’opposé du flux du champ magnétique à travers le circuit. Il vient qu’un circuit en régime stationnaire aura tendance à se déplacer et s’orienter de manière à maximiser le flux du champ magnétique à travers lui.</p>
+</div>
+</details></div>
+<div class="section" id="champ-magnetique-uniforme-action-resultante-sur-un-circuit-indeformable">
+<h3>Champ magnétique uniforme. Action résultante sur un circuit indéformable<a class="headerlink" href="#champ-magnetique-uniforme-action-resultante-sur-un-circuit-indeformable" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Principe de traitement:</strong> l’utilisation des forces de Laplace permet de traiter le circuit comme un solide.</p></li>
+<li><p><strong>Position du problème:</strong> On considère un circuit fermé <span class="math notranslate nohighlight">\(\Gamma\)</span> dans un champ magnétique uniforme <span class="math notranslate nohighlight">\(\overrightarrow{B_0}\)</span>. On traitera successivement les trois cas suivants:</p>
+<ul>
+<li><p><strong>Cas A:</strong> Le circuit est quelconque (à une maille) et parcouru par une intensité I quelconque et pouvant varier.</p></li>
+<li><p><strong>Cas B:</strong> Le circuit est quelconque (à une maille) et parcouru par une intensité I constante (on parlera de régime stationnaire).</p></li>
+<li><p><strong>Cas C:</strong> Le circuit est une spire rectangulaire parcouru par une intensité I constante.
+Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité est la même en tout point du circuit.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="resultante-des-forces">
+<h4>Résultante des forces<a class="headerlink" href="#resultante-des-forces" title="Permalink to this headline">¶</a></h4>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Fondamental : Force de Lapalce résultante. Champ uniforme</strong></p>
+<p>Généralisation (Cas A): Dans tous les cas, la résultante des actions d’un champ magnétique uniforme est nulle. Elle ne provoque donc pas de translation globale (déplacement du centre d’inertie).</p>
+</div>
+<blockquote>
+<div><p><strong>Démonstration</strong> :</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overrightarrow{F}(\Gamma)&amp;= \oint_{M \in \Gamma} I \overrightarrow{dl}(M) \wedge \overrightarrow{B}(M)\\
+&amp;= I\underbrace{(\oint_{M \in \Gamma} \overrightarrow{dl}(M))}_{0} \wedge \overrightarrow{B_0}\\
+&amp;=0
+\end{align*}\]</div>
+</div></blockquote>
+</div>
+<div class="section" id="moment-resultant-des-forces-de-laplace-en-un-point-o-fixe">
+<h4>Moment résultant des forces de Laplace en un point O fixe<a class="headerlink" href="#moment-resultant-des-forces-de-laplace-en-un-point-o-fixe" title="Permalink to this headline">¶</a></h4>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Fondamental : Moment de Laplace résultante. Champ uniforme</strong></p>
+<p>Généralisation (Cas A — Admis): Pour un circuit quelconque de moment magnétique <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span>, l’action d’un champ magnétique uniforme <span class="math notranslate nohighlight">\(\overrightarrow{B_0}\)</span> est un couple dont le moment est <span class="math notranslate nohighlight">\(\overrightarrow{M} \wedge \overrightarrow{B_0}\)</span></p>
+</div>
+<div class="figure align-center" id="fig-spire-moment">
+<img alt="../_images/em_spire_moment.jpg" src="../_images/em_spire_moment.jpg" />
+</div>
+<blockquote>
+<div><p><strong>Démonstration :</strong></p>
+<p>Nous ne prouvons cette expression que dans le cas C, c’est-à-dire pour une géométrie particulière. C’estle seul cas où la preuve est à connaître.</p>
+<p>Prenons un système de coordonnées cartésiennes d’axe Ox et Oy parallèles aux côtés du carré et d’axe Oz perpendiculaire au plan de la spire. On oriente Oz de sorte que <span class="math notranslate nohighlight">\(\overrightarrow{M} = Ia^2 \overrightarrow{e_z}\)</span>. On pose <span class="math notranslate nohighlight">\(\overrightarrow{B_0} = B_{0x} \overrightarrow{e_x} + B_{0y} \overrightarrow{e_y} + B_{Oz} \overrightarrow{e_z}\)</span>.</p>
+<p>La résultante des forces est nulle, donc on peut choisir le point où l’on calcule le moment des forces de Laplace. On choisit le point O au centre du carré. On distingue le calcul du moment sur chaque côté du carré:</p>
+<ul class="simple">
+<li><p><strong>Segment AB:</strong> <span class="math notranslate nohighlight">\(\overrightarrow{dl} = dx \overrightarrow{e_x}\)</span>; <span class="math notranslate nohighlight">\(\overrightarrow{OM} = x \overrightarrow{e_x} - \frac{a}{2} \overrightarrow{e_y}\)</span> donc:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overrightarrow{M_{AB}} &amp;= \int_{-a/2}^{a/2} (x \overrightarrow{e_x} - \frac{a}{2} \overrightarrow{e_y}) \wedge (I dx \overrightarrow{e_x}) \wedge (B_{0x} \overrightarrow{e_x} + B_{0y} \overrightarrow{e_y} + B_{Oz} \overrightarrow{e_z})\\
+&amp;= \int_{-a/2}^{a/2} (x \overrightarrow{e_x} - \frac{a}{2} \overrightarrow{e_y}) \wedge (I dx B_{0y} \overrightarrow{e_z} - I dx B_{Oz} \overrightarrow{e_y})\\
+&amp;= \int_{-a/2}^{a/2} \left(-I x(B_{0y}\overrightarrow{e_y} + B_{0z}\overrightarrow{e_z}) - I \frac{a}{2} B_{0y} \overrightarrow{e_x}\right) dx\\
+&amp;= -I \frac{a^2}{2} B_{0y} \overrightarrow{e_x}
+\end{align*}\]</div>
+<ul class="simple">
+<li><p><strong>Segment BC:</strong> <span class="math notranslate nohighlight">\(\overrightarrow{dl} = dy \overrightarrow{e_y}\)</span>; <span class="math notranslate nohighlight">\(\overrightarrow{OM} = \frac{a}{2} \overrightarrow{e_x} +y \overrightarrow{e_y}\)</span> donc:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overrightarrow{M_{AB}} &amp;= \int_{-a/2}^{a/2} (\frac{a}{2} \overrightarrow{e_x} +y \overrightarrow{e_y}) \wedge (I dy \overrightarrow{e_y}) \wedge (B_{0x} \overrightarrow{e_x} + B_{0y} \overrightarrow{e_y} + B_{Oz} \overrightarrow{e_z})\\
+&amp;= I \frac{a^2}{2} B_{0x} \overrightarrow{e_y}
+\end{align*}\]</div>
+<ul class="simple">
+<li><p><strong>Segment CD:</strong> <span class="math notranslate nohighlight">\(\overrightarrow{dl} = -dx \overrightarrow{e_x}\)</span>; <span class="math notranslate nohighlight">\(\overrightarrow{OM} = x \overrightarrow{e_x} + \frac{a}{2} \overrightarrow{e_y}\)</span> donc:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overrightarrow{M_{AB}} &amp;= \int_{-a/2}^{a/2} (x \overrightarrow{e_x} + \frac{a}{2} \overrightarrow{e_y}) \wedge (-I dx \overrightarrow{e_x}) \wedge (B_{0x} \overrightarrow{e_x} + B_{0y} \overrightarrow{e_y} + B_{Oz} \overrightarrow{e_z})\\
+&amp;= -I \frac{a^2}{2} B_{0y} \overrightarrow{e_x}
+\end{align*}\]</div>
+<ul class="simple">
+<li><p><strong>Segment DA:</strong> <span class="math notranslate nohighlight">\(\overrightarrow{dl} = -dy \overrightarrow{e_y}\)</span>; <span class="math notranslate nohighlight">\(\overrightarrow{OM} = -\frac{a}{2} \overrightarrow{e_x} +y \overrightarrow{e_y}\)</span> donc:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overrightarrow{M_{AB}} &amp;= \int_{-a/2}^{a/2} (-\frac{a}{2} \overrightarrow{e_x} +y \overrightarrow{e_y}) \wedge (-I dy \overrightarrow{e_y}) \wedge (B_{0x} \overrightarrow{e_x} + B_{0y} \overrightarrow{e_y} + B_{Oz} \overrightarrow{e_z})\\
+&amp;= I \frac{a^2}{2} B_{0x} \overrightarrow{e_y}
+\end{align*}\]</div>
+<p>En sommant, il vient:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overrightarrow{\Gamma} &amp;= -I a^2 B_{0y} \overrightarrow{e_x} + I a^2 B_{0x} \overrightarrow{e_y}\\
+ &amp;= I a^2 \overrightarrow{e_z} \wedge \overrightarrow{B_0}\\
+ &amp;= \overrightarrow{M} \wedge \overrightarrow{B_0}
+\end{align*}\]</div>
+</div></blockquote>
+</div>
+<div class="section" id="consequence-sur-le-mouvement">
+<h4>Conséquence sur le mouvement<a class="headerlink" href="#consequence-sur-le-mouvement" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Le principe fondamental de la dynamique montre qu’il n’y a pas d’accélération du centre d’inertie: le mouvement global de translation n’est pas modifié.</p></li>
+<li><p>On observe par contre que la spire aura tendance à tourner pour aligner son moment magnétique sur le champ magnétique. Il y deux positions d’équilibre: le moment magnétique peut être parallèle ou anti-parallèle au champ magnétique.</p></li>
+<li><p>En écartant légèrement la spire de ses positions d’équilibre, on observe que le moment tend à ramener le moment magnéitque dans la position parallèle: cette position est stable alors que la position anti-parallèle est instable.</p></li>
+</ul>
+</div>
+<div class="section" id="puissance-des-forces-de-laplace">
+<h4>Puissance des forces de Laplace<a class="headerlink" href="#puissance-des-forces-de-laplace" title="Permalink to this headline">¶</a></h4>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Fondamental : Puissance des forces de Laplace. Circuit à <span class="math notranslate nohighlight">\(I\)</span> constant</strong></p>
+<p>Généralisation (Cas B — Admis): Pour un circuit quelconque de moment magnétique <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span> constant (c’est-à-dire que le circuit n’est pas déformable ET que l’intensité est constante) dans un champ uniforme <span class="math notranslate nohighlight">\(\overrightarrow{B_0}\)</span>, les forces de Laplace dérivent d’un potentiel et l’énergie potentielle associée est: <span class="math notranslate nohighlight">\(E_{PL} = - \overrightarrow{M} \cdot \overrightarrow{B_0}\)</span>.</p>
+<p><strong>Cette propriété n’est PAS vraie dans le cas A où l’intensité varie.</strong></p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On pourrait réécrire cette énergie potentielle comme: <span class="math notranslate nohighlight">\(E_P = - I \phi_B\)</span> où <span class="math notranslate nohighlight">\(\phi_B\)</span> est le flux du champ magnétique à travers le circuit. Cette expression n’est vraie que si l’intensité est constante, mais elle présente l’avantage d’être encore vraie si le circuit se déforme. <strong>Elle est toutefois hors-programme.</strong></p>
+</div>
+</details></div>
+</div>
+</div>
+<div class="section" id="si-le-champ-n-est-pas-uniforme-hp">
+<h3>Si le champ n’est pas uniforme (HP)<a class="headerlink" href="#si-le-champ-n-est-pas-uniforme-hp" title="Permalink to this headline">¶</a></h3>
+<p>La résultante des forces n’est plus nulle. Dans le cas général, le moment des forces est différent et la force ne dérive pas d’un potentiel. Néanmoins, si le champ varie lentement devant la taille du circuit (cas semblable à l’approximation dipolaire), le moment et la puissance des forces reste globalement valables (circuit indéformable) et on peut même trouver une expression (HP) à la résultante des forces.</p>
+<ul class="simple">
+<li><p>(Admis) Dans un champ magnétique non uniforme mais variant lentement, un circuit filiforme indéformable tend à se déplacer dans les zones de plus fort champ magnétique et à s’orienter suivant le champ magnétique.</p></li>
+</ul>
+</div>
+<div class="section" id="action-sur-un-dipole-magnetique">
+<h3>Action sur un dipôle magnétique<a class="headerlink" href="#action-sur-un-dipole-magnetique" title="Permalink to this headline">¶</a></h3>
+<p>Les affirmations précédentes lorsque le champ n’est pas uniforme font apparaître les cas “où le champ varie sur des distances grandes devant la taille du circuit”. Cela correspond à considérer la taille du circuit comme très petite, soit se placer dans le cadre de l’approximation dipolaire. Ainsi, la majorité des résultats trouvés précédemment vont se généraliser à un dipôle magnétique quelconque dans le cadre de l’approximation dipolaire.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Fondamental : Action des forces de Laplace sur un dipôle magnétique -Champ uniforme</strong></p>
+<ul class="simple">
+<li><p>La résultante des forces de Laplace est nulle.</p></li>
+<li><p>Le moment des forces de Laplace s’écrit:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-9c036ae1-6a7a-4921-816d-2f54f197f4d1">
+<span class="eqno">(23)<a class="headerlink" href="#equation-9c036ae1-6a7a-4921-816d-2f54f197f4d1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{\Gamma} = \overrightarrow{M} \wedge \overrightarrow{B}
+\end{equation}\]</div>
+<p>Si le dipôle est rigide (c’est-à-dire <span class="math notranslate nohighlight">\(\overrightarrow{M} = cste\)</span>), alors la force dérive d’un potentiel et <span class="math notranslate nohighlight">\(E_{PL} = - \overrightarrow{M} \cdot \overrightarrow{B}\)</span></p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Cas d’un champ non uniforme (HP): Les caractéristiques sont identiques à celle trouvée pour le circuit électrique, dans le cadre de variations spatialement lentes du champ. Dans le champ magnétique uniforme, un dipôle magnétique tend à aligner son moment magnétique sur le champ magnétique. Cette propriété a été utilisée précédemment pour caractériser les lignes de champ magnétique (aiguille de boussole).</p>
+</div>
+</details></div>
+<div class="section" id="utilisation-des-forces-de-laplace-moteur-synchrone">
+<h3>Utilisation des forces de Laplace: Moteur synchrone<a class="headerlink" href="#utilisation-des-forces-de-laplace-moteur-synchrone" title="Permalink to this headline">¶</a></h3>
+<p>Une machine synchrone est un dispositif permettant de transformer:</p>
+<ul class="simple">
+<li><p>soit un apport d’énergie électrique alternatif en une énergie cinétique — un mouvement de rotation: on parle de moteur.</p></li>
+<li><p>soit un mouvement (rotation) en un signal électrique alternatif: on parle d’alternateur.</p></li>
+</ul>
+<p>Une machine synchrone est composée de deux parties:</p>
+<ul class="simple">
+<li><p>un stator, élément… statique!, composé de plusieurs bobinages reliées à une source électrique (cas moteur) ou un réseau récepteur (alternateur). Ces bobinages sont décalées d’un même angle les uns par rapport aux autres. En général, une machine asynchrone fonctionne avec des courants triphasés et le stator est composé de 3 bobinages écartés d’angle de <span class="math notranslate nohighlight">\(120 ^{\circ}\)</span> (on pourrait le réaliser avec 2 bobinages seulement).</p></li>
+<li><p>un rotor, élément… en rotation!, composé d’aimants permanents ou de bobinage alimenté par un courant continu. Le principe est qu’il peut-être représenté par un dipôle magnétique (ou dans les cas réels par un multipôle magnétique, mais le principe est le même) en rotation autour d’un axe.</p></li>
+</ul>
+<p>En fonctionnement moteur, les bobinages du stator sont alimentés en régime triphasé, c’est-à-dire qu’il sont soumis à la même tension sinusoïdal de pulsation <span class="math notranslate nohighlight">\(\omega\)</span> mais déphasées successivement de <span class="math notranslate nohighlight">\(2 \pi /3\)</span>. Les intensités circulant dans les bobinages (normalement identiques) permettent ainsi de superposer trois champs magnétiques dont la résultante est assimilable à un champ magnétique tournant à une vitesse angulaire correspondant à la pulsation du signal triphasé.</p>
+<p>Interprétation: On a vu qu’un dipôle magnétique tendait à s’aligner sur le champ magnétique. Comme celui-ci est tournant, le rotor va tourner à la même vitesse (vitesse de synchronisme) que le champ magnétique.</p>
+</div>
+<div class="section" id="action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable">
+<h3>Action d’un champ magnétique uniforme sur un circuit déformable<a class="headerlink" href="#action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center" id="fig-rail-laplace">
+<img alt="../_images/em_rail_laplace.jpg" src="../_images/em_rail_laplace.jpg" />
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Rails de Laplace</span><a class="headerlink" href="#fig-rail-laplace" title="Permalink to this image">¶</a></p>
+</div>
+<p>Position du problème: Nous allons étudier l’effet des forces de Laplace sur un circuit pouvant se déformer. Le circuit en question est appelé “rails de Laplace”.</p>
+<p>Soit deux rails conducteurs parallèles distants d’une distance a. On repère les points des rails sur un axe Ox. Au point <span class="math notranslate nohighlight">\(x=0\)</span>, on a relié à chaque rail un générateur qui délivre une tension E constante. Au point <span class="math notranslate nohighlight">\(x=x_0\)</span>, on place une tige conductrice de masse m qui joint les deux rails. Sa vitesse initiale est suivant Ox et vaut <span class="math notranslate nohighlight">\(v(t=0)=v_0\)</span>. L’ensemble est plongé dans un champ magnétique   créé par un aimant.</p>
+<p>Hypothèse de modélisation:</p>
+<ul class="simple">
+<li><p>Le champ magnétique créé par l’aimant est uniforme et suivant l’axe normal au plan du circuit électrique ainsi réalisé. On a choisit de l’orientation comme suivant le schéma.</p></li>
+<li><p>La résistance totale du circuit formé est notée R et ne dépend pas de la position de la barre.</p></li>
+<li><p>On néglige le champ magnétique propre au circuit devant celui créé par l’aimant.</p></li>
+<li><p>La barre glisse sans frottements sur les rails</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Etude du mouvement de la barre</strong></p>
+<ol class="simple">
+<li><p>Justifier qualitativement que la barre se déplace.</p></li>
+<li><p>Expliquer pourquoi, suivant le signe de E, le circuit va s’agrandir ou se rétrécir.</p></li>
+<li><p>Exprimer, pour une vitesse <span class="math notranslate nohighlight">\(v(t)\)</span>, la puissance reçue par la barre par l’intermédiaire des forces de Laplace.</p></li>
+<li><p>Si le mouvement dure suffisamment longtemps, on constate expérimentalement que la barre tend vers une vitesse constante, même en diminuant au maximum les frottements. Cette observation est-elle cohérente la seule connaissance de la force de Laplace?</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="travaux-diriges">
+<h2>Travaux dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Définition de l’Ampère</strong></p>
+<p>L’unité Ampère est définie comme l’intensité circulant dans deux fils infinis situé à une distance de 1m telle que la force exercée par un fil un unité de longueur (1m) de l’autre fil soit égale à <span class="math notranslate nohighlight">\(2.10^{-7} \rm{N}\)</span>.</p>
+<ol class="simple">
+<li><p>Retrouver la valeur de cette force au moyen des formules données du champ magnétique créé par un fil infini.</p></li>
+<li><p>Commenter le caractère attractif/répulsif de la force d’interaction suivant les sens de parcours des intensités.</p></li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Equilibre d’un losange conducteur</strong></p>
+<div class="figure align-center" id="fig-td2-ex2-losange">
+<img alt="../_images/Electromagnetisme_TD2_EX2_1.jpeg" src="../_images/Electromagnetisme_TD2_EX2_1.jpeg" />
+</div>
+<p>On considère un circuit formé de 4 tiges rigides de masses m et de longueur a. Le circuit, fermé est parcouru par un courant i constant. Le point supérieur est fixé sur un plafond fixe dans un référentiel galiléen. Le point inférieur est contraint à ne pouvoir bouger que sur un axe verticale fixe. Ce mouvement s’effectue sans frottements. L’ensemble du losange ne peut que se translater sur lui-même. L’ensemble est placé dans un champ de pesanteur uniforme vers le bas et dans un champ magnétique dirigé suivant la normale au plan du losange.</p>
+<ol class="simple">
+<li><p>Etudier les positions d’équilibre du système et leur stabilité par une étude énergétique. On admettra que la force de Lapalce dérive d’une énergie potentielle dont l’expression est <span class="math notranslate nohighlight">\(Ep = - I \Phi\)</span> où <span class="math notranslate nohighlight">\(\Phi\)</span> est le flux du champ magnéique à travers le losange.</p></li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Pression magnétique sur un supraconducteur</strong></p>
+<p>Un supraconducteur est un conducteur dans lequel le champ magnétique est imposé nul. En présence d’un champ magnétique extérieur <span class="math notranslate nohighlight">\(\overrightarrow{B_0}\)</span>, des courants de surfaces <span class="math notranslate nohighlight">\(\overrightarrow{j_S}\)</span> (une densité surfacique de courant) apparaissent sur le conducteur de manière à annuler le champ magnétique intérieur. Ces courants sont données par la relation “de passage” :</p>
+<p>[
+\overrightarrow{B_{ext}} - \overrightarrow{B_{int}} = \mu_0 \overrightarrow{j_S} \wedge \overrightarrow{n_{int \rightarrow ext}}
+]
+où: <span class="math notranslate nohighlight">\(\overrightarrow{B_{ext}}\)</span> est le champ à l’extérieur du supraconducteur, <span class="math notranslate nohighlight">\(\overrightarrow{B_{int}}\)</span> est le champ à l’intérieur du supraconducteur et <span class="math notranslate nohighlight">\(n_{int \rightarrow ext}\)</span> est le vecteur normale au point de la surface où l’on évalue les courants orienté de l’intérieur vers l’extérieur. On considère un supraconducteur occupant toute la partie <span class="math notranslate nohighlight">\(x&gt;0\)</span> (infini suivant y et z). L’espace <span class="math notranslate nohighlight">\(x&lt;0\)</span> est plongé dans un champ magnétique uniforme: <span class="math notranslate nohighlight">\(\overrightarrow{B_0} = B_0 \overrightarrow{e_z}\)</span>.</p>
+<ol class="simple">
+<li><p>Justifier sans calculs que les courants surfaciques créés ne vont pas dépendre de y et z.</p></li>
+<li><p>Montrer que <span class="math notranslate nohighlight">\(\overrightarrow{j_S} = \frac{B_0}{\mu_0} \overrightarrow{e_y}\)</span>.</p></li>
+<li><p>On considère une portion de surface du supraconducteur infinitésimale dS d’extension dy et dz. Exprimer l’intensité qui circule dans ce petit élément de surface.</p></li>
+<li><p>En déduire la force surfacique de Laplace exercée par le champ magnétique sur la surface du supraconductrice. Commetner le terme utilisé de pression magnétique.</p></li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Interaction entre un aimant et une spire</strong></p>
+<p>Un dipôle magnétique de moment <span class="math notranslate nohighlight">\(\overrightarrow{M_1} = M_1 \overrightarrow{u_z}\)</span> est situé en un point <span class="math notranslate nohighlight">\(O_1\)</span>. Une spire circulaire <span class="math notranslate nohighlight">\(S_2\)</span>, de rayon <span class="math notranslate nohighlight">\(R_2\)</span>, parcourue par un courant <span class="math notranslate nohighlight">\(i_2\)</span> constante, a son centre <span class="math notranslate nohighlight">\(O_2\)</span> situé sur l’axe <span class="math notranslate nohighlight">\(O_1 z\)</span>. La distance <span class="math notranslate nohighlight">\(O_1 O_2\)</span> est égale à <span class="math notranslate nohighlight">\(d\)</span>,l’axe de la spire est suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span>. On considère <span class="math notranslate nohighlight">\(R_2 &lt;&lt; d\)</span>.</p>
+<ol class="simple">
+<li><p>Déterminer la force de Laplace exercée par le dipôle sur la spire en utilisant la formule du champ magnétique créé par un dipôle magnétique donnée dans le cours.</p></li>
+<li><p>En utilisant le moment magnétique de la spire <span class="math notranslate nohighlight">\(S_2\)</span>, retrouver l’expression précédente.</p></li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Pression magnétique sur un conducteur</strong></p>
+<p>On considère une bobine longue assimilable à un solénoïde infini de rayon R. On l’assimile à un cylindre très fin parcouru par une densité surfacique de courant <span class="math notranslate nohighlight">\(\overrightarrow{j_S} = j_S \overrightarrow{e_{\theta}}\)</span>.</p>
+<ol class="simple">
+<li><p>Déterminer l’intensité qui circule à travers une longueur de 1m de solénoïde.</p></li>
+<li><p>En comparant le résultat trouvé à celui qu’on trouverait pour un solénoïde composé de n spires jointives par unité de longueurs, déterminer le champ magnétique créé par la bobine.</p></li>
+<li><p>Déterminer la force surfacique (appelée pression magnétique) exercée par le champ magnétique sur la bobine.</p></li>
+</ol>
+<p>L’expression trouvée ici est générale à la pression exercée par un champ magnétique qui est nul sur l’une des deux surfaces d’un conducteur (surfaciques évidemment).
+[resume]</p>
+<ol class="simple">
+<li><p>Au Laboratoire National des Champs Magnétiques Intenses (Toulouse), on réalise des bobines non destructives (c’est-à-dire qu’elles ne sont pas détruites après la génération du champ magnétique) pouvant aller jusqu’à 80T. Déterminer la pression magnétique subit par le bobinage. Commenter.</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="particules_c.html" title="previous page">Mouvement de particules chargées</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouvement de particules chargées &#8212; Electromagnétisme</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/em/notebook/particules_c.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Actions d’un champ magnétique. Forces de Laplace" href="actions_b.html" />
+    <link rel="prev" title="Champ magnétique. Introduction" href="champ_b.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Electromagnétisme</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../em.html">
+   Electromagnétisme
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="champ_b.html">
+   Champ magnétique. Introduction
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Mouvement de particules chargées
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="actions_b.html">
+   Actions d’un champ magnétique. Forces de Laplace
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/particules_c.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/particules_c.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/particules_c.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#influences-des-particules-chargees-immobiles-et-mobiles-force-de-lorentz">
+   Influences des particules chargées immobiles et mobiles: force de Lorentz
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#force-de-coulomb-champ-electrostatique">
+     Force de Coulomb: Champ électrostatique
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#interaction-entre-deux-charges-statiques">
+       Interaction entre deux charges statiques
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#champ-electrostatique-cree-par-plusieurs-charges-principe-de-superposition">
+       Champ électrostatique créé par plusieurs charges: principe de superposition
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#circulation-de-charge-champ-magnetique">
+     Circulation de charge: champ magnétique.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#force-exercee-sur-une-charge-ponctuelle">
+       Force exercée sur une charge ponctuelle
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#force-de-lorentz-ordre-de-grandeur">
+     Force de Lorentz. Ordre de grandeur
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#force-de-lorentz">
+   Force de Lorentz
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expression-principe-fondamental-de-la-dynamique">
+     Expression. Principe fondamental de la dynamique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analyse-energetique">
+     Analyse énergétique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mouvement-d-une-particule-chargee-dans-un-champ-magnetique-uniforme-et-constant">
+   Mouvement d’une particule chargée dans un champ magnétique uniforme et constant.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#etude-de-la-trajectoire-pulsation-cyclotron">
+     Etude de la trajectoire. Pulsation cyclotron
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exemple-d-utilisation-cyclotron-et-spectrometrie-de-masse">
+     Exemple d’utilisation: cyclotron et spectrométrie de masse
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#le-cyclotron">
+       Le cyclotron
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#spectrometre-de-masse">
+       Spectromètre de masse
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cas-d-un-champ-magnetique-non-uniforme">
+     Cas d’un champ magnétique non uniforme.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#travaux-diriges">
+   Travaux dirigés
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="mouvement-de-particules-chargees">
+<h1>Mouvement de particules chargées<a class="headerlink" href="#mouvement-de-particules-chargees" title="Permalink to this headline">¶</a></h1>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On a déjà vu en mécanique que des particules chargées pouvaient être soumises à une force particulière: l’interaction électrostatique. Cette interaction résulte simplement d’interactions entre charges qu’elles soient mobiles ou immobiles. En réalité, on observe que pour des particules chargées en mouvement, l’interaction devient plus complexe: on parle d’interaction électromagnétique. Du point de vue classique, cette interaction est regroupée dans ce qu’on appelle la force de Lorentz. Celle-ci permet de décrire de nombreux phénomènes électromagnétiques, notamment quand on s’intéresse à un grand nombre de particules chargées à une échelle pas trop petite. Il apparaît alors que la force de Lorentz dépend de la position relative des charges ainsi que de leur mouvement relatif. Nous allons faire apparaître naturellement deux champs vectoriels: l’un dit électrique en relation avec l’interaction électrique de Coulomb déjà connue et l’autre, en relation avec les interactions de charges en mouvement sera appelé champ magnétique. Le but du cours d’électromagnétisme de première année est de savoir comment calculer ces champs à  partir des données de leur cause: les distributions de positions et de vitesses (= courant électrique) des charges. On peut noter qu’à l’échelle atomique, l’utilisation des champs électromagnétiques demande le passage à la mécanique quantique et la théorie des champs qui n’est évidemment pas au programme de première année.</p>
+</div>
+</details><div class="section" id="influences-des-particules-chargees-immobiles-et-mobiles-force-de-lorentz">
+<h2>Influences des particules chargées immobiles et mobiles: force de Lorentz<a class="headerlink" href="#influences-des-particules-chargees-immobiles-et-mobiles-force-de-lorentz" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="force-de-coulomb-champ-electrostatique">
+<h3>Force de Coulomb: Champ électrostatique<a class="headerlink" href="#force-de-coulomb-champ-electrostatique" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="interaction-entre-deux-charges-statiques">
+<h4>Interaction entre deux charges statiques<a class="headerlink" href="#interaction-entre-deux-charges-statiques" title="Permalink to this headline">¶</a></h4>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Force électrostatique de Coulomb</strong></p>
+<p>Soit deux particules chargées de charges <span class="math notranslate nohighlight">\(q_1\)</span> et <span class="math notranslate nohighlight">\(q_2\)</span> située aux points <span class="math notranslate nohighlight">\(M_1\)</span> et <span class="math notranslate nohighlight">\(M_2\)</span>. La charge en <span class="math notranslate nohighlight">\(M_1\)</span> exerce sur la charge en <span class="math notranslate nohighlight">\(M_2\)</span> une force appelée force électrostatique de Coulomb dont l’expression est:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f7afe182-ea62-4887-8684-1e4138f02854">
+<span class="eqno">(16)<a class="headerlink" href="#equation-f7afe182-ea62-4887-8684-1e4138f02854" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{F_{M_1 \rightarrow M_2}} = \frac{q_1 q_2}{4 \pi \epsilon_0} \frac{\overrightarrow{M_1 M_2}}{M_1 M_2^3}
+\end{equation}\]</div>
+<p>où <span class="math notranslate nohighlight">\(\epsilon_0\)</span> est une constante appelée permittivité du vide: <span class="math notranslate nohighlight">\(\epsilon_0 = 8.85 \times 10^{-12} \rm{m^{-3}.kg^{-1}.A^{2}.s^{4}}\)</span></p>
+</div>
+<p>L’étude des mouvements de M et M’ dépend peu du type de problème qu’on considère. Soit on considère que l’une des deux charges est fixe, soit les deux charges sont mobiles et le principe d’étude des systèmes à deux points nous ramène finalement au cas précédent. Cela revient finalement à particulariser un des points (ex: M) et à considérer le mouvement de l’autre charge (ex: M’): on peut alors introduire une grandeur qui ne dépend que de M et plus de M’. On pourra alors faire une étude globale du comportement des charges (on peut faire le parallèle avec le champ de pesanteur). C’est là qu’intervient le champ électrostatique.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Champ électrique pour une particule chargée</strong></p>
+<p>Soit une particule chargée située au point P de chargé <span class="math notranslate nohighlight">\(q\)</span>, on peut définir le champ électrostatique créé par P en un point M quelconque par:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-87c77591-32b7-4a45-bed5-c7a6e352a04f">
+<span class="eqno">(17)<a class="headerlink" href="#equation-87c77591-32b7-4a45-bed5-c7a6e352a04f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{E_{q}}(M) = \frac{q}{4 \pi \epsilon_0} \frac{\overrightarrow{PM}}{PM^3}
+\end{equation}\]</div>
+</div>
+<p>Pour une particule chargé de charge q’ mise en M, la force exercée par P sur la particule est alors <span class="math notranslate nohighlight">\(\overrightarrow{F} = q' \overrightarrow{E_q}(M)\)</span>. En faisant le parallèle entre le champ électrostatique et le champ de gravitation, on voit tout de suite l’intérêt de définir cette grandeur.</p>
+</div>
+<div class="section" id="champ-electrostatique-cree-par-plusieurs-charges-principe-de-superposition">
+<h4>Champ électrostatique créé par plusieurs charges: principe de superposition<a class="headerlink" href="#champ-electrostatique-cree-par-plusieurs-charges-principe-de-superposition" title="Permalink to this headline">¶</a></h4>
+<p>Considérons maintenant une distribution de charge <span class="math notranslate nohighlight">\(\{q_i\}\)</span> en des points <span class="math notranslate nohighlight">\(\{P_i\}\)</span> distincts. Si une particule chargé <span class="math notranslate nohighlight">\(q'\)</span> se trouve en un point M de l’espace. La résultante des forces électriques de tous les points  sur M est la somme de chaque interactions de Coulomb. Il vient:</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Principe de superposition</strong></p>
+<p>Le champ électrique créé par une distribution de charge <span class="math notranslate nohighlight">\(\{q_i\}\)</span> en un point M donné est la somme des champ créés par chaque charge seule.</p>
+</div>
+</div>
+</div>
+<div class="section" id="circulation-de-charge-champ-magnetique">
+<h3>Circulation de charge: champ magnétique.<a class="headerlink" href="#circulation-de-charge-champ-magnetique" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="force-exercee-sur-une-charge-ponctuelle">
+<h4>Force exercée sur une charge ponctuelle<a class="headerlink" href="#force-exercee-sur-une-charge-ponctuelle" title="Permalink to this headline">¶</a></h4>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Champ magnétique (Rappel)</strong></p>
+<p>Soit une particule chargé de charge <span class="math notranslate nohighlight">\(q\)</span> en un point M possédant une vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span>. L’action d’un champ magnétique <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> sur la charge <span class="math notranslate nohighlight">\(q\)</span> s’écrit:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c055309d-ab95-45db-8057-8d2f43870388">
+<span class="eqno">(18)<a class="headerlink" href="#equation-c055309d-ab95-45db-8057-8d2f43870388" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{F} = q \overrightarrow{v} \wedge \overrightarrow{B}(M)
+\end{equation}\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="force-de-lorentz-ordre-de-grandeur">
+<h3>Force de Lorentz. Ordre de grandeur<a class="headerlink" href="#force-de-lorentz-ordre-de-grandeur" title="Permalink to this headline">¶</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Force de Lorentz</strong></p>
+<p>Si on considère une particule chargé mobile dans un champ électrique et magnétique, il vient alors que ces deux champs exercent une action conjugué électromagnétique appelée force de Lorentz et qui a pour expression:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f061068b-3238-465a-b764-5399ae859c84">
+<span class="eqno">(19)<a class="headerlink" href="#equation-f061068b-3238-465a-b764-5399ae859c84" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{F} = q (\overrightarrow{E} + \overrightarrow{v} \wedge \overrightarrow{B})
+\end{equation}\]</div>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">A l’échelle macroscopique, cette force tend à décroître rapidement. Cette force devient importante quand:</p>
+<ul class="simple">
+<li><p class="card-text">on est à très petite échelle, là où les forces de gravitation sont très faibles.</p></li>
+<li><p class="card-text">on a des portions importantes de matières chargées (exemple: billes chargées d’électricité statique)</p></li>
+<li><p class="card-text">quand la matière est organisée d’une certaine manière, le champ magnétique créé peut devenir relativement important: c’est le cas de la magnétite et des matériaux dits ferromagnétiques (les aimants).</p></li>
+<li><p class="card-text">au moyens de circuits électriques parcourus par de forts courants: c’est le cas de grandes spires.</p></li>
+</ul>
+<p class="card-text">Pour calculer cette force, il faut connaître les champs électriques et magnétiques. Pour l’instant, nous supposerons connus les champs magnétiques et électriques en tout point de l’espace et nous étudierons le mouvement d’une particule chargée dans de tels champs sans forcément en connaître la cause.</p>
+<p class="card-text">Nous supposerons de plus que ces champs sont uniformes. Nous verrons par la suite que pour créer un champ uniforme sur des distances notoires, on peut:</p>
+<ul class="simple">
+<li><p class="card-text">créer un champ magnétique uniforme dans un solénoïde infini c’est-à-dire dans une zone d’un solénoïde éloignée des bords.</p></li>
+<li><p class="card-text">créer un champ électrique uniforme grâce à des plans infinis, c’est-à-dire en se plaçant suffisamment proche du plan et éloigné des bords. On verra par la suite que le condensateur plan permet de réaliser un tel dispositif.</p></li>
+</ul>
+<p class="card-text">Cette liste n’est pas exhaustive, on citera aussi les bobines de Helmholtz pour créer un champ magnétique uniforme dans une zone donnée. Sauf contre-indication, on négligera l’action du poids dans tout le chapitre.</p>
+</div>
+</details></div>
+</div>
+<div class="section" id="force-de-lorentz">
+<h2>Force de Lorentz<a class="headerlink" href="#force-de-lorentz" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="expression-principe-fondamental-de-la-dynamique">
+<h3>Expression. Principe fondamental de la dynamique<a class="headerlink" href="#expression-principe-fondamental-de-la-dynamique" title="Permalink to this headline">¶</a></h3>
+<p>La force dépend de la vitesse et semble donc dépendre du référentiel. Il n’en est rien à condition de se placer dans un cadre de mécanique relativiste. Nous supposerons pour simplifier que tous les mouvements étudiés s’effectuent dans un référentiel galiléen.</p>
+<p><strong>Principe fondamental de la dynamique:</strong> Appliqué à la particule M de masse m et de charge q, il s’énonce évidemment:</p>
+<p>[
+m \frac{d \overrightarrow{v}}{dt} = q (\overrightarrow{E} + \overrightarrow{v} \wedge \overrightarrow{B})
+]</p>
+</div>
+<div class="section" id="analyse-energetique">
+<h3>Analyse énergétique<a class="headerlink" href="#analyse-energetique" title="Permalink to this headline">¶</a></h3>
+<p><strong>On ne s’intéresse ici qu’à des champs statiques.</strong></p>
+<p>La force magnétique ne travaille pas au contraire de la force électrostatique. C’est-à-dire que le champ magnétique n’agit que sur la direction de la vitesse et non son module. Seul le champ électrostatique peut modifier le module de la vitesse d’une particule.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Fondamental : Force électrostatique. Energie potentielle électrostatique (Admise)</strong></p>
+<p>Le champ électrique en régime statique est conservatif: <span class="math notranslate nohighlight">\(\overrightarrow{E} = - \overrightarrow{grad} V\)</span> où <span class="math notranslate nohighlight">\(V\)</span> est le potentiel électrostatique. La force électrique est donc aussi conservative: l’énergie potentielle électrique sera donc: <span class="math notranslate nohighlight">\(E_p = qV\)</span>.</p>
+</div>
+<p>La force magnétique ne travaillant pas, on peut dire qu’il s’agit de l’énergie potentielle associée à la force de Lorentz. Attention, néanmoins le caractère conservatif du champ électrique n’est valable que pour des champs statiques.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+## Mouvement d&#39;une particule chargée dans un champ électrostatique uniforme
+
+### Applications
+````{tip} __Exercice : Accélération de particules__  
+
+On considère deux plaques infinies $P_1$ et $P_2$ distantes d&#39;une distance $d$ et chargées uniformément et portées chacune aux potentiels respectifs $V_1$ et $V_2$. Des particules de charge $q$ sont libérées sans vitesse initiale de la plaque 1. On oriente un axe Ox perpendiculaire aux plaques avec la plaque $P_1$ est en $x=0$. On admet que le champ électrique est uniforme entre les deux plaques et suivant $\overrightarrow{e_x}$: $\overrightarrow{E} = E_0 \overrightarrow{e_x}$.
+
+1. Déterminer son expression en fonction de $V_1,V_2$ et $d$.
+1. Montrer que pour que les charges $q$ se dirigent vers la plaque 2, il faut ordonner $V_1$ et $V_2$.
+1. Déterminer alors la vitesse des charges quand elles arrivent sur la plaque 2. En déduire que l&#39;expression &quot;on accélère les charges au moyens d&#39;une tension accélératrice U&quot; a un sens (expliquer notamment pourquoi l&#39;hypothèse d&#39;un champ uniforme est inutile).
+
+
+</pre></div>
+</div>
+<p><strong>Généralisation:</strong>
+On voit que la simple donnée de la tension accélératrice permet de connaître la variation d’énergie cinétique et donc la vitesse des charges en sortie d’un tel dispositif. Si l’utilisation de plaques est très fréquente, on peut très bien imaginer d’autres systèmes d’accélération.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Electron-volt</strong></p>
+<p>L’électron-volt est une unité énergétique définie comme l’énergie cinétique d’un électron accéléré depuis le repos par une tension de 1V: <span class="math notranslate nohighlight">\(1 \rm{eV} = 1.6 \times 10^{-19} J\)</span>.
+\tcblower{}
+Cette unité est très utile à l’échelle microscopique.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Déviation d’un faisceau électronique</strong></p>
+<p>On considère maintenant une particule possédant une vitesse <span class="math notranslate nohighlight">\(v_0\)</span> perpendiculaire à un champ <span class="math notranslate nohighlight">\(\overrightarrow{E}\)</span> uniforme. On suppose que le champ n’est établi que sur distance <span class="math notranslate nohighlight">\(d\)</span> et que les particules sont des électrons. A la sortie de la zone de déviation, il n’y a plus de champ électrique et on place un écran à une distance D de la zone sur lequel est repéré l’impact du faisceau électronique.</p>
+<ol class="simple">
+<li><p>Déterminer la déflexion, c’est-à-dire la position verticale du faisceau sur l’écran.</p></li>
+<li><p>Estimer les tensions de déflexion mise en jeu dans un oscilloscope. Commenter</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="mouvement-d-une-particule-chargee-dans-un-champ-magnetique-uniforme-et-constant">
+<h2>Mouvement d’une particule chargée dans un champ magnétique uniforme et constant.<a class="headerlink" href="#mouvement-d-une-particule-chargee-dans-un-champ-magnetique-uniforme-et-constant" title="Permalink to this headline">¶</a></h2>
+<p>Dans toute cette partie, on considère une particule de masse <span class="math notranslate nohighlight">\(m\)</span> et de charge <span class="math notranslate nohighlight">\(q\)</span> plongée dans un champ magnétique placé suivant l’axe Oz. On suppose qu’il n’y a aucune autre force en jeu.
+On peut placer la particule au milieu d’un solénoïde de grande dimension.</p>
+<div class="section" id="etude-de-la-trajectoire-pulsation-cyclotron">
+<h3>Etude de la trajectoire. Pulsation cyclotron<a class="headerlink" href="#etude-de-la-trajectoire-pulsation-cyclotron" title="Permalink to this headline">¶</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Définition : Pulsation cyclotron</p>
+<p>On appelle pulsation cyclotron: <span class="math notranslate nohighlight">\(\omega_c = \left\vert \frac{qB}{m} \right\vert\)</span>. On définit le vecteur associé: <span class="math notranslate nohighlight">\(\overrightarrow{\Omega} = - \frac{q \overrightarrow{B}}{m}\)</span>.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Fondamental : Caractéristiques générales du mouvement (Admis)</p>
+<p>On note <span class="math notranslate nohighlight">\(\phi\)</span> l’angle entre la vitesse initiale et le champ magnétique. Le mouvement d’une particule chargée dans un champ magnétique uniforme est uniforme et composée de 2 mouvements:</p>
+<ul class="simple">
+<li><p>un mouvement rectiligne uniforme suivant l’axe du champ magnétique à la vitesse.</p></li>
+<li><p>un mouvement circulaire uniforme dans le plan perpendiculaire à <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span>. Les caractéristiques de ce mouvement circulaire seront données par la suite.</p></li>
+</ul>
+<p>Le mouvement est donc un mouvement hélicoïdal.</p>
+<p>Si la vitesse initiale de la charge est perpendiculaire à <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> (<span class="math notranslate nohighlight">\(\phi = \pi/2\)</span>), alors la trajectoire est un cercle contenu dans le plan perpendiculaire au champ magnétique.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">La preuve de cette propriété est donnée par la suite. Elle n’est normalement pas à connaître.</p>
+</div>
+</details><div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Fondamental : Cas du mouvement circulaire plan</p>
+<p>Soit une particule de charge <span class="math notranslate nohighlight">\(q\)</span> dans un champ magnétique uniforme <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span>. Si la vitesse initiale <span class="math notranslate nohighlight">\(v_0\)</span> est perpendiculaire à <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span>, le mouvement est circulaire. Les caractéristiques du mouvement sont:</p>
+<ul class="simple">
+<li><p>le mouvement est uniforme à la vitesse <span class="math notranslate nohighlight">\(v_0\)</span></p></li>
+<li><p>la vitesse angulaire est la pulsation cyclotron <span class="math notranslate nohighlight">\(\omega_c = \vert \frac{qB}{m} \vert\)</span></p></li>
+<li><p>le rayon est <span class="math notranslate nohighlight">\(R = \vert \frac{mv_0}{qB} \vert\)</span></p></li>
+<li><p>le cercle est parcouru dans le sens en cohérence avec le vecteur <span class="math notranslate nohighlight">\(-q\overrightarrow{B}\)</span> (règle du tire-bouchon)</p></li>
+</ul>
+</div>
+<blockquote>
+<div><p>Cette preuve est à connaître. On part du postulat que le mouvement est contenu dans le plan perpendiculaire à <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span>.</p>
+<p><strong>Caractère circulaire.</strong></p>
+<p>Remarquons que la force magnétique est toujours perpendiculaire à la vitesse. On va se placer dans le repère de Fresnet puisque la trajectoire est plane. Il vient que :</p>
+<ul class="simple">
+<li><p>l’accélération tangentielle est nulle donc <span class="math notranslate nohighlight">\(\frac{\rm{d}v}{\rm{dt}} = 0\)</span> : le mouvement est uniforme.</p></li>
+<li><p>l’accélération tangentielle s’écrit a pour norme  <span class="math notranslate nohighlight">\(qBv\)</span> si on note <span class="math notranslate nohighlight">\(v\)</span> la norme de la vitesse (puisque le champ magnétique est perpendiculaire à la vitesse). Il vient qu’elle est constante (<span class="math notranslate nohighlight">\(v\)</span> est constante).</p></li>
+</ul>
+<p>De plus, on sait que <span class="math notranslate nohighlight">\(a_N = \frac{v^2}{R}\)</span>. comme <span class="math notranslate nohighlight">\(a_N\)</span> et <span class="math notranslate nohighlight">\(v\)</span> sont constant, il vient que le rayon de courbure est constant. <strong>La seule trajectoire plane de rayon de courbure constante est un cercle</strong> donc la trajectoire est circulaire.</p>
+<p><strong>Relation vitesse et rayon</strong>
+On se place donc dans un système de coordonnées cylindriques d’axe Oz confondu avec <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span>: <span class="math notranslate nohighlight">\(\overrightarrow{B} = B \overrightarrow{e_z}\)</span>.</p>
+<p>Avant même de passer à une preuve quantitative, remarquons que:</p>
+<ul class="simple">
+<li><p>Sur un mouvement circulaire uniforme, l’accélération est centripète de sorte que la force magnétique doit être centripète (suivant <span class="math notranslate nohighlight">\(-\overrightarrow{e_r}\)</span>). Or le trièdre <span class="math notranslate nohighlight">\((\overrightarrow{F}, q \overrightarrow{v}, \overrightarrow{B})\)</span> doit être directe par définitio de la force magnétique. Il vient effectivement que:</p></li>
+<li><p>si <span class="math notranslate nohighlight">\(q &gt;0\)</span>, <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> est suivant <span class="math notranslate nohighlight">\(- \overrightarrow{e_{\theta}}\)</span> soit en cohérence avec <span class="math notranslate nohighlight">\(-q\overrightarrow{B}\)</span></p></li>
+<li><p>si <span class="math notranslate nohighlight">\(q &lt;0\)</span>, <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> est suivant <span class="math notranslate nohighlight">\( \overrightarrow{e_{\theta}}\)</span> soit en cohérence avec <span class="math notranslate nohighlight">\(-q\overrightarrow{B}\)</span></p></li>
+</ul>
+<p>Le PFD projeté dans la base cylindrique s’écrit:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+-m R \dot \theta^2 \overrightarrow{e_r} + m R \ddot \theta \overrightarrow{e_{\theta}} &amp;= q R \dot \theta \overrightarrow{e_{\theta}} \wedge B \overrightarrow{e_z}\\
+-m R \dot \theta^2 \overrightarrow{e_r} + m R \ddot \theta \overrightarrow{e_{\theta}} &amp;= q R B \dot \theta \overrightarrow{e_r}
+\end{align*}\]</div>
+</div></blockquote>
+<blockquote>
+<div><p>En projection sur <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span>, on retrouve que le mouvement est uniforme (<span class="math notranslate nohighlight">\(\ddot \theta = 0\)</span>) et en projection sur <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span>, il vient:</p>
+<div class="math notranslate nohighlight">
+\[
+\dot \theta = - \frac{q B}{m}
+\]</div>
+<p>soit la pulsation cyclotron en valeur absolue. On a bien <span class="math notranslate nohighlight">\(\dot \theta &lt;0\)</span> si <span class="math notranslate nohighlight">\(q &gt; 0\)</span> et <span class="math notranslate nohighlight">\(\dot \theta &gt;0\)</span> si <span class="math notranslate nohighlight">\(q &lt; 0\)</span> soit l’orientation de la trajectoire en cohérence avec <span class="math notranslate nohighlight">\(-q \overrightarrow{B}\)</span>.</p>
+<p>De <span class="math notranslate nohighlight">\(v_0 = R \dot \theta\)</span>, il vient immédiatement l’expression du rayon.</p>
+</div></blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Déflexion par un champ magnétique</strong></p>
+<p>On suppose que le champ magnétique n’existe qu’entre y=0 et y=D. Pour un champ <span class="math notranslate nohighlight">\(B=0.1\rm{T}\)</span> et un électron dont la vitesse initiale de <span class="math notranslate nohighlight">\(2\times10^{7} \rm{m.s^{-1}}\)</span></p>
+<ol class="simple">
+<li><p>Déterminer la distance D à mettre pour dévier la particule d’un angle <span class="math notranslate nohighlight">\(\theta=1,71 ^{\circ}\)</span></p></li>
+<li><p>Quel champ électrique permettrait la même déviation sur la même distance D. Commenter.</p></li>
+</ol>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Si le champ magnétique ne peut accélérer les particules (on a vu qu’il ne travaillait pas), il est fort utile pour dévier les faisceaux de particules. C’est par exemple un champ magnétique qui est utilisé dans les anciennes télévisions.</p>
+</div>
+</details></div>
+<div class="section" id="exemple-d-utilisation-cyclotron-et-spectrometrie-de-masse">
+<h3>Exemple d’utilisation: cyclotron et spectrométrie de masse<a class="headerlink" href="#exemple-d-utilisation-cyclotron-et-spectrometrie-de-masse" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="le-cyclotron">
+<h4>Le cyclotron<a class="headerlink" href="#le-cyclotron" title="Permalink to this headline">¶</a></h4>
+<p>La déviation ainsi obtenue est utilisée  dans le cyclotron. Il s’agit d’un accélérateur de particules chargées qui conjugue les effets des deux champs. Les particules évoluent dans deux demi-cylindre, appelés dees, de rayon R dans lesquels règnent un champ magnétique uniforme perpendiculaire à la face circulaire. Entre les deux dees se trouve  une petite épaisseur dans laquelle règne un champ électrique uniforme mais qui varier au cours du temps (de manière périodique). Après un premier temps de chauffe, les électrons, sortant d’un dee sont accélérés par le champ électrique en direction de l’autre dee. Les particules vont effectuer des demi-cercles dans chaque dee, revenant ainsi dans dans l’espace d’accélération. Entre-temps, le champ électrique a varié et s’est inversé de sorte que les particules vont être à nouveau accélérer. La distance entre les deux dees étant faible devant R, on peut supposer que le champ E est constant durant le passage des particules.</p>
+<p>On peut remarquer que le temps entre eux passages dans la zone d’accélération est constant, il vaut la demi-période de rotation calculée précédemment, le champ doit donc avoir une période T, soit une pulsation <span class="math notranslate nohighlight">\(\omega_c\)</span>. D’où le nom de pulsation cyclotron.</p>
+<p>Ainsi, pour une différence de potentiel de 10kV, l’énergie cinétique Ec (en supposant l’énergie nulle au départ) après n passages est: <span class="math notranslate nohighlight">\(Ec = nqU\)</span>. Il aurait donc fallu une différence de potentiel de <span class="math notranslate nohighlight">\(10 * nkV\)</span> pour obtenir la même accélération. Si le champ électrique est le même dans les deux cas, cela signifie un espace n fois plus grand.</p>
+</div>
+<div class="section" id="spectrometre-de-masse">
+<h4>Spectromètre de masse<a class="headerlink" href="#spectrometre-de-masse" title="Permalink to this headline">¶</a></h4>
+<p>On peut aussi remarquer que le rayon R dépend de <span class="math notranslate nohighlight">\(v_0\)</span> mais aussi de la masse de la particule. C’est cette propriété qui est utilisée dans le spectromètre de masse: en introduisant des particules accélérées toutes à la même vitesse dans un champ magnétique uniforme, on peut séparer des particules chargées de masse différentes.</p>
+<p>En général, le spectromètre de masse est couplé avec un dispositif réalisant une chromatographie (liquide ou gazeuse). En couplant le temps de migration dans la colonne de chromatographie avec le point d’arrivée de l’élément dans le collecteur à la sortie du spectromètre, on obtient de nombreuses informations. En les comparant avec les tables, on peut en général déterminer la nature des composés étudiés.</p>
+</div>
+</div>
+<div class="section" id="cas-d-un-champ-magnetique-non-uniforme">
+<h3>Cas d’un champ magnétique non uniforme.<a class="headerlink" href="#cas-d-un-champ-magnetique-non-uniforme" title="Permalink to this headline">¶</a></h3>
+<p>On s’intéresse ici à des champs magnétiques dont les variations sont faibles.</p>
+<p>Commençons par remarquer que dans le cas d’un champ magnétique uniforme le mouvement hélicoïdal se fait sur la surface d’un tube de champ (les lignes de champ étant des droites).</p>
+<p>Pour un champ magnétique variant faiblement, on arrive à montrer que les particules vont à nouveaux tourner autour de la direction globale du champ en s’enroulant sur un tube de champ. Si le tube se rétrécit le rayon de l’hélice va se rétrécir et inversement.</p>
+<p>Observation: Lorsqu’elles arrivent sur Terre, les particules chargées issues des vents solaires subissent ainsi la déviation par le champ magnétique terrestre. Vers les pôles, elles vont suivre les lignes de champ qui bouclent aux pôles magnétiques. Ces le seul endroits où elles peuvent atteindre la haute atmosphère et leur interaction avec celle-ci créé un phénomène particulier: les aurores boréales.</p>
+</div>
+</div>
+<div class="section" id="travaux-diriges">
+<h2>Travaux dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Spectrographe de masse</strong></p>
+<div class="figure align-center" id="fig-spec-masse-td">
+<img alt="../_images/Mecanique_TD7_EX1_1.jpeg" src="../_images/Mecanique_TD7_EX1_1.jpeg" />
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Spectromètre de masse</span><a class="headerlink" href="#fig-spec-masse-td" title="Permalink to this image">¶</a></p>
+</div>
+<p>Le principe d’un spectrographe de masse est représenté \cref{fig_spec_masse_td}. Dans un chambre une chambre d’ionisation (1) on produit des ions  de masse m et de charge <span class="math notranslate nohighlight">\(q=2e\)</span>. Ces ions pénètrent par le trou <span class="math notranslate nohighlight">\(T_1\)</span> d’une plaque <span class="math notranslate nohighlight">\(P_1\)</span> dans une enceinte (A); leur vitesse en <span class="math notranslate nohighlight">\(T_1\)</span> est négligeable. Dans l’enceinte (A), ces ions sont accélérés par une tension <span class="math notranslate nohighlight">\(U=V_{P1} - V_{P2}\)</span>, puis sortent de (A) par un trou <span class="math notranslate nohighlight">\(T_2\)</span> percé dans la plaque <span class="math notranslate nohighlight">\(P_2\)</span>. Ils pénètrent alors dans une enceinte (D) où règne un champ magnétique B uniforme et constant perpendiculaire au plan de la figure. La vitesse des ions en <span class="math notranslate nohighlight">\(T_2\)</span> est notée <span class="math notranslate nohighlight">\(v_0\)</span>. On néglige le poids.</p>
+<p><em>Données : <span class="math notranslate nohighlight">\(e=1.6 \times 10^{-19} \rm{C}\)</span>; <span class="math notranslate nohighlight">\(U=4000\rm{V}\)</span>; <span class="math notranslate nohighlight">\(B=0.1\rm{T}\)</span>; unité de masse atomique: <span class="math notranslate nohighlight">\(m_0 = 1.67 \times 10^{-27} \rm{kg}\)</span>.</em></p>
+<ol class="simple">
+<li><p>Exprimer la vitesse <span class="math notranslate nohighlight">\(v_0\)</span> en fonction de q, m et U.</p></li>
+<li><p>Préciser le sens de B pour que les ions puissent être recueillis dans la fente O du collecteur (C). Calculer littéralement le rayon R de la trajectoire des ions dans l’enceinte (D).</p></li>
+<li><p>L’élément zinc contient deux isotopes de nombres de masse <span class="math notranslate nohighlight">\(A_1=68\)</span> et <span class="math notranslate nohighlight">\(A_2 = 70\)</span>. On souhaite recueillir en O l’isotope <span class="math notranslate nohighlight">\(A_1\)</span>. Calculer numériquement la distance <span class="math notranslate nohighlight">\(l=T_2 O\)</span> et évaluer la largeur maximale de la fente du collecteur.</p></li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Focalisation par un champ électrique</strong></p>
+<div class="figure align-center" id="fig-focalisation-chp-elec">
+<img alt="../_images/Mecanique_TD7_EX2_1.jpeg" src="../_images/Mecanique_TD7_EX2_1.jpeg" />
+</div>
+<p>Des électrons, préalablement accélérés par une tension V=10kV, pénètrent dans la fente supposée très fine dans une région où règne un champ électrique uniforme <span class="math notranslate nohighlight">\(\overrightarrow{E} = E \overrightarrow{e_y}\)</span>. On désire recueillir ces électrons à travers une fente B pratiquée dans le plan opaque (xAy), à la distance AB=L=20cm de A. On peut régler l’angle <span class="math notranslate nohighlight">\(\alpha\)</span> que fait le vecteur vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v_0}\)</span> des électrons en A avec l’axe (Ax), ainsi que la norme et le sens du champ électrostatique E. Le vecteur <span class="math notranslate nohighlight">\(v_0\)</span> est supposé parallèle au plan (Oxy).</p>
+<ol class="simple">
+<li><p>Quelles sont les valeurs optimales à donner à <span class="math notranslate nohighlight">\(\alpha\)</span> et E pour réaliser la focalisation de ces électrons, sachant que le faisceau incident présente une faible dispersion angulaire <span class="math notranslate nohighlight">\(\Delta \alpha &lt;&lt; \alpha\)</span>?</p></li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Focalisation par un secteur magnétique</strong></p>
+<div class="figure align-center" id="fig-focalisation-chp-magnetique">
+<img alt="../_images/Mecanique_TD7_EX3_1.jpeg" src="../_images/Mecanique_TD7_EX3_1.jpeg" />
+</div>
+<p>On considère un secteur magnétique d’angle <span class="math notranslate nohighlight">\(90 ^{\circ}\)</span> définissant la zone d’action d’un champ magnétique B. permanent et uniforme dans lequel pénètrent des ions positifs monochargés de masse m et accélérés sous une tension de valeur absolue V. On note e la charge élémentaire.</p>
+<ol class="simple">
+<li><p>Calculer le module de la vitesse <span class="math notranslate nohighlight">\(v_0\)</span> des ions à l’entrée du secteur magnétique, en supposant qu’ils sont émis sans vitesse avant l’accélération sous la tension V et préciser le sens de variation du potentiel au cours de l’accélération.</p></li>
+<li><p>Le secteur magnétique est conçu pour une trajectoire circulaire moyenne de rayon R fixée par construction. On notera O le centre de la trajectoire et Oxy le plan du cercle, le secteur magnétique occupant le premier quadrant. Indiquer, en fonction de R, e, m et V, l’expression du champ magnétique correspondant à cette trajectoire.</p></li>
+<li><p>Les ions issus d’une fente A située à une distance d de la face d’entrée du secteur magnétique et forment un faisceau peu dispersé en angle autour de la direction Ax perpendiculaire à la face à la face d’entrée du dispositif. Montrer que, pour un rapport e/m donné qui impose le choix de B, les ions provenant de A dont la vitesse est perpendiculaire à B sont focalisés en un point A’ que l’on déterminera. Peut-on parler de stigmatisme?</p></li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Conduction dans un métal en présence d’un champ magnétique</strong></p>
+<p>L’espace est repéré par les axes cartésiens Ox, Oy, Oz et les vecteurs <span class="math notranslate nohighlight">\((\overrightarrow{u_x}, \overrightarrow{u_y}, \overrightarrow{u_z})\)</span>. On s’intéresse ici à la conduction dans un métal assurée par des électrons de charge q=-e, de masse m, de densité n. Le métal est placé dans un champ électrique <span class="math notranslate nohighlight">\(\overrightarrow{E} = E_x \overrightarrow{u_x}+E_y \overrightarrow{u_y}+E_z \overrightarrow{u_z}\)</span> et un champ magnétique <span class="math notranslate nohighlight">\(\overrightarrow{B} = B \overrightarrow{u_z}\)</span>. Ces champs sont uniformes et permanents. L’interaction entre les électrons et les ions fixes du réseau est modélisé par une force de frottement: <span class="math notranslate nohighlight">\(\overrightarrow{f} = - \frac{m}{\tau} \overrightarrow{v}\)</span>, v étant la vitesse des électrons.</p>
+<ol class="simple">
+<li><p>Déterminer l’unité de <span class="math notranslate nohighlight">\(\tau\)</span>.</p></li>
+<li><p>Etablir l’équation différentielle du mouvement d’un électron. Que devient cette équation en régime permanent.</p></li>
+<li><p>On note <span class="math notranslate nohighlight">\(j=nqv\)</span> le vecteur densité de courant. Montrer qu’en régime permanent, les composantes de ce vecteur vérifie le système d’équations:</p></li>
+</ol>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+j_x - q \tau \frac{B}{m} j_y = \gamma E_x\\
+q \tau \frac{B}{m} j_x + j_y  = \gamma E_y\\
+j_z = \gamma E_z
+\end{align*}\]</div>
+<p>où <span class="math notranslate nohighlight">\(\gamma\)</span> est une constante que l’on déterminera.</p>
+<ol class="simple">
+<li><p>En déduire que l’on peut écrire <span class="math notranslate nohighlight">\(j_x\)</span> et <span class="math notranslate nohighlight">\(j_y\)</span> sous la forme suivante: <span class="math notranslate nohighlight">\(j_x = \gamma (\alpha E_x + \beta E_y)\)</span> et <span class="math notranslate nohighlight">\(j_y = \gamma (-\beta E_x + \alpha E_y)\)</span> où <span class="math notranslate nohighlight">\(\alpha\)</span> et <span class="math notranslate nohighlight">\(\beta\)</span> sont deux constantes à déterminer en fonction des données.</p></li>
+<li><p>Si la conduction ne peut avoir lieu que suivant Ox, montrer que la présence du champ B impose la présence d’un champ électrique (appelé champ de Hall) et déterminer sa direction. Calculer la constante de Hall: <span class="math notranslate nohighlight">\(\frac{E_y}{j_x B}\)</span>.</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="champ_b.html" title="previous page">Champ magnétique. Introduction</a>
+    <a class='right-next' id="next-link" href="actions_b.html" title="next page">Actions d’un champ magnétique. Forces de Laplace</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
