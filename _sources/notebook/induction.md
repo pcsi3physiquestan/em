@@ -251,7 +251,7 @@ L'induction mutuelle peut permettre:
 
 
 ````{admonition} Exemple : Les puces RFID
-:class:hint, dropdown
+:class: hint, dropdown
   
 
 Les puces RFID fonctionnent sur le principe d'induction: le circuit fixe parcouru par un courant asservi va induire un courant dans le second circuit qui en retour va perturber le premier. La mesure de cette perturbation permet la communication entre la borne de contrôle et la puce.
@@ -259,7 +259,7 @@ Les puces RFID fonctionnent sur le principe d'induction: le circuit fixe parcour
 ````
 
 ````{admonition} Exemple : Stimulateurs cardiaques
-:class:hint, dropdown
+:class: hint, dropdown
   
 
 Outre les transformateurs étudié ci-dessous, on peut citer certains stimulateurs cardiaques dont les batteries sont rechargées en moyen d'une autre bobine en influence mutuelle. On évite ainsi le recours à une opération chirurgicale.
@@ -353,7 +353,7 @@ La consevation du flux revient à dire que les deux bobinages sont en influence 
 ````{tip} __Exercice : Bilan de puissance__
 Dans un transformateur parfait, la puissance reçue par le circuit primaire est égale à la puissance fournie par le circuit secondaire. En déduire que :
 \begin{equation}
-	$\frac{I_2}{I_1} = - \frac{1}{m}$
+	\frac{I_2}{I_1} = - \frac{1}{m}
 \end{equation}
 On précisera le sens des intensités amenant à cette relation.
 ````
