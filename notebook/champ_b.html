@@ -107,6 +107,11 @@
    Actions d’un champ magnétique. Forces de Laplace
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="induction.html">
+   Induction et application
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -414,8 +419,8 @@ Remarque<div class="summary-down docutils">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Champ magnétique</strong></p>
 <p>Soit une particule chargé de charge <span class="math notranslate nohighlight">\(q\)</span> en un point M possédant une vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span>. L’action, appelée force de Lorentz, d’un circuit parcouru par un courant ou d’un aimant peut-être modélisée par une force dont l’expression mathématique est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5f6e8af9-492e-4e6e-a3d6-f27535a6ddb9">
-<span class="eqno">(1)<a class="headerlink" href="#equation-5f6e8af9-492e-4e6e-a3d6-f27535a6ddb9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b428f829-3ff1-4a16-8f84-8e7b950860a4">
+<span class="eqno">(1)<a class="headerlink" href="#equation-b428f829-3ff1-4a16-8f84-8e7b950860a4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{F} = q \overrightarrow{v} \wedge \overrightarrow{B}(M)
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(\overrightarrow{B}(M)\)</span> est un champ vectoriel dont les caractéristiques ne dépendent que du circuit ou de l’aimant. On l’appelle champ magnétique et son unité est le Tesla (T). M est le point où se trouve la particule de charge <span class="math notranslate nohighlight">\(q\)</span>.</p>
@@ -492,8 +497,8 @@ Remarque<div class="summary-down docutils">
 <div class="tip dropdown admonition">
 <p class="admonition-title">Exemple : Bobine infinie</p>
 <p>On peut montrer que le champ magnétique est nulle à l’extérieur du solenoïde et uniforme à l’intérieur:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7e277a86-d78b-427d-bb4c-c55d6c43d199">
-<span class="eqno">(2)<a class="headerlink" href="#equation-7e277a86-d78b-427d-bb4c-c55d6c43d199" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-fa708f58-7c12-4542-8946-f09bbdba9fc1">
+<span class="eqno">(2)<a class="headerlink" href="#equation-fa708f58-7c12-4542-8946-f09bbdba9fc1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{B} = \mu_0 n I \overrightarrow{e_z}
 \end{equation}\]</div>
 <p>où n est le nombre de spire par unité de longuer, I l’intensité qui parcourt les spires et <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span> le vecteur axial <strong>orienté en cohérence</strong> avec I.</p>
@@ -545,8 +550,8 @@ Remarque<div class="summary-down docutils">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Flux du champ magnétique</strong></p>
 <p>Soit un champ vectoriel <span class="math notranslate nohighlight">\(\overrightarrow{B}(M)\)</span> définit en tout point M de l’espace et une surface <span class="math notranslate nohighlight">\(\Sigma\)</span> quelconque orientée décomposée en un ensemble de surface plane infinitésimale <span class="math notranslate nohighlight">\(\overrightarrow{dS}\)</span>. On définit le flux du vecteur <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> à travers <span class="math notranslate nohighlight">\(\Sigma\)</span> comme l’intégrale:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5633e0d6-c5ef-4fb1-b3e3-cda3e808cbb4">
-<span class="eqno">(3)<a class="headerlink" href="#equation-5633e0d6-c5ef-4fb1-b3e3-cda3e808cbb4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-6cbf9dae-572a-4367-b76c-06de20bf2f76">
+<span class="eqno">(3)<a class="headerlink" href="#equation-6cbf9dae-572a-4367-b76c-06de20bf2f76" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \Phi = \int_{M \in \Sigma} \overrightarrow{B}(M) \cdot \overrightarrow{dS}(M)
 \end{equation}\]</div>
 </div>
@@ -648,21 +653,21 @@ On considère les deux exemples précédente :</p>
 <div><p>Résolution<br />
 <strong>Cas volumique</strong> : On commence par décomposer la <strong>surface</strong> transverse du cylindre (un cercle de rayon <span class="math notranslate nohighlight">\(R\)</span>) en des surfaces élémentaires <span class="math notranslate nohighlight">\(dS(M)\)</span> orientée suivant <span class="math notranslate nohighlight">\(+\overrightarrow{e_z}\)</span> autour de chaque point M dela surface. La quantité de charge qui traverse cette surface <span class="math notranslate nohighlight">\(dS(M)\)</span> entre <span class="math notranslate nohighlight">\(t\)</span> et <span class="math notranslate nohighlight">\(t+dt\)</span> et l’ensemble des charges contenu à l’instant <span class="math notranslate nohighlight">\(t\)</span> dans le cylindre élementaire appuyé sur dS et de hauteur <span class="math notranslate nohighlight">\(vdt\)</span> (<span class="math notranslate nohighlight">\(v\)</span> étant la vitesse ces charges, elle est bien constante sur une durée dt tendant vers 0).</p>
 <p>La surface et donc le volume <span class="math notranslate nohighlight">\(v(M) dtdS(M)\)</span> étant infinitésimaux, on peut considérer que la densité volumique de charges mobiles y est uniforme et la quantité de charges est donc <span class="math notranslate nohighlight">\(\rho(M)v(M) dt dS(M)\)</span>, ce qu’on peut réécrire vectoriellement :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-847e4b6f-b789-4466-8209-be1ea77b78b6">
-<span class="eqno">(4)<a class="headerlink" href="#equation-847e4b6f-b789-4466-8209-be1ea77b78b6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-51c5fa7c-6244-490e-beae-f77de1bfd5a0">
+<span class="eqno">(4)<a class="headerlink" href="#equation-51c5fa7c-6244-490e-beae-f77de1bfd5a0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{j_v}(M) \cdot \overrightarrow{dS}(M)
 \end{equation}\]</div>
 <p>Il vient que l’intensité totale s’écrit :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ae18078c-a811-4626-945e-ea25dae70078">
-<span class="eqno">(5)<a class="headerlink" href="#equation-ae18078c-a811-4626-945e-ea25dae70078" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-0aaaede2-d63d-4752-9f63-cc81ecae2ba6">
+<span class="eqno">(5)<a class="headerlink" href="#equation-0aaaede2-d63d-4752-9f63-cc81ecae2ba6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \iint_{\Sigma} \overrightarrow{j_v}(M) \cdot \overrightarrow{dS}(M)
 \end{equation}\]</div>
 <p>Dans le cas uniforme, il vient <span class="math notranslate nohighlight">\(I = j_0 \pi R^2\)</span></p>
 <p><strong>Cas surfacique</strong> : Cette fois, les charges ne traverse pas une surface mais une <strong>ligne transverse</strong> à la conduction (avec suivant Oz) (faire le parallèle avec une barrière de péage). On commence par décomposer la <strong>ligne transverse</strong> du cylindre en des lignes élémentaires <span class="math notranslate nohighlight">\(dz\)</span> orientée suivant <span class="math notranslate nohighlight">\(+\overrightarrow{e_y}\)</span> autour de chaque point M de la ligne. La quantité de charge qui traverse cette ligne <span class="math notranslate nohighlight">\(dz\)</span> entre <span class="math notranslate nohighlight">\(t\)</span> et <span class="math notranslate nohighlight">\(t+dt\)</span> et l’ensemble des charges contenu à l’instant <span class="math notranslate nohighlight">\(t\)</span> dans le rectangle élementaire appuyé sur dz et de hauteur <span class="math notranslate nohighlight">\(vdt\)</span> (<span class="math notranslate nohighlight">\(v\)</span> étant la vitesse ces charges, elle est bien constante sur une durée dt tendant vers 0).</p>
 <p>La ligne et donc lsurface <span class="math notranslate nohighlight">\(v(M) dtdz\)</span> étant infinitésimaux, on peut considérer que la densité surfacique de charges mobiles y est uniforme et la quantité de charges est donc <span class="math notranslate nohighlight">\(\sigma(M)v(M) dt dz\)</span>, ce qu’on peut réécrire vectoriellement :
 Il vient que l’intensité totale s’écrit :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-791ea88d-5cd6-4121-9f69-9c49f6c5d1b9">
-<span class="eqno">(6)<a class="headerlink" href="#equation-791ea88d-5cd6-4121-9f69-9c49f6c5d1b9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a979f015-cb67-4837-8e72-56ba143ec238">
+<span class="eqno">(6)<a class="headerlink" href="#equation-a979f015-cb67-4837-8e72-56ba143ec238" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \int j_s(M) dz
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(j_s(M)\)</span> est la valeur de la composante de <span class="math notranslate nohighlight">\(\overrightarrow{j_s}\)</span> suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_y}\)</span>.</p>
@@ -781,8 +786,8 @@ On considérons un champ magnétique <span class="math notranslate nohighlight">
 <li><p><strong>Invariance</strong> : La distribution du courant est invariante par rotation autour de l’axe donc si les courant ne dépendent pas de <span class="math notranslate nohighlight">\(\theta\)</span>, les composantes de <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> non plus.</p></li>
 </ul>
 <p><strong>Synthèse</strong> : Il vient qu’on peut écrire une expression simplifiée du champ magnétique en tout point M de l’espace :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a9f4e25f-3202-41b4-85a2-bb0f1db7c690">
-<span class="eqno">(7)<a class="headerlink" href="#equation-a9f4e25f-3202-41b4-85a2-bb0f1db7c690" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7ca905cf-2c05-4f5d-88a9-8d535f92ab5f">
+<span class="eqno">(7)<a class="headerlink" href="#equation-7ca905cf-2c05-4f5d-88a9-8d535f92ab5f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 	\overrightarrow{B}(M) = B_{\theta}(r) e_{\theta}
 \end{equation}\]</div>
 </div></blockquote>
@@ -812,8 +817,8 @@ Remarque<div class="summary-down docutils">
 <div class="dropdown admonition">
 <p class="admonition-title">Théorème d’Ampère (pas à connaître en première année)</p>
 <p>La circulation du champ magnétique sur un contour orienté (C) fermé est le produit de <span class="math notranslate nohighlight">\(\mu_0\)</span> par la somme algébrique des intensités des courants enlacés par ce contour, les intensités dont l’orientation n’est pas en cohérence avec celle du contour (règle du tire- bouchon) étant changées de signe:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bc60645c-1406-4520-9899-36ae9ca01b74">
-<span class="eqno">(8)<a class="headerlink" href="#equation-bc60645c-1406-4520-9899-36ae9ca01b74" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-24f2b10f-38e8-4834-8ce4-980b36984836">
+<span class="eqno">(8)<a class="headerlink" href="#equation-24f2b10f-38e8-4834-8ce4-980b36984836" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \oint_{(C)} \overrightarrow{B}\cdot \overrightarrow{dl} = \mu_0 \sum\limits_{i} \alpha_i I_i
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(\alpha_i = \pm 1\)</span> suivant que l’intensité <span class="math notranslate nohighlight">\(I_i\)</span> est orientée en cohérence avec le contour.</p>
@@ -901,8 +906,8 @@ Remarque<div class="summary-down docutils">
 <p class="admonition-title">Important</p>
 <p class="card-text">Fondamental : Champ magnétique créé par un dipôle magnétique
 A un dipôle magnétique, on peut associer un <strong>moment dipolaire magnétique</strong> <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span> tel que le champ magnétique créé en un point P par le dipôle situé au point O dans le cadre de l’approximation dipôlaire s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bb7f6c3f-a891-4dae-a373-aa1c24363d7a">
-<span class="eqno">(9)<a class="headerlink" href="#equation-bb7f6c3f-a891-4dae-a373-aa1c24363d7a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-53acd8cb-0e05-4288-a3cb-b5d756a11d78">
+<span class="eqno">(9)<a class="headerlink" href="#equation-53acd8cb-0e05-4288-a3cb-b5d756a11d78" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{B}(M) = \frac{\mu_0}{4 \pi} \frac{3 (\overrightarrow{M} \cdot \overrightarrow{r}) \overrightarrow{r} - r^2 \overrightarrow{M}}{r^5}
 \end{equation}\]</div>
 <p class="card-text">avec <span class="math notranslate nohighlight">\(\overrightarrow{r} = \overrightarrow{OP}\)</span></p>
@@ -935,14 +940,14 @@ Complément : Vecteur surface<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">Pour un contour fermé <span class="math notranslate nohighlight">\(\Gamma\)</span>, on définit le vecteur surface <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> associé par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4d6e7961-d2cb-468c-ba46-84b92c01c6b4">
-<span class="eqno">(10)<a class="headerlink" href="#equation-4d6e7961-d2cb-468c-ba46-84b92c01c6b4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-99e85e28-7f0e-4b51-b137-5c4bc9580e51">
+<span class="eqno">(10)<a class="headerlink" href="#equation-99e85e28-7f0e-4b51-b137-5c4bc9580e51" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{S} = \iint_{S(\Gamma)} \overrightarrow{dS}
 \end{equation}\]</div>
 <p class="card-text">soit la somme des vecteurs surfaces de chaque petit morceau de la surface <span class="math notranslate nohighlight">\(S(\Gamma)\)</span> définie par le contour. Ces éléments sont orientés soit arbitrairement, soit — très souvent — en cohérence avec l’orientation du contour (règle du tire-bouchon).</p>
 <p class="card-text">Si dans le cas général, le calcul de <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> peut être relativement complexe, <strong>on ne retiendra que</strong> le cas simple d’une surface plane. Alors:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2c3eeed6-6f30-499b-835b-2d08e60142b8">
-<span class="eqno">(11)<a class="headerlink" href="#equation-2c3eeed6-6f30-499b-835b-2d08e60142b8" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-0a2f0b6b-6638-4662-8278-593404ab7fb9">
+<span class="eqno">(11)<a class="headerlink" href="#equation-0a2f0b6b-6638-4662-8278-593404ab7fb9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{S} = S \overrightarrow{n}
 \end{equation}\]</div>
 <p class="card-text">où S est la surface délimité par le contour et <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> le vecteur normal à la surface dans le sens en cohérence avec l’orientation du contour s’il y en a.</p>
@@ -951,8 +956,8 @@ Complément : Vecteur surface<div class="summary-down docutils">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Spire plane de forme quelconque (Admise)</strong></p>
 <p>Soit une spire plane parcourue par une intensité <span class="math notranslate nohighlight">\(I\)</span>. On note <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> le vecteur surface orienté en cohérence avec l’intensité <span class="math notranslate nohighlight">\(I\)</span>. Le moment dipolaire magnétique de la spire dans le cadre de l’approximation dipolaire est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2f8009d9-ff70-44bd-a6f7-ef5db1cf6dae">
-<span class="eqno">(12)<a class="headerlink" href="#equation-2f8009d9-ff70-44bd-a6f7-ef5db1cf6dae" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d7c87c57-bbe0-413b-8fc7-ad9e7bbfcbd6">
+<span class="eqno">(12)<a class="headerlink" href="#equation-d7c87c57-bbe0-413b-8fc7-ad9e7bbfcbd6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{M} = I \overrightarrow{S}
 \end{equation}\]</div>
 </div>
@@ -994,8 +999,8 @@ Complément : Vecteur surface<div class="summary-down docutils">
 <p class="admonition-title">Important</p>
 <p>Fondamental : Spin</p>
 <p>A l’échelle microscopique, le moment magnétique total est causé par le moment cinétique orbital ET le moment cinétique intrinsèque aux particules (appelé spin) <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span>. On parle de moment cinétique total <span class="math notranslate nohighlight">\(\overrightarrow{J}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-92083804-bda7-4938-8d9b-0d88b0da1839">
-<span class="eqno">(13)<a class="headerlink" href="#equation-92083804-bda7-4938-8d9b-0d88b0da1839" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-256119fd-b250-4d03-9b14-e0a0a0fc4dde">
+<span class="eqno">(13)<a class="headerlink" href="#equation-256119fd-b250-4d03-9b14-e0a0a0fc4dde" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{J} = \overrightarrow{L} + \overrightarrow{S}
 \end{equation}\]</div>
 <p>On peut alors associer au spin, un moment magnétique de spin proportionnel <span class="math notranslate nohighlight">\(\overrightarrow{m_S} = g \gamma \overrightarrow{S}\)</span> où <span class="math notranslate nohighlight">\(\gamma\)</span> est le rapport gyromagnétique et <span class="math notranslate nohighlight">\(g\)</span> un facteur de correction appelé facteur de Landé. Le moment magnétique total de la particule vec <span class="math notranslate nohighlight">\(\overrightarrow{m} = \overrightarrow{m_S} + \overrightarrow{m_L}\)</span></p>
@@ -1039,8 +1044,8 @@ Remarque<div class="summary-down docutils">
 <p class="admonition-title">Important</p>
 <p>Définition : Aimantation</p>
 <p>A l’échelle mésoscopique, on peut considérer que la matière — y compris — les dipôles magnétiques forment un ensemble continu. Pour un volume infinitésimal, la notion d’uniformité reste valable. On va donc définir une grandeur intensive associée au moment magnétique: l’aimantation <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span>. Elle est définie comme la quantité de moment magnétique par unité de volume. Pour un volume <span class="math notranslate nohighlight">\(d \tau\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-575af152-3aba-4b10-b521-0ea0d24dc953">
-<span class="eqno">(14)<a class="headerlink" href="#equation-575af152-3aba-4b10-b521-0ea0d24dc953" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-035c2553-ef96-48ca-9039-a2b8402821ee">
+<span class="eqno">(14)<a class="headerlink" href="#equation-035c2553-ef96-48ca-9039-a2b8402821ee" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{dm_{Total}} = \overrightarrow{M} d \tau
 \end{equation}\]</div>
 </div>
@@ -1120,8 +1125,8 @@ Remarque<div class="summary-down docutils">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Lecture d’une carte de champ</strong></p>
 <p>Trois fils infinis longs et parallèles entre eux sont parcourus par des courants <span class="math notranslate nohighlight">\(I_1,I_2\)</span> et <span class="math notranslate nohighlight">\(I_3\)</span>. Les lignes de champ sont représentées sur la carte ci-dessous. On rappelle que le champ magnétique créé par un fil infini s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-acefd2ca-99b1-49b7-ac00-b1c3a502e3b6">
-<span class="eqno">(15)<a class="headerlink" href="#equation-acefd2ca-99b1-49b7-ac00-b1c3a502e3b6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-de46854d-fe5a-49f6-9948-51debae3f425">
+<span class="eqno">(15)<a class="headerlink" href="#equation-de46854d-fe5a-49f6-9948-51debae3f425" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{B(M)} = \frac{\mu_0 I}{2 \pi M_0 M} \overrightarrow{e_{\theta,M/fil}}
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(M_0\)</span> est le projeté de M sur le fil et <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta,M/fil}}\)</span> est le vecteur orthoradiale associé au point M dans un système de coordonnées cylindriques d’axe le fil orienté.</p>

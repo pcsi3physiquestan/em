@@ -55,6 +55,7 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Induction et application" href="induction.html" />
     <link rel="prev" title="Mouvement de particules chargées" href="particules_c.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -104,6 +105,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Actions d’un champ magnétique. Forces de Laplace
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="induction.html">
+   Induction et application
   </a>
  </li>
 </ul>
@@ -310,8 +316,8 @@ Remarque<div class="summary-down docutils">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Force de Laplace sur un élément infinitésimal</strong></p>
 <p>Soit un circuit <span class="math notranslate nohighlight">\(\Gamma\)</span> parcouru par une intensité I plongé dans un champ magnétique <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span>. Le champ magnétique exerce une action sur le circuit global appelé force de Laplace. Chaque petit élément <span class="math notranslate nohighlight">\(\overrightarrow{dl}\)</span> en un point M du circuit subit une force:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9fafa59c-9892-46b8-b057-45a2d9045c2e">
-<span class="eqno">(20)<a class="headerlink" href="#equation-9fafa59c-9892-46b8-b057-45a2d9045c2e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b4b27c5a-5149-4006-bcb3-31652cff9ef1">
+<span class="eqno">(20)<a class="headerlink" href="#equation-b4b27c5a-5149-4006-bcb3-31652cff9ef1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{dF}(M) = I \overrightarrow{dl} \wedge \overrightarrow{B}(M)
 \end{equation}\]</div>
 </div>
@@ -328,13 +334,13 @@ Remarque<div class="summary-down docutils">
 <p class="card-text">On rappelle qu’on doit définir la force ET le moment résultant. Comme on a défini les forces appliquées sur chaque “point” du circuit, on peut calculer ces deux éléments.</p>
 </div>
 </details><p>La résultante de toute les actions sur chaque point du circuit sera:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7c590f3d-eb1f-4e2d-bbbd-9b94d7f45413">
-<span class="eqno">(21)<a class="headerlink" href="#equation-7c590f3d-eb1f-4e2d-bbbd-9b94d7f45413" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5dc45edb-50f3-44ef-bbfc-14fde0cba161">
+<span class="eqno">(21)<a class="headerlink" href="#equation-5dc45edb-50f3-44ef-bbfc-14fde0cba161" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{F}(\Gamma)= \oint_{M \in \Gamma} I \overrightarrow{dl}(M) \wedge \overrightarrow{B}(M)
 \end{equation}\]</div>
 <p>Le moment résultant en un point A sera:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-afbd98a0-6d65-48e6-ad1f-08391d230152">
-<span class="eqno">(22)<a class="headerlink" href="#equation-afbd98a0-6d65-48e6-ad1f-08391d230152" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-73598761-a079-4cc8-a4ec-ef48c91258e0">
+<span class="eqno">(22)<a class="headerlink" href="#equation-73598761-a079-4cc8-a4ec-ef48c91258e0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{M}_{A}(\overrightarrow{F}(\Gamma))= \oint_{M \in \Gamma} \overrightarrow{AM} \wedge (I \overrightarrow{dl}(M) \wedge \overrightarrow{B}(M))
 \end{equation}\]</div>
 </div>
@@ -490,8 +496,8 @@ Remarque<div class="summary-down docutils">
 <li><p>La résultante des forces de Laplace est nulle.</p></li>
 <li><p>Le moment des forces de Laplace s’écrit:</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-9c036ae1-6a7a-4921-816d-2f54f197f4d1">
-<span class="eqno">(23)<a class="headerlink" href="#equation-9c036ae1-6a7a-4921-816d-2f54f197f4d1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-aea7e6ca-2372-4659-9d04-713a4afaa1fb">
+<span class="eqno">(23)<a class="headerlink" href="#equation-aea7e6ca-2372-4659-9d04-713a4afaa1fb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{\Gamma} = \overrightarrow{M} \wedge \overrightarrow{B}
 \end{equation}\]</div>
 <p>Si le dipôle est rigide (c’est-à-dire <span class="math notranslate nohighlight">\(\overrightarrow{M} = cste\)</span>), alors la force dérive d’un potentiel et <span class="math notranslate nohighlight">\(E_{PL} = - \overrightarrow{M} \cdot \overrightarrow{B}\)</span></p>
@@ -638,6 +644,7 @@ où: <span class="math notranslate nohighlight">\(\overrightarrow{B_{ext}}\)</sp
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="particules_c.html" title="previous page">Mouvement de particules chargées</a>
+    <a class='right-next' id="next-link" href="induction.html" title="next page">Induction et application</a>
 
         </div>
         
