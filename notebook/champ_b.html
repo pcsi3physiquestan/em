@@ -55,7 +55,7 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Mouvement de particules chargées" href="particules_c.html" />
+    <link rel="next" title="Champs magnétiques. Méthodes et exercices." href="champ_b_methodes.html" />
     <link rel="prev" title="Electromagnétisme" href="../em.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -92,10 +92,32 @@
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Champ magnétique. Introduction
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="champ_b_methodes.html">
+     Champs magnétiques. Méthodes et exercices.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="champ_b_activite.html">
+     Origine et ordre de grandeur du moment magnétique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="champ_b_td.html">
+     Entrainement
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="particules_c.html">
@@ -209,8 +231,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#observations">
-     Observations
+    <a class="reference internal nav-link" href="#observations-en-ligne">
+     Observations (en ligne)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -241,8 +263,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#creer-un-champ-magnetique-uniforme">
-     Créer un champ magnétique uniforme
+    <a class="reference internal nav-link" href="#creer-un-champ-magnetique-uniforme-en-ligne">
+     Créer un champ magnétique uniforme (en ligne)
     </a>
    </li>
   </ul>
@@ -258,8 +280,8 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#lien-entre-distribution-et-intensite">
-       Lien entre distribution et intensité.
+      <a class="reference internal nav-link" href="#exemples-de-distribution-en-ligne">
+       Exemples de distribution (en ligne)
       </a>
      </li>
     </ul>
@@ -277,6 +299,11 @@
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#symetrie-et-anti-symetrie-planaire-d-un-vecteur">
        Symétrie et anti-symétrie planaire d’un vecteur
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#symetrie-et-anti-symetrie-planaire-d-un-pseudo-vecteur">
+       Symétrie et anti-symétrie planaire d’un pseudo-vecteur
       </a>
      </li>
     </ul>
@@ -299,8 +326,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#champ-cree-par-un-circuit-electrique">
-     Champ créé par un circuit électrique
+    <a class="reference internal nav-link" href="#champ-cree-par-un-circuit-electrique-en-ligne">
+     Champ créé par un circuit électrique (en ligne)
     </a>
    </li>
   </ul>
@@ -321,50 +348,13 @@
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cas-d-un-multi-poles-hp">
-       Cas d’un “multi-pôles” (HP)
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#origine-et-ordre-de-grandeur-du-moment-magnetique">
-     Origine et ordre de grandeur du moment magnétique
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#echelle-microscopique-moment-cinetique-et-moment-magnetique">
-       Echelle microscopique. Moment cinétique et moment magnétique
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#echelle-macroscopique-aimantation">
-       Echelle macroscopique. Aimantation
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#differents-types-de-materiaux">
-       Différents types de matériaux
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#effet-d-un-champ-excitation-magnetique-exterieur-e">
-       Effet d’un champ (excitation) magnétique extérieur(e)
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#champ-magnetique-terrestre">
-       Champ magnétique terrestre
+      <a class="reference internal nav-link" href="#cas-d-un-multi-poles-hp-en-ligne">
+       Cas d’un “multi-pôles” (HP - en ligne)
       </a>
      </li>
     </ul>
    </li>
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#travaux-diriges">
-   Travaux dirigés
-  </a>
  </li>
 </ul>
 
@@ -381,61 +371,45 @@
 <h1>Champ magnétique. Introduction<a class="headerlink" href="#champ-magnetique-introduction" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="observation-experimentale">
 <h2>Observation expérimentale<a class="headerlink" href="#observation-experimentale" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="observations">
-<h3>Observations<a class="headerlink" href="#observations" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="observations-en-ligne">
+<h3>Observations (en ligne)<a class="headerlink" href="#observations-en-ligne" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title">Observations</p>
 <p>On observe différents cas d’influence d’objets sur d’autres dont l’action ne correspond pas à des forces déjà présentées en mécanique:</p>
 <ul class="simple">
 <li><p>Une bobine parcourue par un courant peut dévier un jet d’électrons</p></li>
 <li><p>De même un aimant peut dévier un jet d’électrons</p></li>
 <li><p>Un aimant peut entraîner le déplacement d’un autre aimant ou d’un circuit parcouru par un courant</p></li>
 </ul>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Il est évident que les actions réciproques à celle citées existent aussi.</p>
-<p class="card-text">Malgré la diversité des actions envisagées, leur étude peut-être modélisée de la même manière: on va introduire un intermédiaire entre la cause (aimant ou circuit électrique) et la conséquence (mouvement d’un aimant/déviation de particules chargées). Cet intermédiaire est le <strong>champ magnétique</strong>. Son unité sera le <strong>Tesla (T)</strong>.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Il est évident que les actions réciproques à celle citées existent aussi.</p>
 </div>
-</details><div class="figure align-center" id="fig-champ-magnetique">
+<p>Malgré la diversité des actions envisagées, leur étude peut-être modélisée de la même manière: on va introduire un intermédiaire entre la cause (aimant ou circuit électrique) et la conséquence (mouvement d’un aimant/déviation de particules chargées). Cet intermédiaire est le <strong>champ magnétique</strong>. Son unité sera le <strong>Tesla (T)</strong>.</p>
+<div class="figure align-center" id="fig-champ-magnetique">
 <img alt="../_images/em_action_magnetique.jpg" src="../_images/em_action_magnetique.jpg" />
 <p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Introduction de l’intermédiaire “champ magnétique”</span><a class="headerlink" href="#fig-champ-magnetique" title="Permalink to this image">¶</a></p>
 </div>
 </div>
+</div>
 <div class="section" id="interpretation-en-terme-de-champ-magnetique">
 <h3>Interprétation en terme de champ magnétique<a class="headerlink" href="#interpretation-en-terme-de-champ-magnetique" title="Permalink to this headline">¶</a></h3>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Comme nous l’avons vu, lorsqu’on traite des particules chargées en mouvement près d’un circuit électrique, leur mouvement peut-être décrit par un champ scalaire dont les caractéristiques dépendent du circuit électrique (forme, intensité, position/orientation…).</p>
-</div>
-</details><div class="admonition important">
+<div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Champ magnétique</strong></p>
+<p><strong>Champ magnétique</strong></p>
 <p>Soit une particule chargé de charge <span class="math notranslate nohighlight">\(q\)</span> en un point M possédant une vitesse <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span>. L’action, appelée force de Lorentz, d’un circuit parcouru par un courant ou d’un aimant peut-être modélisée par une force dont l’expression mathématique est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b428f829-3ff1-4a16-8f84-8e7b950860a4">
-<span class="eqno">(1)<a class="headerlink" href="#equation-b428f829-3ff1-4a16-8f84-8e7b950860a4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \overrightarrow{F} = q \overrightarrow{v} \wedge \overrightarrow{B}(M)
-\end{equation}\]</div>
+\]</div>
 <p>où <span class="math notranslate nohighlight">\(\overrightarrow{B}(M)\)</span> est un champ vectoriel dont les caractéristiques ne dépendent que du circuit ou de l’aimant. On l’appelle champ magnétique et son unité est le Tesla (T). M est le point où se trouve la particule de charge <span class="math notranslate nohighlight">\(q\)</span>.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Comme on le verra par la suite, l’action d’un champ magnétique se généralisera à des dispositifs globalement neutres comme d’autres circuits électriques ou d’autres aimants. On parlera alors de force de Laplace.</p>
-<p class="card-text">La notion de champ peut paraître très abstraite. Elle est pourtant cruciale. Pour comprendre sa première utilité, on peut faire le parallèle avec le champ de gravitation. Si son intervention n’est pas nécessaire pour calculer la force exercée par une masse sur une autre masse, sa définition permet de découplé l’étude de la cause (première masse) de la seconde. On peut donc ainsi travailler sur l’action d’un champ de gravitation donné (qu’on pourra même déterminer expérimentalement) sur une particule massique, un corps solide… sans se soucier de ce qui le crée. Pour le champ magnétique, c’est le même principe. Vu la diversité des façons de créer un champ magnétique, son intervention est encore plus utile. De plus, des études plus poussées en électromagnétisme montrerait que cet outils a pris aujourd’hui une place prépondérante dans des domaines comme la théorie des champs.</p>
+<div class="topic">
+<p class="topic-title">Notion de champ magnétique</p>
+<p>Comme on le verra par la suite, l’action d’un champ magnétique se généralisera à des dispositifs globalement neutres comme d’autres circuits électriques ou d’autres aimants. On parlera alors de force de Laplace.</p>
+<p>La notion de champ peut paraître très abstraite. Elle est pourtant cruciale. Pour comprendre sa première utilité, on peut faire le parallèle avec le champ de gravitation. Si son intervention n’est pas nécessaire pour calculer la force exercée par une masse sur une autre masse, sa définition permet de découplé l’étude de la cause (première masse) de la seconde. On peut donc ainsi travailler sur l’action d’un champ de gravitation donné (qu’on pourra même déterminer expérimentalement) sur une particule massique, un corps solide… sans se soucier de ce qui le crée. Pour le champ magnétique, c’est le même principe. Vu la diversité des façons de créer un champ magnétique, son intervention est encore plus utile. De plus, des études plus poussées en électromagnétisme montrerait que cet outils a pris aujourd’hui une place prépondérante dans des domaines comme la théorie des champs.</p>
 </div>
-</details></div>
+</div>
 </div>
 <div class="section" id="cartes-de-champ-magnetiques">
 <h2>Cartes de champ magnétiques<a class="headerlink" href="#cartes-de-champ-magnetiques" title="Permalink to this headline">¶</a></h2>
@@ -443,74 +417,38 @@ Remarque<div class="summary-down docutils">
 <h3>Lignes de champ. Caractérisation expérimentale<a class="headerlink" href="#lignes-de-champ-caracterisation-experimentale" title="Permalink to this headline">¶</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Ligne de champ magnétique</strong></p>
+<p><strong>Ligne de champ magnétique</strong></p>
 <p>Une ligne de champ magnétique est une courbe avec laquelle le champ magnétique est colinéaire en tout point de la-dite courbe.</p>
 </div>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
 <div class="figure align-center" id="fig-fil-infini">
 <img alt="../_images/em_fil_infini.jpg" src="../_images/em_fil_infini.jpg" />
 <p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Exemple : Carte de champ pour un fil infini</span><a class="headerlink" href="#fig-fil-infini" title="Permalink to this image">¶</a></p>
 </div>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
 <div class="figure align-center" id="fig-deux-fils-champ-b">
 <img alt="../_images/Electromagnetisme_1_Deuxfils.jpg" src="../_images/Electromagnetisme_1_Deuxfils.jpg" />
 <p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Exemple : Carte de champ de deux fils. L’intensité est identique dans les deux fils mais n’est pas dans le même sens: elle sort de la feuille pour le fil de gauche et entre dans la feuille pour le fil de droite</span><a class="headerlink" href="#fig-deux-fils-champ-b" title="Permalink to this image">¶</a></p>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
 <div class="figure align-center" id="fig-dipole-magneto-aimant">
 <img alt="../_images/em_carte_champ_dipole_magnetostatique.jpg" src="../_images/em_carte_champ_dipole_magnetostatique.jpg" />
 <p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Exemple : Carte de champ pour un petit aimant droit</span><a class="headerlink" href="#fig-dipole-magneto-aimant" title="Permalink to this image">¶</a></p>
 </div>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
 <div class="figure align-center" id="fig-spire-solen-champ-b">
 <img alt="../_images/Electromagnetisme_1_Spire_Solene.jpg" src="../_images/Electromagnetisme_1_Spire_Solene.jpg" />
 <p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Champ magnétique pour une spire circulaire et une bobine longue.</span><a class="headerlink" href="#fig-spire-solen-champ-b" title="Permalink to this image">¶</a></p>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Exemple : Bobine infinie</p>
+<div class="tip admonition">
+<p class="admonition-title">Exemple : Bobine infinie (à connaitre)</p>
 <p>On peut montrer que le champ magnétique est nulle à l’extérieur du solenoïde et uniforme à l’intérieur:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fa708f58-7c12-4542-8946-f09bbdba9fc1">
-<span class="eqno">(2)<a class="headerlink" href="#equation-fa708f58-7c12-4542-8946-f09bbdba9fc1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \overrightarrow{B} = \mu_0 n I \overrightarrow{e_z}
-\end{equation}\]</div>
+\]</div>
 <p>où n est le nombre de spire par unité de longuer, I l’intensité qui parcourt les spires et <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span> le vecteur axial <strong>orienté en cohérence</strong> avec I.</p>
 </div>
-<p><strong>Matérialisation expérimentale:</strong></p>
+<div class="topic">
+<p class="topic-title">Matérialisation expérimentale</p>
 <p>Les aimants, sur des liaisons pivots quasi-parfaites ou de la limaille de fer aura tendance à l’aligner le long des lignes de champ: on peut ainsi caractériser les lignes de champ magnétiques.</p>
-<p><strong>Principe de symétrie (non exhaustif):</strong></p>
-<ul class="simple">
-<li><p>Les invariances des causes (courants) se retrouvent dans les invariances du champ magnétique</p></li>
-<li><p>Sur un plan d’anti-symétrie des causes, le champ magnétique est contenu dans le plan.</p></li>
-<li><p>Sur un plan de symétrie des causes, le champ magnétique est perpendiculaire au plan.</p></li>
-</ul>
+</div>
 </div>
 <div class="section" id="caracteristiques-generales">
 <h3>Caractéristiques générales<a class="headerlink" href="#caracteristiques-generales" title="Permalink to this headline">¶</a></h3>
@@ -521,88 +459,85 @@ Remarque<div class="summary-down docutils">
 <li><p>En un point où deux lignes se croisent, le champ est nécessairement nul.</p></li>
 <li><p>Une ligne de champ qui boucle sur elle-même enlace nécessairement des courants. Le sens total de parcours des courants enlacés (calculés comme une somme algébrique) peut-être déterminé par la règle du tire-bouchon.</p></li>
 </ul>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Ce dernier point est un aspect qualitatif d’un théorème utile pour calculer un champ magnétique créé par une distribution de courant: le théorème d’Ampère (et sa formulation locale l’équation de Maxwell-Ampère). Cette formulation n’est pas donnée complètement en première année et sera vue l’année prochaine.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Ce dernier point est un aspect qualitatif d’un théorème utile pour calculer un champ magnétique créé par une distribution de courant: le théorème d’Ampère (cf. deuxième année).</p>
 </div>
-</details></div>
+</div>
 <div class="section" id="conservation-du-flux-du-champ-magnetique">
 <h3>Conservation du flux du champ magnétique<a class="headerlink" href="#conservation-du-flux-du-champ-magnetique" title="Permalink to this headline">¶</a></h3>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Orientation d’une surface: En géométrie vectorielle, une surface plane est orientée par un vecteur appelé vecteur surface dont la norme est égale à l’aire de la surface considérée et l’orientation est perpendiculaire à la surface.</p>
-<p class="card-text">Cette définition se généralise facilement à une surface non plane par une approche différentielle. On “découpe” la surface en des surfaces infinitésimales <span class="math notranslate nohighlight">\(\overrightarrow{dS}\)</span> qui sont approchables par des surfaces planes. Le vecteur surface totale est la somme de tous les vecteurs surfaces considérés (ici une intégrale sur une surface).</p>
-<p class="card-text">Sens d’orientation d’une surface non fermée: Soit une surface <span class="math notranslate nohighlight">\(\Sigma\)</span> délimitée par un contour <span class="math notranslate nohighlight">\(\Gamma\)</span> orienté. La surface est alors orientée par convention en cohérence avec le contour <span class="math notranslate nohighlight">\(\Gamma\)</span> en appliquant la règle du tire- bouchon (ou du bonhomme d’Ampère).</p>
-<p class="card-text">Cette convention d’orientation fonctionne dans les deux sens. On peut très bien orienter le contour de la surface à partir de l’orientation de la surface elle-même.</p>
-<p class="card-text">Sens d’orientation d’une surface fermée: Soit une surface <span class="math notranslate nohighlight">\(\Sigma\)</span> fermée, on oriente la surface, par convention, vers l’extérieur.</p>
+<div class="topic">
+<p class="topic-title">Rappel : Orientation d’une surface</p>
+<ul class="simple">
+<li><p>En géométrie vectorielle, une surface plane est orientée par un vecteur appelé vecteur surface dont la norme est égale à l’aire de la surface considérée et l’orientation est perpendiculaire à la surface.</p>
+<ul>
+<li><p>Cette définition se généralise facilement à une surface non plane par une approche différentielle. On “découpe” la surface en des surfaces infinitésimales <span class="math notranslate nohighlight">\(\overrightarrow{dS}\)</span> qui sont approchables par des surfaces planes. Le vecteur surface totale est la somme de tous les vecteurs surfaces considérés (ici une intégrale sur une surface).</p></li>
+</ul>
+</li>
+<li><p><em>Sens d’orientation d’une surface non fermée</em>: Soit une surface <span class="math notranslate nohighlight">\(\Sigma\)</span> délimitée par un contour <span class="math notranslate nohighlight">\(\Gamma\)</span> orienté. La surface est alors orientée par convention en cohérence avec le contour <span class="math notranslate nohighlight">\(\Gamma\)</span> en appliquant la règle du tire-bouchon (ou du bonhomme d’Ampère).</p>
+<ul>
+<li><p>Cette convention d’orientation fonctionne dans les deux sens. On peut très bien orienter le contour de la surface à partir de l’orientation de la surface elle-même.</p></li>
+</ul>
+</li>
+<li><p><em>Sens d’orientation d’une surface fermée</em>: Soit une surface <span class="math notranslate nohighlight">\(\Sigma\)</span> fermée, on oriente la surface, par convention, <strong>vers l’extérieur</strong>.</p></li>
+</ul>
 </div>
-</details><div class="admonition important">
+<div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Flux du champ magnétique</strong></p>
-<p>Soit un champ vectoriel <span class="math notranslate nohighlight">\(\overrightarrow{B}(M)\)</span> définit en tout point M de l’espace et une surface <span class="math notranslate nohighlight">\(\Sigma\)</span> quelconque orientée décomposée en un ensemble de surface plane infinitésimale <span class="math notranslate nohighlight">\(\overrightarrow{dS}\)</span>. On définit le flux du vecteur <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> à travers <span class="math notranslate nohighlight">\(\Sigma\)</span> comme l’intégrale:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6cbf9dae-572a-4367-b76c-06de20bf2f76">
-<span class="eqno">(3)<a class="headerlink" href="#equation-6cbf9dae-572a-4367-b76c-06de20bf2f76" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<p><strong>Flux du champ magnétique</strong></p>
+<p>Soit un champ vectoriel <span class="math notranslate nohighlight">\(\overrightarrow{B}(M)\)</span> définit en tout point M de l’espace et une surface <span class="math notranslate nohighlight">\(\Sigma\)</span> quelconque orientée décomposée en un ensemble de surface plane infinitésimale <span class="math notranslate nohighlight">\(\overrightarrow{dS}\)</span>. On définit le flux du (pseudo-)vecteur <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> à travers <span class="math notranslate nohighlight">\(\Sigma\)</span> comme l’intégrale:</p>
+<div class="math notranslate nohighlight">
+\[
 \Phi = \int_{M \in \Sigma} \overrightarrow{B}(M) \cdot \overrightarrow{dS}(M)
-\end{equation}\]</div>
+\]</div>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Conservation du flux du champ magnétique</strong></p>
-<p>Le flux du champ magnétique est conservé, c’est-à-dire qu’il est toujours nul à travers une surface fermée.</p>
+<p><strong>Conservation du flux du champ magnétique</strong>
+Le flux du champ magnétique est conservé, c’est-à-dire qu’il est toujours nul à travers une surface fermée.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Tube de champ</strong></p>
+<p>Cas d’un tube de champ</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>C’est cette application qui explique le terme de “conservation du flux”.</p>
+</div>
 <p>Un tube de champ est une surface fermée, orientée de l’intérieur vers l’extérieur, constituée d’une surface latérale (<span class="math notranslate nohighlight">\(S_L\)</span>) uniquement formée de lignes de champ et de deux surfaces quelconques (<span class="math notranslate nohighlight">\(S_1\)</span>) et (<span class="math notranslate nohighlight">\(S_2\)</span>) la fermant à ses extrémités.</p>
 <div class="figure align-center" id="fig-tube-de-champ-magn-tique">
 <img alt="../_images/em_tube_champ.jpg" src="../_images/em_tube_champ.jpg" />
 <p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Tube de champ magnétique</span><a class="headerlink" href="#fig-tube-de-champ-magn-tique" title="Permalink to this image">¶</a></p>
 </div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Exercice : Calcul du flux du champ magnétique sur un tube de champ</strong></p>
-<ol class="simple">
-<li><p>Exprimer le flux du champ magnétique à travers un tube de champ en fonction des flux entrant en <span class="math notranslate nohighlight">\(S_1\)</span> et sortant en <span class="math notranslate nohighlight">\(S_2\)</span></p></li>
-<li><p>En déduire une interprétation de la notion de conservation du flux.</p></li>
-</ol>
+<p>Le flux du champ magnétique à travers un tube de champ se ramène au seul flux à traversd la surface <span class="math notranslate nohighlight">\((C_1)\)</span> et la surface <span class="math notranslate nohighlight">\((C_2)\)</span> (car <span class="math notranslate nohighlight">\(\overrightarrow{dS} est perpendiculaire aux lignes de champ sur la surface latérale). La conservation du flux du champ magnétiques s'écrit donc (\)</span>\overrightarrow{dS_1}<span class="math notranslate nohighlight">\( et \)</span>\overrightarrow{dS_2}$ sont orientés dans le même sens):</p>
+<div class="math notranslate nohighlight">
+\[
+\iint_{M \in C_1} \overrightarrow{B}_1 (M) \cdot \overrightarrow{dS_1} = \iint_{M \in C_2} \overrightarrow{B}_2 (M) \cdot \overrightarrow{dS_2}
+\]</div>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Conséquence de la conservation du flux</strong></p>
+<p><strong>Conséquence de la conservation du flux</strong></p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Les réciproques de ces affirmations sont aussi vraies (influence de l’intensité du champ sur la section du tube de champ associé).</p>
+</div>
 <ul class="simple">
 <li><p>Lorsque les lignes de champ magnétique se resserrent, l’intensité du champ magnétique augmente.</p></li>
 <li><p>Lorsque les lignes de champ magnétique s’écartent, l’intensité du champ magnétique diminue.</p></li>
 <li><p>Si les lignes de champ forme un tube de section constant, alors le champ est uniforme.</p></li>
 </ul>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Les réciproques de ces affirmations sont aussi vraies (influence de l’intensité du champ sur la section du tube de champ associé).</p>
 </div>
-</details></div>
 </div>
-<div class="section" id="creer-un-champ-magnetique-uniforme">
-<h3>Créer un champ magnétique uniforme<a class="headerlink" href="#creer-un-champ-magnetique-uniforme" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="creer-un-champ-magnetique-uniforme-en-ligne">
+<h3>Créer un champ magnétique uniforme (en ligne)<a class="headerlink" href="#creer-un-champ-magnetique-uniforme-en-ligne" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title">Champ magnétique uniforme</p>
 <p>Si l’on ne peut créer un champ magnétique uniforme dans tout l’espace, on peut par contre créer un champ magnétique dont les variations (intensité ET orientation) sont relativement faibles sur une zone donnée. On utilise généralement deux dispositifs:</p>
 <ul class="simple">
 <li><p>les bobines de Helmoltz: ce sont deux spires parallèles et coaxiales de rayon R distantes de R. On peut montrer que le champ magnétique au milieu des bobine varie peu.</p></li>
 <li><p>une bobine longue: on peut montrer que le champ magnétique est globalement uniforme à l’intérieur de la bobine tant qu’on reste loin des bords.</p></li>
 </ul>
+</div>
 </div>
 </div>
 <div class="section" id="symetrie-des-champs-magnetiques">
@@ -620,8 +555,10 @@ Remarque<div class="summary-down docutils">
 <p class="admonition-title">Attention</p>
 <p><span class="math notranslate nohighlight">\(\overrightarrow{j_s}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{j_v}\)</span> n’ont PAS la même unité.</p>
 </div>
-<div class="tip dropdown admonition" id="exemple-dist">
-<p class="admonition-title">Exemples de distribution</p>
+<div class="section" id="exemples-de-distribution-en-ligne">
+<h4>Exemples de distribution (en ligne)<a class="headerlink" href="#exemples-de-distribution-en-ligne" title="Permalink to this headline">¶</a></h4>
+<div class="topic" id="exemple-dist">
+<p class="topic-title">Exemples de distribution</p>
 <p><strong>Distribution linéique</strong></p>
 <ul class="simple">
 <li><p>Un fil infini parcouru par une intensité I</p></li>
@@ -637,161 +574,85 @@ Remarque<div class="summary-down docutils">
 <li><p>Nappe de courant : Une bande infinie de large <span class="math notranslate nohighlight">\(L\)</span>, d’épaisseur négligeable. On note <span class="math notranslate nohighlight">\(Ox\)</span> l’axe normal à la nappe et <span class="math notranslate nohighlight">\(Oy\)</span> l’axe correspondant à l’axe (infini) de la bande. Si la conduction a lieu suivant <span class="math notranslate nohighlight">\(Oy\)</span>, on la décrira par une distribution surfacique <span class="math notranslate nohighlight">\(\overrightarrow{j_s}(M) = j_0 \overrightarrow{e_y}\)</span> (cas d’une distribution homogène des courant sur la nappe).</p></li>
 </ul>
 </div>
-<div class="section" id="lien-entre-distribution-et-intensite">
-<h4>Lien entre distribution et intensité.<a class="headerlink" href="#lien-entre-distribution-et-intensite" title="Permalink to this headline">¶</a></h4>
-<p>Il faut faire attention car le nom des distributions de courantpeut être trompeur.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Exercice
-On considère les deux exemples précédente :</p>
-<ol class="simple">
-<li><p>fil infini de rayon <span class="math notranslate nohighlight">\(R\)</span> parcouru par une distribution axiale uniforme. Calculer l’intensité qui traverse une section transverse du cylindre (orientée suivant <span class="math notranslate nohighlight">\(+\overrightarrow{e_z}\)</span>).</p></li>
-<li><p>nappe de courant de largeur <span class="math notranslate nohighlight">\(L\)</span> parcourue par une densité uniforme. Calculer l’intensité qui traverse la nappe suivant l’axe Oy.</p></li>
-</ol>
-</div>
-<blockquote>
-<div><p>Résolution<br />
-<strong>Cas volumique</strong> : On commence par décomposer la <strong>surface</strong> transverse du cylindre (un cercle de rayon <span class="math notranslate nohighlight">\(R\)</span>) en des surfaces élémentaires <span class="math notranslate nohighlight">\(dS(M)\)</span> orientée suivant <span class="math notranslate nohighlight">\(+\overrightarrow{e_z}\)</span> autour de chaque point M dela surface. La quantité de charge qui traverse cette surface <span class="math notranslate nohighlight">\(dS(M)\)</span> entre <span class="math notranslate nohighlight">\(t\)</span> et <span class="math notranslate nohighlight">\(t+dt\)</span> et l’ensemble des charges contenu à l’instant <span class="math notranslate nohighlight">\(t\)</span> dans le cylindre élementaire appuyé sur dS et de hauteur <span class="math notranslate nohighlight">\(vdt\)</span> (<span class="math notranslate nohighlight">\(v\)</span> étant la vitesse ces charges, elle est bien constante sur une durée dt tendant vers 0).</p>
-<p>La surface et donc le volume <span class="math notranslate nohighlight">\(v(M) dtdS(M)\)</span> étant infinitésimaux, on peut considérer que la densité volumique de charges mobiles y est uniforme et la quantité de charges est donc <span class="math notranslate nohighlight">\(\rho(M)v(M) dt dS(M)\)</span>, ce qu’on peut réécrire vectoriellement :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-51c5fa7c-6244-490e-beae-f77de1bfd5a0">
-<span class="eqno">(4)<a class="headerlink" href="#equation-51c5fa7c-6244-490e-beae-f77de1bfd5a0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
-\overrightarrow{j_v}(M) \cdot \overrightarrow{dS}(M)
-\end{equation}\]</div>
-<p>Il vient que l’intensité totale s’écrit :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0aaaede2-d63d-4752-9f63-cc81ecae2ba6">
-<span class="eqno">(5)<a class="headerlink" href="#equation-0aaaede2-d63d-4752-9f63-cc81ecae2ba6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
-\iint_{\Sigma} \overrightarrow{j_v}(M) \cdot \overrightarrow{dS}(M)
-\end{equation}\]</div>
-<p>Dans le cas uniforme, il vient <span class="math notranslate nohighlight">\(I = j_0 \pi R^2\)</span></p>
-<p><strong>Cas surfacique</strong> : Cette fois, les charges ne traverse pas une surface mais une <strong>ligne transverse</strong> à la conduction (avec suivant Oz) (faire le parallèle avec une barrière de péage). On commence par décomposer la <strong>ligne transverse</strong> du cylindre en des lignes élémentaires <span class="math notranslate nohighlight">\(dz\)</span> orientée suivant <span class="math notranslate nohighlight">\(+\overrightarrow{e_y}\)</span> autour de chaque point M de la ligne. La quantité de charge qui traverse cette ligne <span class="math notranslate nohighlight">\(dz\)</span> entre <span class="math notranslate nohighlight">\(t\)</span> et <span class="math notranslate nohighlight">\(t+dt\)</span> et l’ensemble des charges contenu à l’instant <span class="math notranslate nohighlight">\(t\)</span> dans le rectangle élementaire appuyé sur dz et de hauteur <span class="math notranslate nohighlight">\(vdt\)</span> (<span class="math notranslate nohighlight">\(v\)</span> étant la vitesse ces charges, elle est bien constante sur une durée dt tendant vers 0).</p>
-<p>La ligne et donc lsurface <span class="math notranslate nohighlight">\(v(M) dtdz\)</span> étant infinitésimaux, on peut considérer que la densité surfacique de charges mobiles y est uniforme et la quantité de charges est donc <span class="math notranslate nohighlight">\(\sigma(M)v(M) dt dz\)</span>, ce qu’on peut réécrire vectoriellement :
-Il vient que l’intensité totale s’écrit :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a979f015-cb67-4837-8e72-56ba143ec238">
-<span class="eqno">(6)<a class="headerlink" href="#equation-a979f015-cb67-4837-8e72-56ba143ec238" title="Permalink to this equation">¶</a></span>\[\begin{equation}
-\int j_s(M) dz
-\end{equation}\]</div>
-<p>où <span class="math notranslate nohighlight">\(j_s(M)\)</span> est la valeur de la composante de <span class="math notranslate nohighlight">\(\overrightarrow{j_s}\)</span> suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_y}\)</span>.</p>
-<p>Dans le cas uniforme, il vient : <span class="math notranslate nohighlight">\(I = L j_0\)</span></p>
-</div></blockquote>
 </div>
 </div>
 <div class="section" id="notions-de-symetries-et-d-invariance">
 <h3>Notions de symétries et d’invariance<a class="headerlink" href="#notions-de-symetries-et-d-invariance" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="invariance">
 <h4>Invariance<a class="headerlink" href="#invariance" title="Permalink to this headline">¶</a></h4>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>En pratique, les invariances que nous rencontreront  seront associée à une indépendance vis-à-vis d’une coordonnée.__</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Invariance</strong></p>
 <p>Soit une transformation de l’espace <span class="math notranslate nohighlight">\(\mathcal{T}\)</span>. On dit qu’elle laisse invariante un champ scalaire <span class="math notranslate nohighlight">\(C(M)\)</span> si et seulement si pour tout point M’ image des points M de l’espace, <span class="math notranslate nohighlight">\(C(M) =C(M')\)</span>.</p>
 </div>
-<p>En pratique, les invariances que nous rencontreront correspondant à un champ scalaire (ou la composante scalaire d’un champ vectoriel)  dont l’expression mathématique ne dépend pas d’une coordonnée de l’espace. <strong>A condition d’avoir choisi un type de repère adapté à l’invariance.</strong></p>
-<p>On distingue alors les invariances par translation et par rotation.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Exemple</p>
-<ul class="simple">
-<li><p>Considérons un fil infini parcouru par un courant I.</p>
-<ul>
-<li><p>La distribution de courant est alors invariante par translation suivant l’axe du fil.</p></li>
-<li><p>Elle est aussi invariante par rotation autour de l’axe du fil.</p></li>
-<li><p>On va donc choisir un repère cylindre d’axe, l’axe du fil. L’invariance par translation correspond à une indépendance vis-à-vis de la coordonnée <span class="math notranslate nohighlight">\(z\)</span> et l’invariance par rotation correspond à une indépendance vis-à-vis de la coordonnées <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
-</ul>
-</li>
-</ul>
-</div>
+<p><em>On distingue principalement les invariances par translation et par rotation</em>.</p>
 </div>
 <div class="section" id="symetrie-et-anti-symetrie-planaire-d-un-vecteur">
 <h4>Symétrie et anti-symétrie planaire d’un vecteur<a class="headerlink" href="#symetrie-et-anti-symetrie-planaire-d-un-vecteur" title="Permalink to this headline">¶</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Symétrie planaires</strong></p>
-<p>Soit un plan <span class="math notranslate nohighlight">\(\Pi\)</span>. On dit que le champ vectoriel <span class="math notranslate nohighlight">\(\overrightarrow{j}(M))\)</span> présente une symétrie par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span> si et seulement si pour tout point M’ image de M par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span>, <span class="math notranslate nohighlight">\(\overrightarrow{j}(M')\)</span> est symétrique de <span class="math notranslate nohighlight">\(\overrightarrow{j}(M)\)</span> par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span></p>
+<p><strong>Symétrie planaires</strong>
+Soit un plan <span class="math notranslate nohighlight">\(\Pi\)</span>. On dit que le champ vectoriel <span class="math notranslate nohighlight">\(\overrightarrow{j}(M))\)</span> présente une symétrie par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span> si et seulement si pour tout point M’ image de M par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span>, <span class="math notranslate nohighlight">\(\overrightarrow{j}(M')\)</span> est symétrique de <span class="math notranslate nohighlight">\(\overrightarrow{j}(M)\)</span> par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span></p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Antisymétrie planaires</strong></p>
-<p>Soit un plan <span class="math notranslate nohighlight">\(\Pi\)</span>. On dit que le champ vectoriel <span class="math notranslate nohighlight">\(\overrightarrow{j}(M))\)</span> présente une anti-symétrie par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span> si et seulement si pour tout point M’ image de M par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span>, <span class="math notranslate nohighlight">\(\overrightarrow{j}(M')\)</span> est <strong>l’opposé</strong> du symétrique de <span class="math notranslate nohighlight">\(\overrightarrow{j}(M)\)</span> par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span></p>
+<p>Soit un plan <span class="math notranslate nohighlight">\(\Pi\)</span>. On dit que le champ vectoriel <span class="math notranslate nohighlight">\(\overrightarrow{j}(M))\)</span> présente une anti-symétrie par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span> si et seulement si pour tout point M’ image de M par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span>, <span class="math notranslate nohighlight">\(\overrightarrow{j}(M')\)</span> est l’antisymétrique de <span class="math notranslate nohighlight">\(\overrightarrow{j}(M)\)</span> par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span>, c’est-à-dire que <span class="math notranslate nohighlight">\(\overrightarrow{j}(M')\)</span> est <em>l’opposé</em> du symétrique de <span class="math notranslate nohighlight">\(\overrightarrow{j}(M)\)</span>.</p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Exemple</p>
-<ul class="simple">
-<li><p>Considérons un fil infini parcouru par un courant I.</p>
-<ul>
-<li><p>Tout plan perpendiculaire au fil est plan d’antisymétrie des courants (la densité de courant linéique (l’intensité) est transformée en -I par symétrie).</p></li>
-<li><p>Tout plan contenant le fil est plan de symétrie des courants.</p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Exercice : Conséquence sur les coordonnées
-On considérons un champ magnétique <span class="math notranslate nohighlight">\(\overrightarrow{B}(M)\)</span> qui possède comme plan de symétrie le plan <span class="math notranslate nohighlight">\(xOy\)</span> d’un repère cartésien <span class="math notranslate nohighlight">\((0, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span>.</p>
-<p>On note les composantes de <span class="math notranslate nohighlight">\(\overrightarrow{B}(M(x, y, z))\)</span> :</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(B_x(x, y, z)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(B_y(x, y, z)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(B_z(x, y, z)\)</span></p></li>
-</ul>
-<ol class="simple">
-<li><p>Préciser la parité des fonctions <span class="math notranslate nohighlight">\(B_x, B_y, B_z\)</span> en <span class="math notranslate nohighlight">\(z\)</span>.</p></li>
-<li><p>Reprendre la même question en supposant que <span class="math notranslate nohighlight">\(xOy\)</span> est un plan d’anti-symétrie.</p></li>
-</ol>
-<p>Il est important de comprendre à travers cet exercice que le lien entre parité et symétrie n’est PAS intuitif.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Exercice : Sur le plan</p>
-<ol class="simple">
-<li><p>Justifier (à retenir) que le vecteur champ magnétique en tout point <span class="math notranslate nohighlight">\(M_0\)</span> du plan <span class="math notranslate nohighlight">\(\Pi\)</span> est contenu dans le plan <span class="math notranslate nohighlight">\(\Pi\)</span>.</p></li>
-</ol>
-<p>On considérons un vecteur champ magnétique <span class="math notranslate nohighlight">\(\overrightarrow{B}(M)\)</span> qui possède comme plan de d’antisymétrie le plan <span class="math notranslate nohighlight">\(\Pi_A\)</span>.</p>
-<ol class="simple">
-<li><p>Justifier (à retenir) que le vecteur champ magnétique en tout point <span class="math notranslate nohighlight">\(M_0\)</span> du plan <span class="math notranslate nohighlight">\(\Pi_A\)</span> est perpendiculaire plan <span class="math notranslate nohighlight">\(\Pi_A\)</span></p></li>
-</ol>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Ces propriétés ne s’appliquent quà des points SUR les plans de symétrie/d’antisymétrie.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Orientation du champ</strong></p>
-<p>Cette observation est <strong>fondamental</strong> car cela signifie qu’en connaissance les symétries du champ magnétique, on peut l’orienter en de nombreux points. On obtiendra ainsi une expression simplifier du champ magnétique.</p>
+<p><strong>Conséquence sur l’orientation du champ magnétique</strong></p>
+<ul class="simple">
+<li><p><strong>En tout point M d’un plan de symétrie d’un champ de vecteur’</strong>, le champ magnétique est <strong>contenu</strong> dans le plan.</p></li>
+<li><p><strong>En tout point M d’un plan d’antisymétrie d’un champ de vecteur</strong>, le champ magnétique est <strong>perpendiculaire</strong> au plan.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="symetrie-et-anti-symetrie-planaire-d-un-pseudo-vecteur">
+<h4>Symétrie et anti-symétrie planaire d’un pseudo-vecteur<a class="headerlink" href="#symetrie-et-anti-symetrie-planaire-d-un-pseudo-vecteur" title="Permalink to this headline">¶</a></h4>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Un pseudo-vecteur est en général issu d’un produit vectoriel entre deux vecteurs.</p>
+</div>
+<p>Les pseudo-vecteur sont des éléments mathématiques possédant les mêmes caractéristiques que les vecteurs (direction, sens, norme ou possibilité de projection dans une base orthonormée) MAIS qui n’auront pas les mêmes propriétés de symétrie. C’est le cas du moment cinétique et surtout <strong>du champ magnétique qui est un pseudo-vecteur.</strong></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Symétries  et antisymétries planaires</strong>
+Pour un pseudo-vecteur, les plans de symétries et d’anti-symétrie sont inversés.</p>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Ces propriétés ne s’appliquent quà des points SUR les plans de symétrie/d’antisymétrie.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Conséquence sur l’orientation du champ magnétique</strong></p>
+<ul class="simple">
+<li><p><strong>En tout point M d’un plan de symétrie du champ magnétique</strong>, le champ magnétique est <strong>perpendiculaire</strong> au plan.</p></li>
+<li><p><strong>En tout point M d’un plan d’antisymétrie du champ magnétique</strong>, le champ magnétique est <strong>contenu</strong> dans le plan.</p></li>
+</ul>
 </div>
 </div>
 </div>
 <div class="section" id="principe-de-curie">
 <h3>Principe de Curie<a class="headerlink" href="#principe-de-curie" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Un plan de symétrie n’a pas les mêmes conséquences sur <span class="math notranslate nohighlight">\(\overrightarrow{j}(M)\)</span> et sur <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span>.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Principe de Curie</strong></p>
-<p>Lorsque certaines causes produisent certains effets, les éléments de symétrie des causes doivent se retrouver dans les effets produits.</p>
+<p><strong>Principe de Curie</strong>
+Lorsque certaines causes produisent certains effets, les éléments de symétrie des causes doivent se retrouver dans les effets produits.</p>
 </div>
-<p>Dans le cas du champ magnétique, la cause est la distribution de courants et la conséquence est le champ magnétique. Les symétries (et invariances) de la distribution de courant se retrouvera donc pour le champ magnétique.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Conséquence sur le champ magnétique</strong></p>
-<p>Mais le champ magnétique est particulier (on dit que c’est un <strong>pseudo-vecteur</strong> car à l’image du moment cinétique, il s’obtient mathématiquement par un produit vectoriel). Concrètement, cela signifie que <strong>pour le champ magnétique</strong> :</p>
-<ul class="simple">
-<li><p>les invariances de la distribution de courants sont aussi des invariances du champ magnétique</p></li>
-<li><p>les plans de symétrie de la distribution de courants sont des plans d’anti-symétrie du vecteur champ magnétique.</p></li>
-<li><p>les plans d’anti-symétrie de la distribution de courants sont des plans de symétrie du vecteur champ magnétique.</p></li>
-</ul>
-</div>
-<div class="tip admonition">
-<p class="admonition-title">Exemple : Détermination de la structure du champ B</p>
-<p>On va utiliser le principe de Curie pour préciser la structure du champ magnétique pour un fil infini.</p>
-</div>
-<blockquote>
-<div><ul class="simple">
-<li><p>Pour un point M de l’espace, le plan perpendiculaire au fil <strong>et passant par M</strong> est un plan d’anti-symétrie des courants (défini par les vecteurs (<span class="math notranslate nohighlight">\(\overrightarrow{e_r}), \overrightarrow{e_{\theta}}\)</span>, c’est donc un plan de symétrie du vecteur <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span>. <strong>Il vient qu’au point M qui est sur ce plan, le champ magnétique est contenu dans ce plan : <span class="math notranslate nohighlight">\(B_z(M) = 0\)</span>.</strong></p></li>
-<li><p>Pour un point M de l’espace, le plan contenant le fil <strong>et passant par M</strong> est un plan de symétrie des courants (défini par les vecteurs (<span class="math notranslate nohighlight">\(\overrightarrow{e_r}), \overrightarrow{e_z}\)</span>, c’est donc un plan d’anti-symétrie du vecteur <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span>. <strong>Il vient qu’au point M qui est sur ce plan, le champ magnétique est perpendiculaire dans ce plan donc suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_\theta}\)</span> : <span class="math notranslate nohighlight">\(B_r(M) = B_z(M) = 0\)</span></strong></p></li>
-<li><p><strong>Invariance</strong> : La distribution du courant est invariante par translation suivant l’axe donc si les courant ne dépendent pas de <span class="math notranslate nohighlight">\(z\)</span>, les composantes de <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> non plus.</p></li>
-<li><p><strong>Invariance</strong> : La distribution du courant est invariante par rotation autour de l’axe donc si les courant ne dépendent pas de <span class="math notranslate nohighlight">\(\theta\)</span>, les composantes de <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> non plus.</p></li>
-</ul>
-<p><strong>Synthèse</strong> : Il vient qu’on peut écrire une expression simplifiée du champ magnétique en tout point M de l’espace :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7ca905cf-2c05-4f5d-88a9-8d535f92ab5f">
-<span class="eqno">(7)<a class="headerlink" href="#equation-7ca905cf-2c05-4f5d-88a9-8d535f92ab5f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
-	\overrightarrow{B}(M) = B_{\theta}(r) e_{\theta}
-\end{equation}\]</div>
-</div></blockquote>
-<p>Cette expression simplifiée permet de réaliser des calculs simples pour expliciter <span class="math notranslate nohighlight">\(B_{\theta}\)</span> grâce au théorème d’Ampère (cf deuxième année).</p>
 </div>
 </div>
 <div class="section" id="ordres-de-grandeurs-de-champs-crees">
@@ -801,69 +662,49 @@ On considérons un champ magnétique <span class="math notranslate nohighlight">
 <ul class="simple">
 <li><p>Aimants néodyme: 0,3 à 1 T</p></li>
 <li><p>IRM (électro-aimant): 6T</p></li>
+<li><p>Champ magnétiue terrestre : <span class="math notranslate nohighlight">\(0.5 \times 10^{-5} \rm{T} = 0.5 \rm{gauss}\)</span></p></li>
 </ul>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Il faut aussi connaître l’ordre du champ magnétique terrestre créé par les mouvements du noyau liquide: <span class="math notranslate nohighlight">\(0.5 \times 10^{-5} \rm{T} = 0.5 \rm{gauss}\)</span>.</p>
 </div>
-</details></div>
-<div class="section" id="champ-cree-par-un-circuit-electrique">
-<h3>Champ créé par un circuit électrique<a class="headerlink" href="#champ-cree-par-un-circuit-electrique" title="Permalink to this headline">¶</a></h3>
-<div class="dropdown admonition">
-<p class="admonition-title">Théorème d’Ampère (pas à connaître en première année)</p>
+<div class="section" id="champ-cree-par-un-circuit-electrique-en-ligne">
+<h3>Champ créé par un circuit électrique (en ligne)<a class="headerlink" href="#champ-cree-par-un-circuit-electrique-en-ligne" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title">Théorème d’Ampère (pas à connaître en première année)</p>
 <p>La circulation du champ magnétique sur un contour orienté (C) fermé est le produit de <span class="math notranslate nohighlight">\(\mu_0\)</span> par la somme algébrique des intensités des courants enlacés par ce contour, les intensités dont l’orientation n’est pas en cohérence avec celle du contour (règle du tire- bouchon) étant changées de signe:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-24f2b10f-38e8-4834-8ce4-980b36984836">
-<span class="eqno">(8)<a class="headerlink" href="#equation-24f2b10f-38e8-4834-8ce4-980b36984836" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \oint_{(C)} \overrightarrow{B}\cdot \overrightarrow{dl} = \mu_0 \sum\limits_{i} \alpha_i I_i
-\end{equation}\]</div>
+\]</div>
 <p>où <span class="math notranslate nohighlight">\(\alpha_i = \pm 1\)</span> suivant que l’intensité <span class="math notranslate nohighlight">\(I_i\)</span> est orientée en cohérence avec le contour.</p>
-</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">On pourrait avoir bien entendu plusieurs types de charges. La circulation est un opérateur mathématique qui a déjà été utilisé dans les calculs de travaux des forces en mécanique. Le principe de calcul est identique, sauf qu’à nouveau, il n’y a pas de mouvement le long du contour choisi.</p>
-</div>
-</details><div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Exercice : Cas simple. Ordre de grandeur</strong></p>
-<p>Estimer à partir du théorème d’Ampère le nombre de spire d’un bobinage nécessaire pour obtenir un champ 100 fois supérieure au champ terrestre à une distance proche du bobinage. Commenter.</p>
 </div>
 </div>
 </div>
 <div class="section" id="principe-du-dipole-magnetique">
 <h2>Principe du dipôle magnétique<a class="headerlink" href="#principe-du-dipole-magnetique" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title">Principe</p>
 <p>De prime abord, on associe la création d’un champ magnétique à un déplacement de particules chargées, c’est-à-dire à des courants. On dispose ainsi de lois (loi de Biot et Savart ou théorème d’Ampère) qui permettent d’établir la cartographie de champ magnétique, connaissant les courants. Le problème est que la seule approche par les courants limite beaucoup l’étude des “objets magnétiques”, entendons par là, des objets créant un champ magnétique. En effet, les aimants courants ne sont pas des circuits électriques dans lesquels on fait parcourir un courant qu’on peut quantifier. De plus, si l’on pourrait modéliser un tel comportement par des mouvements microscopiques (mouvement orbital des électrons par exemple, cf. TD), les ordres de grandeurs montrent que cette modélisation est insuffisante pour caractériser la majorité des phénomènes magnétiques dans la matières. On doit admettre deux points:</p>
 <ul class="simple">
 <li><p>La matière peut créer des champs magnétiques (ex: les aimants) dont l’origine n’est pas forcément lié à un déplacement <strong>physique</strong> de charges, même microscopique.</p></li>
 <li><p>Que le champ magnétique créé par des matériaux magnétiques soit lié à un mouvement (microscopique ou macroscopique) ou à une “autre cause” (…), les distances caractéristiques mises en jeu permettent de supposer que les champs “qui nous intéressent” sont souvent créés à grandes distances de la cause.</p></li>
 </ul>
+</div>
 <div class="section" id="approximation-dipolaire-carte-de-champ-magnetique">
 <h3>Approximation dipolaire. Carte de champ magnétique<a class="headerlink" href="#approximation-dipolaire-carte-de-champ-magnetique" title="Permalink to this headline">¶</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Approximation dipolaire</strong></p>
+<p><strong>Approximation dipolaire</strong></p>
 <p>Soit un champ magnétique créé par un dispositif particulier (aimant, circuit, phénomène microscopique…) situé autour d’un point O. On se place dans le cadre de l’approximation dipolaire si l’on considère que le point M où l’on calcule/étudie le champ magnétique est “loin” du dispositif, c’est-à-dire que la distance OM est grande devant la taille caractéristique L du dispositif.</p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Exemples</p>
+<div class="topic">
+<p class="topic-title">Exemples</p>
 <ul class="simple">
 <li><p>Soit une spire de rayon 1cm parcourue par un courant I. On pourra se placer dans le cadre de l’approximation dipolaire si l’on considère des point M situé à une distance OM &gt;&gt;1cm (on pourra prendre O au centre de la spire).</p></li>
 <li><p>Soit un atome constitué d’électrons tournant autour du noyau. Ce sont des particules chargées en mouvement qui créent donc un champ magnétique. On peut définir un “rayon” de l’atome comme une zone au sein de laquelle est confiné (dans une vision classique) l’électron. A une distance d grande devant ce rayon, on pourra considérer qu’on est dans le cadre de l’approximation dipolaire.</p></li>
 <li><p>Le cas d’un aimant droit est particulier, car ce sont en réalité des phénomènes microscopiques qui sont à l’origine du magnétisme de l’aimant. Même si l’aimant est grand, l’échelle mise en jeu dans les phénomènes magnétiques est très petite, c’est pourquoi on arrive à se placer dans le cadre de l’approximation dipolaire à des distances qui paraissent petites devant la taille de l’aimant.</p></li>
 </ul>
 </div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Fondamental : Champ magnétique dans le cadre de l’approximation dipolaire</strong></p>
+<div class="topic">
+<p class="topic-title">Champ magnétique dans le cadre de l’approximation dipolaire</p>
 <p>Dans le cadre de l’approximation dipolaire, les dispositifs magnétiques, possèdent malgré leur grande variété de réalisation des cartes de champs de forme relativement similaire. On pourra distinguer plusieurs “classes de dispositifs” :</p>
 <ul class="simple">
 <li><p>les monopôles magnétiques… qui n’existent en réalité pas (plus précisément, on n’en connaît pas même si la théorie quantique prévoit qu’ils peuvent exister).</p></li>
@@ -871,56 +712,28 @@ Remarque<div class="summary-down docutils">
 <li><p>les quadripôles magnétiques, les octopôles magnétiques… (on peut augmenter le nombre de pôles mais toujours par paire).</p></li>
 </ul>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">De cette présentation relativement abstraite, retenons pour l’instant deux points:</p>
-<ul class="simple">
-<li><p class="card-text">les dipôles sont les cas de figure les plus couramment rencontrés (pour nous en tout cas).</p></li>
-<li><p class="card-text">on fait apparaître la notion de “pôles” d’un dispositif magnétique</p></li>
-</ul>
-</div>
-</details><div class="section" id="cas-du-dipole-magnetique">
+<div class="section" id="cas-du-dipole-magnetique">
 <h4>Cas du dipôle magnétique.<a class="headerlink" href="#cas-du-dipole-magnetique" title="Permalink to this headline">¶</a></h4>
 <p>Malgré la grande diversité des dipôles magnétiques, le champ magnétique créé <strong>dans le cadre de l’approximation dipolaire</strong> est toujours le même.</p>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
 <div class="figure align-center" id="fig-dipole-magneto">
 <img alt="../_images/em_carte_champ_dipole_magnetostatique.jpg" src="../_images/em_carte_champ_dipole_magnetostatique.jpg" />
 <p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Dipôle magnétostatique</span><a class="headerlink" href="#fig-dipole-magneto" title="Permalink to this image">¶</a></p>
 </div>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p class="card-text">Fondamental : Champ magnétique créé par un dipôle magnétique
+<p>Champ magnétique créé par un dipôle magnétique
 A un dipôle magnétique, on peut associer un <strong>moment dipolaire magnétique</strong> <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span> tel que le champ magnétique créé en un point P par le dipôle situé au point O dans le cadre de l’approximation dipôlaire s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-53acd8cb-0e05-4288-a3cb-b5d756a11d78">
-<span class="eqno">(9)<a class="headerlink" href="#equation-53acd8cb-0e05-4288-a3cb-b5d756a11d78" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \overrightarrow{B}(M) = \frac{\mu_0}{4 \pi} \frac{3 (\overrightarrow{M} \cdot \overrightarrow{r}) \overrightarrow{r} - r^2 \overrightarrow{M}}{r^5}
-\end{equation}\]</div>
-<p class="card-text">avec <span class="math notranslate nohighlight">\(\overrightarrow{r} = \overrightarrow{OP}\)</span></p>
+\]</div>
+<p>avec <span class="math notranslate nohighlight">\(\overrightarrow{r} = \overrightarrow{OP}\)</span></p>
 </div>
-<p class="card-text">La carte de champ fait apparaître deux lobes partant du point O où se trouve le dipôle et une orientation communes des lignes de champs. Le moment dipolaire <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span> qu’on place généralement à l’endroit où se trouve le dipôle donne l’orientation des lignes de champ. Les lignes de champ partent du pôle nord magnétique et arrivent au pôle sud magnétique.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+<p>La carte de champ fait apparaître deux lobes partant du point O où se trouve le dipôle et une orientation communes des lignes de champs. Le moment dipolaire <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span> qu’on place généralement à l’endroit où se trouve le dipôle donne l’orientation des lignes de champ. Les lignes de champ partent du pôle nord magnétique et arrivent au pôle sud magnétique.</p>
 <p>Les dipôles magnétiques regroupent un ensemble de dispositifs très variés (matériau aimanté droit, circuit parcouru par un courant…) à différentes échelles (microscopiques ou macroscopiques) dont le champ magnétique créé à grande distance (approximation dipolaire) possèdent la même géométrie et dont l’intensité et l’orientation peut être définie simplement à l’aide d’une grandeur: le moment dipolaire (vectoriel).</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Exemple : Cas d’une spire circulaire</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Cas d’une spire circulaire</strong></p>
 <p>On considère une spire circulaire de rayon <span class="math notranslate nohighlight">\(R\)</span> parcourue par un courant <span class="math notranslate nohighlight">\(I\)</span>. A une distance <span class="math notranslate nohighlight">\(r &gt;&gt; R\)</span> du centre de la spire, on peut considérer qu’on se place dans le cadre de l’approximation dipolaire. Le moment magnétique de la spire est:
 $<span class="math notranslate nohighlight">\(
 \overrightarrow{M} = \pi R^2 I \overrightarrow{n}
@@ -932,239 +745,44 @@ $<span class="math notranslate nohighlight">\(
 \]</div>
 <p>où <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> est le vecteur surface associé à la spire (\ref{enc:enc_vecteur_surface_et_moment_dipolaire_d_un_circuit}).</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Complément : Vecteur surface<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Pour un contour fermé <span class="math notranslate nohighlight">\(\Gamma\)</span>, on définit le vecteur surface <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> associé par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-99e85e28-7f0e-4b51-b137-5c4bc9580e51">
-<span class="eqno">(10)<a class="headerlink" href="#equation-99e85e28-7f0e-4b51-b137-5c4bc9580e51" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="topic">
+<p class="topic-title">Vecteur surface</p>
+<p>Pour un contour fermé <span class="math notranslate nohighlight">\(\Gamma\)</span>, on définit le vecteur surface <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> associé par:</p>
+<div class="math notranslate nohighlight">
+\[
 \overrightarrow{S} = \iint_{S(\Gamma)} \overrightarrow{dS}
-\end{equation}\]</div>
-<p class="card-text">soit la somme des vecteurs surfaces de chaque petit morceau de la surface <span class="math notranslate nohighlight">\(S(\Gamma)\)</span> définie par le contour. Ces éléments sont orientés soit arbitrairement, soit — très souvent — en cohérence avec l’orientation du contour (règle du tire-bouchon).</p>
-<p class="card-text">Si dans le cas général, le calcul de <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> peut être relativement complexe, <strong>on ne retiendra que</strong> le cas simple d’une surface plane. Alors:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0a2f0b6b-6638-4662-8278-593404ab7fb9">
-<span class="eqno">(11)<a class="headerlink" href="#equation-0a2f0b6b-6638-4662-8278-593404ab7fb9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\]</div>
+<p>soit la somme des vecteurs surfaces de chaque petit morceau de la surface <span class="math notranslate nohighlight">\(S(\Gamma)\)</span> définie par le contour. Ces éléments sont orientés soit arbitrairement, soit — très souvent — en cohérence avec l’orientation du contour (règle du tire-bouchon).</p>
+<p>Si dans le cas général, le calcul de <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> peut être relativement complexe, <strong>on ne retiendra que</strong> le cas simple d’une surface plane. Alors:</p>
+<div class="math notranslate nohighlight">
+\[
 \overrightarrow{S} = S \overrightarrow{n}
-\end{equation}\]</div>
-<p class="card-text">où S est la surface délimité par le contour et <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> le vecteur normal à la surface dans le sens en cohérence avec l’orientation du contour s’il y en a.</p>
+\]</div>
+<p>où S est la surface délimité par le contour et <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> le vecteur normal à la surface dans le sens en cohérence avec l’orientation du contour s’il y en a.</p>
 </div>
-</details><div class="admonition important">
+<div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Spire plane de forme quelconque (Admise)</strong></p>
+<p><strong>Spire plane de forme quelconque (Admise)</strong></p>
 <p>Soit une spire plane parcourue par une intensité <span class="math notranslate nohighlight">\(I\)</span>. On note <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> le vecteur surface orienté en cohérence avec l’intensité <span class="math notranslate nohighlight">\(I\)</span>. Le moment dipolaire magnétique de la spire dans le cadre de l’approximation dipolaire est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d7c87c57-bbe0-413b-8fc7-ad9e7bbfcbd6">
-<span class="eqno">(12)<a class="headerlink" href="#equation-d7c87c57-bbe0-413b-8fc7-ad9e7bbfcbd6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \overrightarrow{M} = I \overrightarrow{S}
-\end{equation}\]</div>
+\]</div>
 </div>
 </div>
-<div class="section" id="cas-d-un-multi-poles-hp">
-<h4>Cas d’un “multi-pôles” (HP)<a class="headerlink" href="#cas-d-un-multi-poles-hp" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="cas-d-un-multi-poles-hp-en-ligne">
+<h4>Cas d’un “multi-pôles” (HP - en ligne)<a class="headerlink" href="#cas-d-un-multi-poles-hp-en-ligne" title="Permalink to this headline">¶</a></h4>
+<div class="topic">
+<p class="topic-title">Multipoles</p>
 <div class="figure align-center" id="fig-multipole">
 <img alt="../_images/em_quadrupolechamp.jpg" src="../_images/em_quadrupolechamp.jpg" />
 <p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Exemple de carte de champ de multipôles</span><a class="headerlink" href="#fig-multipole" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 </div>
-<div class="section" id="origine-et-ordre-de-grandeur-du-moment-magnetique">
-<h3>Origine et ordre de grandeur du moment magnétique<a class="headerlink" href="#origine-et-ordre-de-grandeur-du-moment-magnetique" title="Permalink to this headline">¶</a></h3>
-<p>Le magnétisme possède deux origines:</p>
-<ul class="simple">
-<li><p>Le mouvement “physique” des particules chargées.</p></li>
-<li><p>Le spin <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> des particules chargées: c’est une grandeur purement quantique qui possède les mêmes comportements mathématiques qu’un moment cinétique (on parle d’ailleurs de moment cinétique intrinsèque) mais qui ne correspond pas physiquement à un mouvement de rotation observable de la particules (les échelles sont trop petites pour pouvoir encore parler de trajectoire).</p></li>
-</ul>
-<div class="section" id="echelle-microscopique-moment-cinetique-et-moment-magnetique">
-<h4>Echelle microscopique. Moment cinétique et moment magnétique<a class="headerlink" href="#echelle-microscopique-moment-cinetique-et-moment-magnetique" title="Permalink to this headline">¶</a></h4>
-<p>A l’échelle microscopique, les électrons sont en mouvement autour du noyau. Le mouvement créé donc un champ magnétique propre. Le mouvement des électrons est un mouvement orbital autour du noyau, on peut donc lui associer un moment cinétique orbital par rapport au noyau.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Fondamental : Moment cinétique orbital et moment magnétique</strong></p>
-<p>Un mouvement orbital d’une particule chargée engendre un moment magnétique <span class="math notranslate nohighlight">\(\overrightarrow{m_L}\)</span> proportionnel à son moment cinétique orbital <span class="math notranslate nohighlight">\(\overrightarrow{L}\)</span>. Le coefficient de proportionnalité est appelé rapport gyromagnétique.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Exercice : Rapport gyromagnétique de l’électron dans un atome</strong></p>
-<p>Déterminer le rapport gyromagnétique de l’électron dans un atome en orbite circulaire de rayon <span class="math notranslate nohighlight">\(R\)</span> à la vitesse <span class="math notranslate nohighlight">\(v\)</span>.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Exercice : Modèle de Bohr de l’atome.</strong></p>
-<p>On considère un atome dans le modèle de Bohr: les électrons réalisent des orbites circulaires dont le moment cinétique total est quantifié: <span class="math notranslate nohighlight">\(\left \| \overrightarrow{L}\right \| = n \hbar\)</span>. Montrer que le moment magnétique de l’atome est quantifié est peut se mettre sous la forme <span class="math notranslate nohighlight">\(\left \| \overrightarrow{M}\right \| = n \mu_B\)</span>. <span class="math notranslate nohighlight">\(\mu_B\)</span> est appelé magneton de Bohr.</p>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Fondamental : Spin</p>
-<p>A l’échelle microscopique, le moment magnétique total est causé par le moment cinétique orbital ET le moment cinétique intrinsèque aux particules (appelé spin) <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span>. On parle de moment cinétique total <span class="math notranslate nohighlight">\(\overrightarrow{J}\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-256119fd-b250-4d03-9b14-e0a0a0fc4dde">
-<span class="eqno">(13)<a class="headerlink" href="#equation-256119fd-b250-4d03-9b14-e0a0a0fc4dde" title="Permalink to this equation">¶</a></span>\[\begin{equation}
-\overrightarrow{J} = \overrightarrow{L} + \overrightarrow{S}
-\end{equation}\]</div>
-<p>On peut alors associer au spin, un moment magnétique de spin proportionnel <span class="math notranslate nohighlight">\(\overrightarrow{m_S} = g \gamma \overrightarrow{S}\)</span> où <span class="math notranslate nohighlight">\(\gamma\)</span> est le rapport gyromagnétique et <span class="math notranslate nohighlight">\(g\)</span> un facteur de correction appelé facteur de Landé. Le moment magnétique total de la particule vec <span class="math notranslate nohighlight">\(\overrightarrow{m} = \overrightarrow{m_S} + \overrightarrow{m_L}\)</span></p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Exemple : Facteurs de Landé</p>
-<p>Pour l’électron <span class="math notranslate nohighlight">\(g=2\)</span>, pour le proton, <span class="math notranslate nohighlight">\(g=5.586\)</span> et pour le neutron <span class="math notranslate nohighlight">\(g=-3.826\)</span></p>
-</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Le moment magnétique de spin se superposant au moment magnétique orbital, la mesure de <span class="math notranslate nohighlight">\(\overrightarrow{m}\)</span> ne permet pas de dissocier les deux. Plusieurs expériences sur l’aimantation des matériaux (expériences de Einstein et Haas ou expérience de Barnett) ont permis de mesurer <span class="math notranslate nohighlight">\(\overrightarrow{m}\)</span>. On observa alors que celui-ci possédait une valeur double du moment magnétique orbital qui était celui attendu par la mécanique classique (dans le cas de l’électron). Si ce ne sont pas ces expériences qui ont poussé à l’introduction du spin, elle ont montré que le seul moment orbital ne suffisait pas à expliquer le magnétisme dans la matière.</p>
-</div>
-</details><p>Le moment cinétique orbital des électrons n’a pas de raison d’être identique dans deux atomes différentes: en pratique, ce sont surtout ses valeurs extrêmes qui vont varier d’un atome à un atome, (se reporter aux nombres quantiques en chimie). Au contraire, le spin, est intrinsèque à la particules. Autrement dit, il sera toujours le même, quelque soit l’environnement de la particules (d’où la dénomination de moment cinétique intrinsèque). De plus, il est quantifié, c’est-à-dire qu’il ne peut prendre que des valeurs discrètes.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Exemple : Spin de l’électron</p>
-<p>Le spin de l’électron ne peut valoir que <span class="math notranslate nohighlight">\(- \hbar/2\)</span> ou  <span class="math notranslate nohighlight">\(\hbar/2\)</span></p>
 </div>
 </div>
-<div class="section" id="echelle-macroscopique-aimantation">
-<h4>Echelle macroscopique. Aimantation<a class="headerlink" href="#echelle-macroscopique-aimantation" title="Permalink to this headline">¶</a></h4>
-<p>Les effets magnétiques à l’échelle macroscopique sont dues:</p>
-<ul class="simple">
-<li><p>A des circuits électriques parcourus pas des courants. Il est nécessaire de faire circuler des forts courants sur des longs bobinages pour créer de forts champs magnétiques. Cela rend de tels dispositifs délicats à créer (effet Joule, pression magnétique…).</p></li>
-<li><p>A l’accumulation de dipôles magnétiques. En effet, le champ magnétique total est la résultante de l’action de chaque moment magnétique (attention, c’est une somme vectoriel !). Dans le cadre de l’approximation dipolaire, on peut considérer que l’ensemble de moments magnétiques se situent approximativement au même endroit, loin de l’endroit où l’on calcul le champ magnétique. Il suffit donc de calculer le moment magnétique total en les sommant.</p></li>
-</ul>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Définition : Moment magnétique total. Cas discret</p>
-<p>A l’échelle microscopique ou en considérant un ensemble discret de dipôle magnétique <span class="math notranslate nohighlight">\(\overrightarrow{m_i}\)</span> regroupées. Le moment magnétique total s’écrit :</p>
-<div class="math notranslate nohighlight">
-\[
-\overrightarrow{m_{Total}} = \sum\limits_{i} \overrightarrow{m_i}
-\]</div>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Définition : Aimantation</p>
-<p>A l’échelle mésoscopique, on peut considérer que la matière — y compris — les dipôles magnétiques forment un ensemble continu. Pour un volume infinitésimal, la notion d’uniformité reste valable. On va donc définir une grandeur intensive associée au moment magnétique: l’aimantation <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span>. Elle est définie comme la quantité de moment magnétique par unité de volume. Pour un volume <span class="math notranslate nohighlight">\(d \tau\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-035c2553-ef96-48ca-9039-a2b8402821ee">
-<span class="eqno">(14)<a class="headerlink" href="#equation-035c2553-ef96-48ca-9039-a2b8402821ee" title="Permalink to this equation">¶</a></span>\[\begin{equation}
-\overrightarrow{dm_{Total}} = \overrightarrow{M} d \tau
-\end{equation}\]</div>
-</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Approche statistique: On peut définir le moment magnétique moyen <span class="math notranslate nohighlight">\(\left\langle \overrightarrow {m} \right\rangle\)</span> dans un volume <span class="math notranslate nohighlight">\(d \tau\)</span> et le nombre <span class="math notranslate nohighlight">\(n\)</span> d’atomes ou molécules par unité de volume possédant un moment magnétique. On aura:</p>
-<div class="math notranslate nohighlight">
-\[
-\overrightarrow{dm_{Total}} = \overrightarrow{M} d \tau = n \left\langle \overrightarrow {m} \right\rangle d \tau
-\]</div>
-</div>
-</details></div>
-<div class="section" id="differents-types-de-materiaux">
-<h4>Différents types de matériaux<a class="headerlink" href="#differents-types-de-materiaux" title="Permalink to this headline">¶</a></h4>
-<p>Le fait que la somme précédente soit vectorielle implique une possibilité d’avoir une aimantation nulle à l’échelle macroscopique, autrement dit un matériau non aimanté. A l’inverse si l’aimantation est non nulle, le matériau sera aimanté. Il créé alors un champ magnétique.</p>
-<p>Partons de l’échelle microscopique. A cette échelle, les atomes et molécules possèdent un grand nombre d’électrons en orbite et leur moment magnétique se somment. Dans la plupart des atomes, les moments magnétiques résultant de tous les moments magnétiques orbitaux et intrinsèques s’annulent, il n’y a donc pas d’aimantation au repos à l’échelle microscopique comme macroscopique. A l’inverse, certains matériaux possèdent un moment magnétique résultant non nul qui peut donc créer une aimantation à l’échelle macroscopique (mais pas forcément).</p>
-<p>Deux effets s’opposent :</p>
-<ul class="simple">
-<li><p>Si l’on impose un champ magnétique sur un dipôle magnétique, il tend à s’orienter dans le sens du champ magnétique. Il vient qu’un ensemble de dipôles vont avoir tendance à s’aligner les uns avec les autres augmentant ainsi l’aimantation totale (cela minimise l’énergie potentielle totale).</p></li>
-<li><p>L’agitation thermique tend à désordonner la matière donnant ainsi aux moments magnétiques une orientation aléatoire et donc à annuler l’aimantation.</p></li>
-</ul>
-<p>La compétition entre les deux effets s’expriment par le facteur de Boltzmann. On a donc trois cas:</p>
-<ul class="simple">
-<li><p>Il n’y a de toute façons pas d’aimantation à l’échelle microscopique, donc pas plus à l’échelle macroscopique. On parle de matériaux <strong>diamagnétiques</strong>.</p></li>
-<li><p>L’agitation thermique est trop forte et empêche l’organisation de la manière. L’aimantation au repos est alors très faible (négligeable) et le matériau n’est pas aimanté au repos. On parle de matériaux <strong>paramagnétiques</strong>.</p></li>
-<li><p>Les interactions dipolaires sont suffisamment fortes pour prendre le pas sur l’agitation thermique. Une aimantation permanente à grande échelle peut alors exister. On parle de matériaux <strong>ferromagnétiques</strong>. C’est grâce à ces matériaux qu’on créer des aimants permanents.</p></li>
-</ul>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Cette compétition montre que si l’on augmente suffisamment la température, un matériau ferromagnétique va se désaimanter et devenir paramagnétique. C’est ce qu’on observe <a class="reference external" href="http://www.canal-u.tv/video/tele2sciences/temperature_de_curie_du_fer.8992">en pratique (lien externe)</a>. L’effet est assimilable à une transition de phase. La température de transition de phase est appelée température de Curie. <span class="math notranslate nohighlight">\(T_{Curie}(Fer)=770 ^{\circ}C\)</span>.</p>
-</div>
-</details><div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Exercice : Fer à température ambiante (Recherche)</p>
-<p>A température ambiante, le fer est un matériau ferromagnétique. Il ne crée pourtant pas forcément un champ magnétique permanent. Pourquoi?</p>
-</div>
-</div>
-<div class="section" id="effet-d-un-champ-excitation-magnetique-exterieur-e">
-<h4>Effet d’un champ (excitation) magnétique extérieur(e)<a class="headerlink" href="#effet-d-un-champ-excitation-magnetique-exterieur-e" title="Permalink to this headline">¶</a></h4>
-<p>Si l’on place un matériau dans un champ magnétique extérieur (on parle d’excitation magnétique), son aimantation va réagir (à cause des forces magnétiques). L’évolution de l’aimantation va dépendre du type de matériaux:</p>
-<ul class="simple">
-<li><p>Dans tous les matériaux, l’application d’une excitation magnétique va créer un phénomène d’induction. Ce phénomène suit une loi de modération, c’est-à-dire que l’aimantation créé va s’opposer à l’excitation pour créer diminuer le champ total. On parle de <strong>diamagnétisme</strong>. Ce phénomène (création d’un aimantation opposée) est de très faible amplitude.</p></li>
-<li><p>Dans les matériaux paramagnétiques et ferromagnétiques, l’application d’une excitation magnétique tend à aligner les moments dipolaires existants dans le sens de l’excitation magnétique, augmentant le champ magnétique total. Ce phénomène est alors bien plus important que le phénomène de modération qui devient négligeable. On peut donc aimanter ces matériaux. La différence notoires entre matériaux paramagnétiques et ferromagnétiques et que les premiers ne gardent pas une aimantation lorsque éteint l’excitation magnétique alors que les seconds conservent une aimantation permanente (effet mémoire, on parle d’hystérésis).</p></li>
-</ul>
-</div>
-<div class="section" id="champ-magnetique-terrestre">
-<h4>Champ magnétique terrestre<a class="headerlink" href="#champ-magnetique-terrestre" title="Permalink to this headline">¶</a></h4>
-<p>L’origine du champ magnétique terrestre est délicate à expliquer. On sait qu’il est dû au noyaux ferreux de la Terre mais les températures énormes sont bien au-delà de la température de Curie. C’est la partie extérieure du noyau, sous forme de fer liquide qui permet, grâce aux mouvements de convection de générer le champ magnétique terrestre. On parle de dynamo auto-excitée car le champ magnétique créé tend à créer des courants qui vont eux-mêmes induire un champ magnétique dans le même sens que le champ excitateur. Ce champ est primordial pour la vie sur Terre car il dévie les particules dangereuses issues du soleil. L’intensité moyenne du champ terrestre est <span class="math notranslate nohighlight">\(5 \times 10^{-5} \rm{T} = 0.5 \rm{gauss}\)</span>.</p>
-<p>Un modèle dipolaire pour le champ magnétique terrestre en surface est un modèle descriptif relativement correct (à 80%). Si l’on veut être plus précis, on peut procéder à un “développement multipolaire” en décrivant ce champ comme un dipôle auquel se superpose un quadripôle, auquel se superpose … A noter que la structure du champ n’est pas constante (les “pôles” se sont ainsi inversées une centaine de fois en 80 millions d’années). Au passage, le pôle Sud magnétique est à l’heure actuelle proche du pôle Nord géographique et inversement.</p>
-</div>
-</div>
-</div>
-<div class="section" id="travaux-diriges">
-<h2>Travaux dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h2>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Exercice : Symétrie</strong></p>
-<p>Reprendre les distributions de courant données dans <a class="reference internal" href="#exemple-dist"><span class="std std-ref">le cours sur les symétries</span></a> et déterminer:</p>
-<ul class="simple">
-<li><p>les symétries des courants</p></li>
-<li><p>les symétries des champs magnétiques</p></li>
-<li><p>un maximum d’information sur l’orientation du champ magnétique, la dépendance de ses composantes en les coordonnées et la parité des composante.</p></li>
-</ul>
-<p>On choisira le type de repère de manière réfléchi quand il n’est pas donné.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Exercice : Lecture d’une carte de champ</strong></p>
-<p>Trois fils infinis longs et parallèles entre eux sont parcourus par des courants <span class="math notranslate nohighlight">\(I_1,I_2\)</span> et <span class="math notranslate nohighlight">\(I_3\)</span>. Les lignes de champ sont représentées sur la carte ci-dessous. On rappelle que le champ magnétique créé par un fil infini s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-de46854d-fe5a-49f6-9948-51debae3f425">
-<span class="eqno">(15)<a class="headerlink" href="#equation-de46854d-fe5a-49f6-9948-51debae3f425" title="Permalink to this equation">¶</a></span>\[\begin{equation}
-\overrightarrow{B(M)} = \frac{\mu_0 I}{2 \pi M_0 M} \overrightarrow{e_{\theta,M/fil}}
-\end{equation}\]</div>
-<p>où <span class="math notranslate nohighlight">\(M_0\)</span> est le projeté de M sur le fil et <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta,M/fil}}\)</span> est le vecteur orthoradiale associé au point M dans un système de coordonnées cylindriques d’axe le fil orienté.</p>
-<div class="figure align-center" id="fig-td1-ex1-carte-champ">
-<img alt="../_images/Electromagnetisme_TD1_EX1_1.jpeg" src="../_images/Electromagnetisme_TD1_EX1_1.jpeg" />
-<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Carte de champ dans un plan perpendiculaire à l’axe des fils.</span><a class="headerlink" href="#fig-td1-ex1-carte-champ" title="Permalink to this image">¶</a></p>
-</div>
-<ol class="simple">
-<li><p>Déterminer le signe de <span class="math notranslate nohighlight">\(I_1,I_2\)</span> et <span class="math notranslate nohighlight">\(I_3\)</span>.</p></li>
-<li><p>Que peut-on dire de <span class="math notranslate nohighlight">\(I_1\)</span> et <span class="math notranslate nohighlight">\(I_2\)</span>?</p></li>
-<li><p>Quelle est la valeur du champ <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> en A ? En déduire une estimation du rapport <span class="math notranslate nohighlight">\(I_3/I_2\)</span>.</p></li>
-<li><p>On sait que le champ en M vaut 0,01 T. Estimer la valeur du champ en P.</p></li>
-</ol>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><em>Exercice : Moments magnétiques intrinséque et moment d’inertie.</em>_</p>
-<p>On considère un électron qu’on représente sous la forme d’un corpuscule sphérique de charge totale e et de rayon R en rotation autour de son diamètre; son moment cinétique est <span class="math notranslate nohighlight">\(\sigma = s \hbar = s \frac{h}{2 \pi}\)</span> où <span class="math notranslate nohighlight">\(h = 6.63 \times 10^{-34} \rm{J.s}\)</span> est la constante de Planck.</p>
-<p>Le moment d’inertie d’un boule de masse  uniformément répartie sur son axe est <span class="math notranslate nohighlight">\(J = \frac{2}{5} m_E R^2\)</span>.</p>
-<ol class="simple">
-<li><p>Déterminer son moment magnétique en supposant la charge uniformément répartie en surface.</p></li>
-<li><p>Calculer l’énergie cinétique et la vitesse à la périphérie. Commenter. On donne <span class="math notranslate nohighlight">\(s = 1/2; R = 2.8 \times 10^{-15} \rm{m}; m_e = 9.1\times 10^{-31} \rm{kg}\)</span>.</p></li>
-</ol>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Exercice : Générer un champ tournant. Double bobinage</strong></p>
-<ol class="simple">
-<li><p>On considère deux bobines longues qui pourront être assimilées à des bobines infinies quant au  champ magnétique qu’elles créent. Ces deux bobines sont disjointes et leurs axes forment un angle de <span class="math notranslate nohighlight">\(90 ^{\circ}\)</span> (on ne s’intéressera pas ici à la manière de réaliser en pratique une telle configuration). Les deux bobines sont parcourus par des courants sinusoïdaux de même amplitude <span class="math notranslate nohighlight">\(I_0\)</span>, de même pulsation <span class="math notranslate nohighlight">\(\omega\)</span> mais déphasé de <span class="math notranslate nohighlight">\(\pi/2\)</span>. Montrer que le champ magnétique résultant est un champ tournant dont on déterminera les caractéristiques.</p></li>
-</ol>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Exercice : (Recherche) Matériau ferromagnétique</strong></p>
-<ol class="simple">
-<li><p>A partir du magnéton de Bohr, proposer un modèle et une estimation permettant de déterminer le champ maximal d’un aimant droit composé de Fer à proche distance. Comparer aux valeurs trouvées.</p></li>
-</ol>
-</div>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -1194,7 +812,7 @@ Remarque<div class="summary-down docutils">
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="../em.html" title="previous page">Electromagnétisme</a>
-    <a class='right-next' id="next-link" href="particules_c.html" title="next page">Mouvement de particules chargées</a>
+    <a class='right-next' id="next-link" href="champ_b_methodes.html" title="next page">Champs magnétiques. Méthodes et exercices.</a>
 
         </div>
         

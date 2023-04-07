@@ -92,10 +92,32 @@
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="champ_b.html">
    Champ magnétique. Introduction
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="champ_b_methodes.html">
+     Champs magnétiques. Méthodes et exercices.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="champ_b_activite.html">
+     Origine et ordre de grandeur du moment magnétique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="champ_b_td.html">
+     Entrainement
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="particules_c.html">
@@ -204,8 +226,8 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#position-du-probleme">
-   Position du problème
+  <a class="reference internal nav-link" href="#position-du-probleme-en-ligne">
+   Position du problème (en ligne)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -234,11 +256,6 @@
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#consequence-sur-le-mouvement">
-       Conséquence sur le mouvement
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#puissance-des-forces-de-laplace">
        Puissance des forces de Laplace
       </a>
@@ -246,8 +263,8 @@
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#si-le-champ-n-est-pas-uniforme-hp">
-     Si le champ n’est pas uniforme (HP)
+    <a class="reference internal nav-link" href="#si-le-champ-n-est-pas-uniforme-hp-en-ligne">
+     Si le champ n’est pas uniforme (HP - en ligne)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -256,13 +273,13 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#utilisation-des-forces-de-laplace-moteur-synchrone">
-     Utilisation des forces de Laplace: Moteur synchrone
+    <a class="reference internal nav-link" href="#utilisation-des-forces-de-laplace-en-ligne">
+     Utilisation des forces de Laplace (en ligne)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable">
-     Action d’un champ magnétique uniforme sur un circuit déformable
+    <a class="reference internal nav-link" href="#methode-action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable">
+     Méthode : Action d’un champ magnétique uniforme sur un circuit déformable
     </a>
    </li>
   </ul>
@@ -285,9 +302,10 @@
                 
   <div class="section" id="actions-d-un-champ-magnetique-forces-de-laplace">
 <h1>Actions d’un champ magnétique. Forces de Laplace<a class="headerlink" href="#actions-d-un-champ-magnetique-forces-de-laplace" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="position-du-probleme">
-<h2>Position du problème<a class="headerlink" href="#position-du-probleme" title="Permalink to this headline">¶</a></h2>
-<p>Observations:</p>
+<div class="section" id="position-du-probleme-en-ligne">
+<h2>Position du problème (en ligne)<a class="headerlink" href="#position-du-probleme-en-ligne" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title">Observations</p>
 <ul class="simple">
 <li><p>Action d’un aimant sur un autre aimant: Il n’y a pas de mouvement — en tout cas visibles à l’échelle macroscopique et pourtant, comme on l’a précisé, l’interaction est d’origine magnétique.</p></li>
 <li><p>Action d’un aimant sur un circuit: Un circuit est localement neutre et c’est l’ensemble du circuit qui est déplacé par le champ magnétique, pas seulement les charges en mouvement.</p></li>
@@ -298,16 +316,13 @@
 <li><p>l’action d’un champ magnétique sur un dipôle magnétique.</p></li>
 </ul>
 <p>Fort heureusement, cette action, ayant pour origine la même interaction fondamentale, aura les mêmes caractéristiques dans les deux cas. On parlera de <strong>force de Laplace</strong>.</p>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">On définit normalement la force de Laplace comme l’action d’un champ magnétique sur un circuit parcouru par une intensité. On peut alors généraliser les caractéristiques de son action sur un dipôle magnétique au moyen d’une moyen du dipôle en terme de circuit électrique — on a vu qu’une spire, dans l’approximation dipolaire était considérée comme un dipôle magnétostatique.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remarque</p>
+<p>On définit normalement la force de Laplace comme l’action d’un champ magnétique sur un circuit parcouru par une intensité. On peut alors généraliser les caractéristiques de son action sur un dipôle magnétique au moyen d’une moyen du dipôle en terme de circuit électrique — on a vu qu’une spire, dans l’approximation dipolaire était considérée comme un dipôle magnétostatique.</p>
 </div>
-</details></div>
+</div>
+</div>
 <div class="section" id="force-de-laplace">
 <h2>Force de Laplace<a class="headerlink" href="#force-de-laplace" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="modelisation-generale-action-sur-un-circuit">
@@ -316,54 +331,44 @@ Remarque<div class="summary-down docutils">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Force de Laplace sur un élément infinitésimal</strong></p>
 <p>Soit un circuit <span class="math notranslate nohighlight">\(\Gamma\)</span> parcouru par une intensité I plongé dans un champ magnétique <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span>. Le champ magnétique exerce une action sur le circuit global appelé force de Laplace. Chaque petit élément <span class="math notranslate nohighlight">\(\overrightarrow{dl}\)</span> en un point M du circuit subit une force:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b4b27c5a-5149-4006-bcb3-31652cff9ef1">
-<span class="eqno">(20)<a class="headerlink" href="#equation-b4b27c5a-5149-4006-bcb3-31652cff9ef1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \overrightarrow{dF}(M) = I \overrightarrow{dl} \wedge \overrightarrow{B}(M)
-\end{equation}\]</div>
+\]</div>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title">Remarque</p>
+<p>On rappelle qu’on doit définir la force ET le moment résultant. Comme on a défini les forces appliquées sur chaque “point” du circuit, on peut calculer ces deux éléments.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Action résultante sur un circuit</strong></p>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">On rappelle qu’on doit définir la force ET le moment résultant. Comme on a défini les forces appliquées sur chaque “point” du circuit, on peut calculer ces deux éléments.</p>
-</div>
-</details><p>La résultante de toute les actions sur chaque point du circuit sera:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5dc45edb-50f3-44ef-bbfc-14fde0cba161">
-<span class="eqno">(21)<a class="headerlink" href="#equation-5dc45edb-50f3-44ef-bbfc-14fde0cba161" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<p>La résultante de toute les actions sur chaque point du circuit sera:</p>
+<div class="math notranslate nohighlight">
+\[
 \overrightarrow{F}(\Gamma)= \oint_{M \in \Gamma} I \overrightarrow{dl}(M) \wedge \overrightarrow{B}(M)
-\end{equation}\]</div>
+\]</div>
 <p>Le moment résultant en un point A sera:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-73598761-a079-4cc8-a4ec-ef48c91258e0">
-<span class="eqno">(22)<a class="headerlink" href="#equation-73598761-a079-4cc8-a4ec-ef48c91258e0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \overrightarrow{M}_{A}(\overrightarrow{F}(\Gamma))= \oint_{M \in \Gamma} \overrightarrow{AM} \wedge (I \overrightarrow{dl}(M) \wedge \overrightarrow{B}(M))
-\end{equation}\]</div>
+\]</div>
 </div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Exercice : Les forces de Laplace travaillent</strong></p>
+<div class="topic">
+<p class="topic-title"><strong>Exercice : Les forces de Laplace travaillent</strong></p>
 <ol class="simple">
 <li><p>Pourquoi est-ce surprenant que les forces de Laplace travaillent?</p></li>
 <li><p>Dans un morceau de conducteur parallélépipèdique parcouru par une intensité I (sur sa longueur), déterminer l’influence qualitative d’un champ magnétique B sur la trajectoire des charges.</p></li>
 <li><p>Information: si deux parois sont chargées par des charges opposées, il se crée un champ électrique entre les deux parois dirigés de la paroi négatives vers la paroi positive. Montrer qu’alors, le réseau “fixe” du circuit subit une force qui le déplace dans la direction attendue par les forces de Laplace.</p></li>
 <li><p>Expliquer pourquoi dans ces conditions, les forces de Laplace peuvent “indirectement” travailler.</p></li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remarque</p>
+<p>La déformation du nuage électronique de conduction implique un travail interne dû à l’interaction entre le réseau atomique cristallin et les électrons de conduction. Il existe des modèles permettant de traiter cette interaction comme le modèle de Drüde. On pourrait même montrer qu’en régime stationnaire (I=cste), cette force dérive d’un potentiel! L’énergie potentielle associée en régime stationnaire est proportionnelle à l’opposé du flux du champ magnétique à travers le circuit. Il vient qu’un circuit en régime stationnaire aura tendance à se déplacer et s’orienter de manière à maximiser le flux du champ magnétique à travers lui.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">La déformation du nuage électronique de conduction implique un travail interne dû à l’interaction entre le réseau atomique cristallin et les électrons de conduction. Il existe des modèles permettant de traiter cette interaction comme le modèle de Drüde. On pourrait même montrer qu’en régime stationnaire (I=cste), cette force dérive d’un potentiel! L’énergie potentielle associée en régime stationnaire est proportionnelle à l’opposé du flux du champ magnétique à travers le circuit. Il vient qu’un circuit en régime stationnaire aura tendance à se déplacer et s’orienter de manière à maximiser le flux du champ magnétique à travers lui.</p>
 </div>
-</details></div>
+</div>
 <div class="section" id="champ-magnetique-uniforme-action-resultante-sur-un-circuit-indeformable">
 <h3>Champ magnétique uniforme. Action résultante sur un circuit indéformable<a class="headerlink" href="#champ-magnetique-uniforme-action-resultante-sur-un-circuit-indeformable" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
@@ -384,15 +389,18 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 <p><strong>Fondamental : Force de Lapalce résultante. Champ uniforme</strong></p>
 <p>Généralisation (Cas A): Dans tous les cas, la résultante des actions d’un champ magnétique uniforme est nulle. Elle ne provoque donc pas de translation globale (déplacement du centre d’inertie).</p>
 </div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Démonstration</strong></p>
 <blockquote>
-<div><p><strong>Démonstration</strong> :</p>
-<div class="amsmath math notranslate nohighlight">
+<div><div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \overrightarrow{F}(\Gamma)&amp;= \oint_{M \in \Gamma} I \overrightarrow{dl}(M) \wedge \overrightarrow{B}(M)\\
 &amp;= I\underbrace{(\oint_{M \in \Gamma} \overrightarrow{dl}(M))}_{0} \wedge \overrightarrow{B_0}\\
 &amp;=0
 \end{align*}\]</div>
 </div></blockquote>
+</div>
 </div>
 <div class="section" id="moment-resultant-des-forces-de-laplace-en-un-point-o-fixe">
 <h4>Moment résultant des forces de Laplace en un point O fixe<a class="headerlink" href="#moment-resultant-des-forces-de-laplace-en-un-point-o-fixe" title="Permalink to this headline">¶</a></h4>
@@ -401,12 +409,13 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 <p><strong>Fondamental : Moment de Laplace résultante. Champ uniforme</strong></p>
 <p>Généralisation (Cas A — Admis): Pour un circuit quelconque de moment magnétique <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span>, l’action d’un champ magnétique uniforme <span class="math notranslate nohighlight">\(\overrightarrow{B_0}\)</span> est un couple dont le moment est <span class="math notranslate nohighlight">\(\overrightarrow{M} \wedge \overrightarrow{B_0}\)</span></p>
 </div>
+<div class="topic">
+<p class="topic-title">Démonstration</p>
 <div class="figure align-center" id="fig-spire-moment">
 <img alt="../_images/em_spire_moment.jpg" src="../_images/em_spire_moment.jpg" />
 </div>
 <blockquote>
-<div><p><strong>Démonstration :</strong></p>
-<p>Nous ne prouvons cette expression que dans le cas C, c’est-à-dire pour une géométrie particulière. C’estle seul cas où la preuve est à connaître.</p>
+<div><p>Nous ne prouvons cette expression que dans le cas C, c’est-à-dire pour une géométrie particulière. C’estle seul cas où la preuve est à connaître.</p>
 <p>Prenons un système de coordonnées cartésiennes d’axe Ox et Oy parallèles aux côtés du carré et d’axe Oz perpendiculaire au plan de la spire. On oriente Oz de sorte que <span class="math notranslate nohighlight">\(\overrightarrow{M} = Ia^2 \overrightarrow{e_z}\)</span>. On pose <span class="math notranslate nohighlight">\(\overrightarrow{B_0} = B_{0x} \overrightarrow{e_x} + B_{0y} \overrightarrow{e_y} + B_{Oz} \overrightarrow{e_z}\)</span>.</p>
 <p>La résultante des forces est nulle, donc on peut choisir le point où l’on calcule le moment des forces de Laplace. On choisit le point O au centre du carré. On distingue le calcul du moment sur chaque côté du carré:</p>
 <ul class="simple">
@@ -452,13 +461,6 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 \end{align*}\]</div>
 </div></blockquote>
 </div>
-<div class="section" id="consequence-sur-le-mouvement">
-<h4>Conséquence sur le mouvement<a class="headerlink" href="#consequence-sur-le-mouvement" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li><p>Le principe fondamental de la dynamique montre qu’il n’y a pas d’accélération du centre d’inertie: le mouvement global de translation n’est pas modifié.</p></li>
-<li><p>On observe par contre que la spire aura tendance à tourner pour aligner son moment magnétique sur le champ magnétique. Il y deux positions d’équilibre: le moment magnétique peut être parallèle ou anti-parallèle au champ magnétique.</p></li>
-<li><p>En écartant légèrement la spire de ses positions d’équilibre, on observe que le moment tend à ramener le moment magnéitque dans la position parallèle: cette position est stable alors que la position anti-parallèle est instable.</p></li>
-</ul>
 </div>
 <div class="section" id="puissance-des-forces-de-laplace">
 <h4>Puissance des forces de Laplace<a class="headerlink" href="#puissance-des-forces-de-laplace" title="Permalink to this headline">¶</a></h4>
@@ -467,24 +469,18 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 <p><strong>Fondamental : Puissance des forces de Laplace. Circuit à <span class="math notranslate nohighlight">\(I\)</span> constant</strong></p>
 <p>Généralisation (Cas B — Admis): Pour un circuit quelconque de moment magnétique <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span> constant (c’est-à-dire que le circuit n’est pas déformable ET que l’intensité est constante) dans un champ uniforme <span class="math notranslate nohighlight">\(\overrightarrow{B_0}\)</span>, les forces de Laplace dérivent d’un potentiel et l’énergie potentielle associée est: <span class="math notranslate nohighlight">\(E_{PL} = - \overrightarrow{M} \cdot \overrightarrow{B_0}\)</span>.</p>
 <p><strong>Cette propriété n’est PAS vraie dans le cas A où l’intensité varie.</strong></p>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">On pourrait réécrire cette énergie potentielle comme: <span class="math notranslate nohighlight">\(E_P = - I \phi_B\)</span> où <span class="math notranslate nohighlight">\(\phi_B\)</span> est le flux du champ magnétique à travers le circuit. Cette expression n’est vraie que si l’intensité est constante, mais elle présente l’avantage d’être encore vraie si le circuit se déforme. <strong>Elle est toutefois hors-programme.</strong></p>
-</div>
-</details></div>
 </div>
 </div>
-<div class="section" id="si-le-champ-n-est-pas-uniforme-hp">
-<h3>Si le champ n’est pas uniforme (HP)<a class="headerlink" href="#si-le-champ-n-est-pas-uniforme-hp" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="si-le-champ-n-est-pas-uniforme-hp-en-ligne">
+<h3>Si le champ n’est pas uniforme (HP - en ligne)<a class="headerlink" href="#si-le-champ-n-est-pas-uniforme-hp-en-ligne" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title">Cas non uniforme</p>
 <p>La résultante des forces n’est plus nulle. Dans le cas général, le moment des forces est différent et la force ne dérive pas d’un potentiel. Néanmoins, si le champ varie lentement devant la taille du circuit (cas semblable à l’approximation dipolaire), le moment et la puissance des forces reste globalement valables (circuit indéformable) et on peut même trouver une expression (HP) à la résultante des forces.</p>
 <ul class="simple">
 <li><p>(Admis) Dans un champ magnétique non uniforme mais variant lentement, un circuit filiforme indéformable tend à se déplacer dans les zones de plus fort champ magnétique et à s’orienter suivant le champ magnétique.</p></li>
 </ul>
+</div>
 </div>
 <div class="section" id="action-sur-un-dipole-magnetique">
 <h3>Action sur un dipôle magnétique<a class="headerlink" href="#action-sur-un-dipole-magnetique" title="Permalink to this headline">¶</a></h3>
@@ -496,24 +492,17 @@ Remarque<div class="summary-down docutils">
 <li><p>La résultante des forces de Laplace est nulle.</p></li>
 <li><p>Le moment des forces de Laplace s’écrit:</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-aea7e6ca-2372-4659-9d04-713a4afaa1fb">
-<span class="eqno">(23)<a class="headerlink" href="#equation-aea7e6ca-2372-4659-9d04-713a4afaa1fb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \overrightarrow{\Gamma} = \overrightarrow{M} \wedge \overrightarrow{B}
-\end{equation}\]</div>
+\]</div>
 <p>Si le dipôle est rigide (c’est-à-dire <span class="math notranslate nohighlight">\(\overrightarrow{M} = cste\)</span>), alors la force dérive d’un potentiel et <span class="math notranslate nohighlight">\(E_{PL} = - \overrightarrow{M} \cdot \overrightarrow{B}\)</span></p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Cas d’un champ non uniforme (HP): Les caractéristiques sont identiques à celle trouvée pour le circuit électrique, dans le cadre de variations spatialement lentes du champ. Dans le champ magnétique uniforme, un dipôle magnétique tend à aligner son moment magnétique sur le champ magnétique. Cette propriété a été utilisée précédemment pour caractériser les lignes de champ magnétique (aiguille de boussole).</p>
 </div>
-</details></div>
-<div class="section" id="utilisation-des-forces-de-laplace-moteur-synchrone">
-<h3>Utilisation des forces de Laplace: Moteur synchrone<a class="headerlink" href="#utilisation-des-forces-de-laplace-moteur-synchrone" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="utilisation-des-forces-de-laplace-en-ligne">
+<h3>Utilisation des forces de Laplace (en ligne)<a class="headerlink" href="#utilisation-des-forces-de-laplace-en-ligne" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title">Moteur synchrone</p>
 <p>Une machine synchrone est un dispositif permettant de transformer:</p>
 <ul class="simple">
 <li><p>soit un apport d’énergie électrique alternatif en une énergie cinétique — un mouvement de rotation: on parle de moteur.</p></li>
@@ -527,8 +516,9 @@ Remarque<div class="summary-down docutils">
 <p>En fonctionnement moteur, les bobinages du stator sont alimentés en régime triphasé, c’est-à-dire qu’il sont soumis à la même tension sinusoïdal de pulsation <span class="math notranslate nohighlight">\(\omega\)</span> mais déphasées successivement de <span class="math notranslate nohighlight">\(2 \pi /3\)</span>. Les intensités circulant dans les bobinages (normalement identiques) permettent ainsi de superposer trois champs magnétiques dont la résultante est assimilable à un champ magnétique tournant à une vitesse angulaire correspondant à la pulsation du signal triphasé.</p>
 <p>Interprétation: On a vu qu’un dipôle magnétique tendait à s’aligner sur le champ magnétique. Comme celui-ci est tournant, le rotor va tourner à la même vitesse (vitesse de synchronisme) que le champ magnétique.</p>
 </div>
-<div class="section" id="action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable">
-<h3>Action d’un champ magnétique uniforme sur un circuit déformable<a class="headerlink" href="#action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="methode-action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable">
+<h3>Méthode : Action d’un champ magnétique uniforme sur un circuit déformable<a class="headerlink" href="#methode-action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center" id="fig-rail-laplace">
 <img alt="../_images/em_rail_laplace.jpg" src="../_images/em_rail_laplace.jpg" />
 <p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Rails de Laplace</span><a class="headerlink" href="#fig-rail-laplace" title="Permalink to this image">¶</a></p>

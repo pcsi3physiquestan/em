@@ -91,10 +91,32 @@
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="champ_b.html">
    Champ magnétique. Introduction
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="champ_b_methodes.html">
+     Champs magnétiques. Méthodes et exercices.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="champ_b_activite.html">
+     Origine et ordre de grandeur du moment magnétique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="champ_b_td.html">
+     Entrainement
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="particules_c.html">
@@ -150,7 +172,10 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/induction.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../_sources/notebook/induction.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
@@ -172,6 +197,23 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/induction.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -188,8 +230,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#observation-experimentale">
-     Observation expérimentale
+    <a class="reference internal nav-link" href="#observation-experimentale-en-ligne">
+     Observation expérimentale (en ligne)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -240,13 +282,8 @@
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#differents-transformateurs">
-       Différents transformateurs
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#modelisation-du-transformateur-reel">
-       Modélisation du transformateur réel
+      <a class="reference internal nav-link" href="#differents-transformateurs-en-ligne">
+       Différents transformateurs (en ligne)
       </a>
      </li>
     </ul>
@@ -261,11 +298,6 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#rails-de-laplace">
      Rails de Laplace
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#induction-et-forces-de-laplace">
-     Induction et forces de Laplace
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -303,9 +335,21 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#travaux-diriges">
-   Travaux dirigés
+  <a class="reference internal nav-link" href="#s-entrainer">
+   S’entrainer
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#applications">
+     Applications
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#entrainement">
+     Entrainement
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -322,8 +366,10 @@
 <h1>Induction et application<a class="headerlink" href="#induction-et-application" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="observation-experimentale">
-<h3>Observation expérimentale<a class="headerlink" href="#observation-experimentale" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="observation-experimentale-en-ligne">
+<h3>Observation expérimentale (en ligne)<a class="headerlink" href="#observation-experimentale-en-ligne" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title">Observations expérimentales</p>
 <p>Expérimentalement, on observe que:</p>
 <ul class="simple">
 <li><p>Un aimant se déplaçant dans une bobine crée une tension aux bornes de la bobine</p></li>
@@ -331,15 +377,16 @@
 <li><p>Une bobine alimentée par un courant variable crée dans une bobine l’entourant une tension</p></li>
 </ul>
 <p>Les différentes expériences réalisées montrent la création d’une force électromotrice induite à l’intérieur des différents circuits. Il apparaît que ce phénomène d’induction apparaît lorsque les caractéristiques du champ magnétique vu du circuit sont variables. Une étude quantitative montrerait que le phénomène d’induction est dû à la variation du flux du champ magnétique à travers le circuit.</p>
-</div>
-<div class="section" id="loi-de-lenz">
-<h3>Loi de Lenz<a class="headerlink" href="#loi-de-lenz" title="Permalink to this headline">¶</a></h3>
 <p>Par des mesures plus précises, on observe que:</p>
 <ul class="simple">
 <li><p>La tension créé dans la bobine au passage de l’aimant crée un courant qui crée un champ magnétique variable exerçant une force sur l’aimant. Cette force tend à ralentir l’aimant (ou la bobine).</p></li>
 <li><p>Dans le cas d’une bobine parcourue par une intensité variable. On observe que la tension induite dans la seconde bobine est variable aussi créant un courant variable dans la bobine. Le champ magnétique ainsi créé est aussi variable et va induire aussi une tension dans la première bobine. Cette tension tend à s’opposer aux variations de l’intensité dans la première bobine.</p></li>
 </ul>
-<p>Dans tous les exemples données, l’effet créé par la variation du flux du champ magnétique va lui-même engendrer un effet sur le flux du champ magnétique: cet effet est opposé à la cause initiale: on parle de <strong>loi de modération</strong>.</p>
+</div>
+</div>
+<div class="section" id="loi-de-lenz">
+<h3>Loi de Lenz<a class="headerlink" href="#loi-de-lenz" title="Permalink to this headline">¶</a></h3>
+<p>Dans tous les exemples données (en ligne), l’effet créé par la variation du flux du champ magnétique va lui-même engendrer un effet sur le flux du champ magnétique: cet effet est opposé à la cause initiale: on parle de <strong>loi de modération</strong>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Loi de Lenz</strong></p>
@@ -350,27 +397,22 @@
 <h3>Loi de Faraday<a class="headerlink" href="#loi-de-faraday" title="Permalink to this headline">¶</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Loi de Faraday</strong></p>
+<p><strong>Fondamental : Loi de Faraday</strong></p>
 <p>Un circuit conducteur <span class="math notranslate nohighlight">\(\Gamma\)</span> plongé dans un champ magnétique <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> est le siège d’une force électromotrice appelée force électromotrice induite: <span class="math notranslate nohighlight">\(e = - \frac{d \phi}{dt}\)</span> où <span class="math notranslate nohighlight">\(\phi\)</span> est le flux du champ magnétique à travers le circuit (dont la surface est orientée) et la f.e.m. induite est orientée dans le circuit en cohérence avec la surface orientée (règle du tire-bouchon).</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Il apparaît clairement dans cette loi la nécessité d’un flux variable. Cela peut se produire de deux façons (qui peuvent être simultanées):</p>
+<div class="topic">
+<p class="topic-title">Remarque</p>
+<p>Il apparaît clairement dans cette loi la nécessité d’un flux variable. Cela peut se produire de deux façons (qui peuvent être simultanées):</p>
 <ul class="simple">
-<li><p class="card-text">Le champ magnétique est lui-même variable (on parle d’induction de Neumann)</p></li>
-<li><p class="card-text">Le circuit est mobile ou se déforme dans le champ magnétique (on parle d’induction de Lorentz)</p></li>
+<li><p>Le champ magnétique est lui-même variable (on parle d’induction de Neumann)</p></li>
+<li><p>Le circuit est mobile ou se déforme dans le champ magnétique (on parle d’induction de Lorentz)</p></li>
 </ul>
-<p class="card-text">Dans la suite, on ne traitera que des cas où la variation du flux est causé par l’une ou l’autre des configurations, pas les deux en même temps.</p>
-<p class="card-text">Les conventions d’orientation sont primordiales. D’autant que l’on va associer une représentation géométrique des circuits à leur schématisation électrique. Si l’on ne fait pas attention, tous les calculs sera faux et même physiquement aberrants (car la loi de modération de Lenz ne sera plus vérifié).</p>
-<p class="card-text">Une f.e.m. tend à créer (si c’est la seule source) un courant qui circule dans le sens de la f.e.m. (puissance fournie positive), il vient que le champ magnétique induit par ces courants s’opposera à celui initial, on retrouve alors la loi de Lenz. Même si la fermeture du circuit va permettre la circulation d’un courant, il faut bien remarquer que la variation du flux magnétique crée une force électromotrice (tension en quelque sorte). Le courant n’est qu’une cause secondaire.</p>
-<p class="card-text">La situation sur le schéma (à une maille) de la f.e.m. induite n’a pas d’importance. En réalité, il s’agit d’une f.e.m. résultant de l’action du champ magnétique sur l’ensemble du circuit. On pourrait associer à la loi de Faraday une équation locale (équation de Maxwell-Faraday) qui le montrerait en associant le champ magnétique au champ électrique (qui rappelons le est en lien directe avec le potentiel électrique dans un circuit).</p>
+<p>Dans la suite, on ne traitera que des cas où la variation du flux est causé par l’une ou l’autre des configurations, pas les deux en même temps.</p>
+<p>Les conventions d’orientation sont primordiales. D’autant que l’on va associer une représentation géométrique des circuits à leur schématisation électrique. Si l’on ne fait pas attention, tous les calculs sera faux et même physiquement aberrants (car la loi de modération de Lenz ne sera plus vérifié).</p>
+<p>Une f.e.m. tend à créer (si c’est la seule source) un courant qui circule dans le sens de la f.e.m. (puissance fournie positive), il vient que le champ magnétique induit par ces courants s’opposera à celui initial, on retrouve alors la loi de Lenz. Même si la fermeture du circuit va permettre la circulation d’un courant, il faut bien remarquer que la variation du flux magnétique crée une force électromotrice (tension en quelque sorte). Le courant n’est qu’une cause secondaire.</p>
+<p>La situation sur le schéma (à une maille) de la f.e.m. induite n’a pas d’importance. En réalité, il s’agit d’une f.e.m. résultant de l’action du champ magnétique sur l’ensemble du circuit. On pourrait associer à la loi de Faraday une équation locale (équation de Maxwell-Faraday) qui le montrerait en associant le champ magnétique au champ électrique (qui rappelons le est en lien directe avec le potentiel électrique dans un circuit).</p>
 </div>
-</details></div>
+</div>
 </div>
 <div class="section" id="champs-variables-et-circuits-fixes">
 <h2>Champs variables et circuits fixes<a class="headerlink" href="#champs-variables-et-circuits-fixes" title="Permalink to this headline">¶</a></h2>
@@ -379,7 +421,7 @@ Remarque<div class="summary-down docutils">
 <p><strong>Position du problème:</strong> Commençons par remarquer qu’un circuit électrique parcouru par un courant électrique engendre un champ magnétique et donc a priori un flux magnétique non nul à travers le circuit lui-même (on parle de <strong>flux propre</strong>). Si l’intensité qui circule dans le circuit est variable, alors le champ magnétique l’est aussi, donc son flux sera variable. Il devrait donc se produire un phénomène d’induction à travers le circuit, c’est-à-dire qu’une f.e.m. induite devrait s’opposer à la variation du courant (cause initiale). Cela se produit: c’est le <strong>phénomène d’auto-induction</strong>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>Exercice : Cas d’une bobine de grande longueur</strong></p>
+<p><strong>Méthode : Cas d’une bobine de grande longueur</strong></p>
 <p>Soit une bobine de longueur D contenant N spires jointives circulaires de section S parcourues par un courant <span class="math notranslate nohighlight">\(i(t)\)</span>.</p>
 <ol class="simple">
 <li><p>Déterminer le flux propre de la bobine, c’est-à-dire le flux du champ magnétique créé par la bobine à travers la bobine elle-même. On assimilera le champ magnétique créé à celui créé par une bobine infinie.</p></li>
@@ -387,6 +429,8 @@ Remarque<div class="summary-down docutils">
 <li><p>Estimer l’ordre de grandeur de l’inductance ainsi définie pour différentes valeurs de bobines. Commenter.</p></li>
 </ol>
 </div>
+<div class="topic">
+<p class="topic-title">Correction</p>
 <blockquote>
 <div><p><strong>On notera l’importance d’un schéma et des conventions d’orientation.</strong></p>
 </div></blockquote>
@@ -412,33 +456,29 @@ On reconnaître l'équation d'évolution d'une inductance avec \)</span>L = \fra
 <li><p>Pour les bobines à air, on a <span class="math notranslate nohighlight">\(D \sim 10 \rm{cm}\)</span> et <span class="math notranslate nohighlight">\(S \sim 1 \rm{dm^{2}}\)</span> soit <span class="math notranslate nohighlight">\(L \sim \times 10^{-7} N^2\)</span>. Il faut donc 10 spires pour avoir <span class="math notranslate nohighlight">\(L = 1 \rm{mH}\)</span> et près de 3000 spires (sur 10 centimètres) pour avoir <span class="math notranslate nohighlight">\(L = 1 \rm{H}\)</span>. On pourra remarquer que les ordre de grandeur choisis ici ne valide PAS l’hypothèse d’une bobine longue. Dans ces conditions, le champ magnétiques chute très rapidement et l’inductance diminue aussi. Il est donc très compliqué de créer une bobine à air de forte inductance.</p></li>
 </ul>
 </div></blockquote>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>En pratique, on oriente cette effet en convention récepteur dans un circuit électrique, ce qui donne les équation d’évolution habituel d’une bobine. On pourra, comme en électrocinétique, conduire des bilans de puissance directement sur le circuit équivalent.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Autoinductance</strong></p>
+<p><strong>Définition : Auto-inductance</strong></p>
 <p>Le flux propre d’un composant est toujours proportionnel à l’intensité qui le traverse et la f.e.m. induite est de même proportionnel à la dérivée temporelle de l’intensité. Le facteur de proportionnalité, identique, est appelé inductance (ou plus précisément auto-inductance):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5122713f-6a32-4f57-a33f-81eb0b292da4">
-<span class="eqno">(24)<a class="headerlink" href="#equation-5122713f-6a32-4f57-a33f-81eb0b292da4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \Phi = L I
-\end{equation}\]</div>
+\]</div>
 <p>La loi de Faraday donne la fem auto-induide: <span class="math notranslate nohighlight">\(e = - L \frac{d I}{dt}\)</span> La valeur de l’inductance dépend de la géométrie du circuit.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">En pratique, on oriente cette effet en convention récepteur dans un circuit électrique, ce qui donne les équation d’évolution habituel d’une bobine. On pourra, comme en électrocinétique, conduire des bilans de puissance directement sur le circuit équivalent.</p>
 </div>
-</details></div>
 <div class="section" id="induction-mutuelle">
 <h3>Induction mutuelle<a class="headerlink" href="#induction-mutuelle" title="Permalink to this headline">¶</a></h3>
 <p><strong>Position du problème:</strong> Considérons deux bobines longues de même axe. On suppose que l’une est imbriquée dans l’autre, de sorte que l’approximation du champ créé par une bobine infinie reste valable. On note <span class="math notranslate nohighlight">\(I_i, D_i, S_i\)</span> et <span class="math notranslate nohighlight">\(N_i\)</span> les intensités, longueur, section et nombre de spire de la bobine i.</p>
 <p><strong>Champ propre et champ extérieur:</strong> Les phénomènes d’induction pour chaque bobine résultent de la superposition du champ magnétique propre à la bobine considéré et du champ magnétique créé par l’autre bobine. Ce dernier phénomène est appelé phénomène d’induction mutuelle. Dans le cas de deux bobines, ces deux champs peuvent être a priori de même ordre de grandeur, on ne peut donc négliger un champ devant l’autre.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>Exercice : Flux mutuel entre deux bobines longues coaxiales</strong></p>
+<p><strong>Méthode : Flux mutuel entre deux bobines longues coaxiales</strong></p>
 <p>On suppose le champ magnétique créé par chaque bobine assimilable <strong>dans la bobine</strong> à celui d’une bobine longue à l’intérieur de la bobine (et est nul à l’extérieur). On pose <span class="math notranslate nohighlight">\(D_1 &gt; D_2\)</span> et <span class="math notranslate nohighlight">\(S_2 &gt; S_1\)</span>. On suppose que les intensités “tournent” dans le même sens en progressant suivant les Oz positifs.</p>
 <ol class="simple">
 <li><p>Déterminer le flux du champ créé par la bobine 1 dans la bobine 2.</p></li>
@@ -447,6 +487,8 @@ Remarque<div class="summary-down docutils">
 <li><p>Que se passe-t-il si on inverse l’enroulement du bobinage 2?</p></li>
 </ol>
 </div>
+<div class="topic">
+<p class="topic-title">Correction</p>
 <blockquote>
 <div><p><strong>On rappelle l’importance des conventions d’orientation.</strong></p>
 </div></blockquote>
@@ -475,36 +517,21 @@ e_2 = - \mu_0 \frac{N_1 N_2}{D_1} S_1 \frac{d I_1}{dt}
 <li><p>L’intensité <span class="math notranslate nohighlight">\(I_2\)</span> tourne alors dans le sens contrainre à <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span>. Il vient que <span class="math notranslate nohighlight">\(e_1\)</span> change de signe. On peut garder la même expression en changeant de sens la tension (\cref{fig_mutuelle_modele_inv}).</p></li>
 </ul>
 </div></blockquote>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
+</div>
 <div class="figure align-center" id="fig-mutuelle-modele">
 <img alt="../_images/em_mutuelle_modele.jpg" src="../_images/em_mutuelle_modele.jpg" />
 <p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Cas des intensités tournant dans le même sens</span><a class="headerlink" href="#fig-mutuelle-modele" title="Permalink to this image">¶</a></p>
 </div>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
 <div class="figure align-center" id="fig-mutuelle-modele-inv">
 <img alt="../_images/em_mutuelle_modele_inv.jpg" src="../_images/em_mutuelle_modele_inv.jpg" />
 <p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Cas des intensités tournant dans des sens opposés</span><a class="headerlink" href="#fig-mutuelle-modele-inv" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Inductance mutuelle</strong></p>
 <p>Généralisation (Admise): Soit deux circuits <span class="math notranslate nohighlight">\(\Gamma_1\)</span> et <span class="math notranslate nohighlight">\(\Gamma_2\)</span> parcourue par des courants d’intensité respectives <span class="math notranslate nohighlight">\(I_1\)</span> et <span class="math notranslate nohighlight">\(I_2\)</span>. Le flux du champ magnétique total à travers le circuit 1 (réciproquement 2) se décompose en deux parties: le flux propre et le flux mutuel. Ce dernier est proportionnel à l’intensité <span class="math notranslate nohighlight">\(I_2\)</span> (réciproquement <span class="math notranslate nohighlight">\(I_1\)</span>). Le coefficient de proportionnalité est appelé coefficient d’inductance mutuelle <span class="math notranslate nohighlight">\(M_{2 \rightarrow 1}\)</span> (respectivement <span class="math notranslate nohighlight">\(M_{1 \rightarrow 2}\)</span>):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d480276c-09d6-4dc7-b8e9-11c02fee2a88">
-<span class="eqno">(25)<a class="headerlink" href="#equation-d480276c-09d6-4dc7-b8e9-11c02fee2a88" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-713540c2-31f8-4c0f-a1ae-ee9350cedff7">
+<span class="eqno">(5)<a class="headerlink" href="#equation-713540c2-31f8-4c0f-a1ae-ee9350cedff7" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \begin{bmatrix}
 \phi_1\\
 \phi_2
@@ -519,25 +546,15 @@ I_1\\
 I_2
 \end{bmatrix}
 \end{equation}\]</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Les coefficients dépendent la géométrie de chaque circuit et de leur disposition relative. Ils peuvent être négatifs à priori (on peut s’en convaincre en observant ce qui se passe si l’on inverse le sens de branche d’une des bobines dans l’exercice~\ref{exe:exe_flux_mutuel_entre_deux_bobines_longues_coaxiales}: le coefficient d’inductance mutuel est).</p>
+<div class="topic">
+<p class="topic-title">Remarque</p>
+<p>Les coefficients dépendent la géométrie de chaque circuit et de leur disposition relative. Ils peuvent être négatifs à priori (on peut s’en convaincre en observant ce qui se passe si l’on inverse le sens de branche d’une des bobines dans l’exercice~\ref{exe:exe_flux_mutuel_entre_deux_bobines_longues_coaxiales}: le coefficient d’inductance mutuel est).</p>
 </div>
-</details></div>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Propriété des coefficient d’inductance mutuelle (Admis)</strong></p>
 <p>Ils sont égaux: <span class="math notranslate nohighlight">\(M_{2 \rightarrow 1} = M_{1 \rightarrow 2}\)</span>. On les notera <span class="math notranslate nohighlight">\(M\)</span> par la suite.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Exercice : Deux bobines réelles en inductance mutuelle.</strong></p>
-<p>On considère deux bobines d’auto-inductance L, de résistance R et de coefficient d’inductance mutuelle M. La première est court-circuitées et la seconde reliée à un générateur délivrant une tension <span class="math notranslate nohighlight">\(E(t) = E_0 \cos \omega t\)</span>. Déterminer les équations couplées pour les amplitudes complexes des intensités dans chaque circuit.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -549,36 +566,24 @@ Remarque<div class="summary-down docutils">
 <p><strong>Fondamental : Inductance mutuelle de circuit en influence totale</strong></p>
 <p>Lorsque deux circuits sont en influence totale, <span class="math notranslate nohighlight">\(M = \sqrt{L_1 L_2}\)</span>. L’inductance mutuelle entre les deux circuits est alors maximale.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Avoir une inductance mutuelle maximale est extrêmement intéressant car dans ces conditions, le premier circuit exerce une influence maximale par induction sur le second (et réciproquement). En général, on utilise l’inductance mutuelle pour transmettre une information ou de l’énergie. Dans les deux cas, l’influence totale permet de minimiser les pertes. Lorsqu’il n’y a pas influence totale, le transfert d’énergie n’est pas maximale, cela correspond à une fuite des lignes de champ magnétique.</p>
+<div class="topic">
+<p class="topic-title">Remarque</p>
+<p>Avoir une inductance mutuelle maximale est extrêmement intéressant car dans ces conditions, le premier circuit exerce une influence maximale par induction sur le second (et réciproquement). En général, on utilise l’inductance mutuelle pour transmettre une information ou de l’énergie. Dans les deux cas, l’influence totale permet de minimiser les pertes. Lorsqu’il n’y a pas influence totale, le transfert d’énergie n’est pas maximale, cela correspond à une fuite des lignes de champ magnétique.</p>
 </div>
-</details></div>
+</div>
 <div class="section" id="bilan-energetique">
 <h3>Bilan énergétique<a class="headerlink" href="#bilan-energetique" title="Permalink to this headline">¶</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Energie emmagasinée</strong></p>
 <p>L’énergie totale emmagasinée par deux bobinages en influence mutuelle de coefficient M est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-30986d08-b552-4442-9a04-28a22551db39">
-<span class="eqno">(26)<a class="headerlink" href="#equation-30986d08-b552-4442-9a04-28a22551db39" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 E_{mag} = \frac{1}{2}L_1 I_1^2 + \frac{1}{2}L_2 I_2 ^2 + M I_1 I_2
-\end{equation}\]</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Les deux premiers termes sont déjà connus. Le dernier montre que le couplage inductif permet aussi un transfert d’énergie (cette énergie vient en général d’un circuit pour être transférée à l’autre).</p>
+\]</div>
 </div>
-</details></div>
+<div class="topic">
+<p class="topic-title">Démonstration</p>
 <blockquote>
 <div><p><strong>Démonstration :</strong> Considérons le système complet constitué des deux bobines. La puissance reçue par la bobine 1 s’écrit: <span class="math notranslate nohighlight">\(P_1 = i_1 (L_1 \frac{di_1}{dt} + M \frac{di_2}{dt})\)</span>. De même la puissance reçue par la bobine 2 s’écrit: <span class="math notranslate nohighlight">\(P_2 = i_2 (L_2 \frac{di_2}{dt} + M \frac{di_1}{dt})\)</span>. La puissance totale reçue s’écrit donc:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -588,7 +593,10 @@ P &amp;= L_1 i_1 \frac{di_1}{dt} + L_2 i_2 \frac{di_2}{dt} + M (i_1 \frac{di_2}{
 \end{align*}\]</div>
 <p>On peut écrire la puissance reçue sous la forme d’une dérivée temporelle d’une grandeur: l’énergie emmagasinée.</p>
 </div></blockquote>
-<p><strong>Interprétation:</strong> L’énergie est donné à un instant t pour une configuration d’intensité <span class="math notranslate nohighlight">\((I_1,I_2)\)</span>. Si dans le circuit 1, l’intensité venait à diminuer pour atteindre 0, sa variation engendrerait:</p>
+</div>
+<div class="topic">
+<p class="topic-title"><strong>Interprétation:</strong></p>
+<p>L’énergie est donné à un instant t pour une configuration d’intensité <span class="math notranslate nohighlight">\((I_1,I_2)\)</span>. Si dans le circuit 1, l’intensité venait à diminuer pour atteindre 0, sa variation engendrerait:</p>
 <ul class="simple">
 <li><p>un phénomène d’auto-induction dans le circuit 1: la f.e.m. auto-induite fournirait de la puissance au circuit 1 selon les lois habituelle de l’électrocinétique.</p></li>
 <li><p>un phénomène d’induction mutuelle dans le circuit 2: la f.e.m. induite fournirait au circuit 2 une puissance selon les lois habituelle de l’électrocinétique.</p></li>
@@ -599,16 +607,16 @@ L’induction mutuelle peut permettre:</p>
 <li><p>soit de transférer une information portée par la “forme” de l’intensité induite dans le second circuit.</p></li>
 <li><p>soit de transférer de l’énergie d’un circuit à l’autre</p></li>
 </ul>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Exemple : Les puces RFID</p>
-<p>Les puces RFID fonctionnent sur le principe d’induction: le circuit fixe parcouru par un courant asservi va induire un courant dans le second circuit qui en retour va perturber le premier. La mesure de cette perturbation permet la communication entre la borne de contrôle et la puce.</p>
+<div class="admonition-exemples admonition">
+<p class="admonition-title">Exemples</p>
+<ul class="simple">
+<li><p>Les puces RFID fonctionnent sur le principe d’induction: le circuit fixe parcouru par un courant asservi va induire un courant dans le second circuit qui en retour va perturber le premier. La mesure de cette perturbation permet la communication entre la borne de contrôle et la puce.</p></li>
+<li><p>Outre les transformateurs étudié ci-dessous, on peut citer certains stimulateurs cardiaques dont les batteries sont rechargées en moyen d’une autre bobine en influence mutuelle. On évite ainsi le recours à une opération chirurgicale.</p></li>
+</ul>
 </div>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Exemple : Stimulateurs cardiaques</p>
-<p>Outre les transformateurs étudié ci-dessous, on peut citer certains stimulateurs cardiaques dont les batteries sont rechargées en moyen d’une autre bobine en influence mutuelle. On évite ainsi le recours à une opération chirurgicale.</p>
 </div>
-<div class="dropdown hint admonition">
-<p class="admonition-title">Complément : Coefficient d’induction mutuelle</p>
+<div class="topic">
+<p class="topic-title">Complément : Coefficient d’induction mutuelle</p>
 <p>Les résultats précédents montre que le coefficients d’induction mutuelle ne peut être supérieur aux inductances mise en jeu. Pour l’augmenter il faut:</p>
 <ul class="simple">
 <li><p>se placer dans des conditions proches de l’influence totale. On utilise, si on peut des “circuits magnétiques”, c’est-à-dire des matériaux possédant des propriétés magnétiques fortes. On ne détaillera pas pourquoi certains matériaux ont ces propriétés (matériaux ferreux surtout) mais il faut savoir que:</p></li>
@@ -667,6 +675,13 @@ L’induction mutuelle peut permettre:</p>
 <p><strong>Fondamental : Lois des tensions</strong></p>
 <p>Le rapport de transformation d’un transformateur parfait est égal au rapport du nombre de spires de l’enroulement secondaire par celui de l’enroulement primaire et est indépendant de la charge placée sur le secondaire: <span class="math notranslate nohighlight">\(m = \frac{U_2}{U_1} = \frac{N_2}{N_1}\)</span></p>
 </div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>On travaille ici en valeur absolue. Le signe de <span class="math notranslate nohighlight">\(U_1\)</span> et <span class="math notranslate nohighlight">\(U_2\)</span> dépend du sens de l’enroulement. En général, on précise ce sens sur le schéma du transformateur.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Démonstration</p>
 <blockquote>
 <div><p>Soit <span class="math notranslate nohighlight">\(\Phi_C\)</span> le flux traversant une section du circuit magnétique enlacé par le primaire et le secondaire. Ce flux est le même pour toute section du circuit magnétique (on parle de flux commun) puisqu’on suppose qu’il n’y a pas de fuite de champ magnétique. Il traverse notamment chaque spire du primaire et chaque spire du secondaire. La loi de Faraday pour le primaire s’écrit donc:
 $<span class="math notranslate nohighlight">\(
@@ -678,28 +693,24 @@ et pour le secondaire:
 \)</span>$
 Il vient le rapport demandé.</p>
 </div></blockquote>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">On travaille ici en valeur absolue. Le signe de <span class="math notranslate nohighlight">\(U_1\)</span> et <span class="math notranslate nohighlight">\(U_2\)</span> dépend du sens de l’enroulement. En général, on précise ce sens sur le schéma du transformateur.</p>
-<p class="card-text">La consevation du flux revient à dire que les deux bobinages sont en influence totale.</p>
 </div>
-</details><div class="admonition tip">
+<div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Bilan de puissance</strong>
 Dans un transformateur parfait, la puissance reçue par le circuit primaire est égale à la puissance fournie par le circuit secondaire. En déduire que :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2f771dd8-ceea-41c6-b274-b0133e170c2c">
-<span class="eqno">(27)<a class="headerlink" href="#equation-2f771dd8-ceea-41c6-b274-b0133e170c2c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 	\frac{I_2}{I_1} = - \frac{1}{m}
-\end{equation}\]</div>
+\]</div>
 <p>On précisera le sens des intensités amenant à cette relation.</p>
 </div>
-<div class="dropdown hint admonition">
-<p class="admonition-title">Complément : Rapport de transformation des courants (HP)</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Démonstration</p>
+<p><strong>Sous l’hypothèse</strong> de perte d’un rendement énergétique égale à 1, la démonstration est directe.</p>
+</div>
+<div class="dropdown hint topic">
+<p class="topic-title">Complément : Rapport de transformation des courants (HP en première année)</p>
 <p>Puisque le champ magnétique circule le long du circuit magnétique. On peut calculer sa circulation le long d’une ligne de champ bouclée. Le théorème d’Ampère s’écrit:
 $<span class="math notranslate nohighlight">\(
 \frac{\oint \overrightarrow{B} \cdot \overrightarrow{dl}}{\mu_0 \mu_r} = \pm N_1 I_1 \pm N_2 I_2
@@ -711,29 +722,26 @@ Le signe plus/moins dépend de l'orientation du bobinage. Dans le cas d'un trans
 Dans les représentation schématiques, le sens de l’enroulement est représenté par un point: il définit le sens à choisir pour l’instant de manière à avoir un rapport positif.</p>
 </div>
 </div>
-<div class="section" id="differents-transformateurs">
-<h4>Différents transformateurs<a class="headerlink" href="#differents-transformateurs" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="differents-transformateurs-en-ligne">
+<h4>Différents transformateurs (en ligne)<a class="headerlink" href="#differents-transformateurs-en-ligne" title="Permalink to this headline">¶</a></h4>
+<div class="topic">
+<p class="topic-title">Typologie</p>
 <p>Il existe plusieurs manières de classer les transformateurs. Si l’on ne s’intéresse qu’à la loi des tensions, on distinguera trois cas:</p>
 <ul class="simple">
 <li><p><strong>m&gt;1</strong> : Le transformateur sert à augmenter la tension. Les centrales électriques s’en servent pour créer une haute tension portée par les lignes HT. Le transport haute tension est en effet très pratique car, comme on l’a vu, cela est couplée avec une diminution de l’intensité, donc des pertes par effet Joule.</p></li>
 <li><p><strong>m&lt;1</strong> : Le transformateur abaisse la tension. On se sert de ces transformateurs à l’autre bout du réseau électrique, pour ramener les hautes tensions du réseau au valeurs “standards” (220V efficace en France). Ces transformateurs sont aussi utilisé pour abaisser la tension du secteur, par exemple dans les adaptateurs censés fournir des tensions continues beaucoup plus basses. Cela était d’autant plus nécessaire que les circuits de redressement (diodes et condensateurs - moins vrai aujourd’hui) ne pouvaient fonctionner à des tensions aussi élevées que celle du secteur.</p></li>
 <li><p><strong>m=1</strong> : on conserver la même valeur de tension. C’est transformateur ont une utilité particulière: il joue le rôle de transformateur d’isolement. En effet il n’y a pas de contact électrique (on dit “galvanique”) entre le primaire et le secondaire. Ainsi, si le primaire est reliée à la Terre, le secondaire ne le sera pas: c’est le principe d’isolement.</p></li>
 </ul>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Il existe aussi des transformateurs délivrant non pas une mais plusieurs tensions. Des fils de sortie sont reliés non seulement aux extrémités du bobinages mais aussi à des spires intérieures (cf. \cref{fig_transfo_symetrique}). Le nombre de spire varie alors suivant les branchements considérés et la tension de sortie aussi. On se sert notamment de tels transformateurs pour créer des alimentations symétriques. Un fil, sortie au milieu du transformateur aura un potentiel médian vis-à-vis des deux autres aux extrémités. C’est ce point de potentiel, une fois le redressement effectué qui est appelé “0V” sur les alimentations symétriques.</p>
+</div>
+<div class="topic">
+<p class="topic-title">Remarque</p>
+<p>Il existe aussi des transformateurs délivrant non pas une mais plusieurs tensions. Des fils de sortie sont reliés non seulement aux extrémités du bobinages mais aussi à des spires intérieures (cf. \cref{fig_transfo_symetrique}). Le nombre de spire varie alors suivant les branchements considérés et la tension de sortie aussi. On se sert notamment de tels transformateurs pour créer des alimentations symétriques. Un fil, sortie au milieu du transformateur aura un potentiel médian vis-à-vis des deux autres aux extrémités. C’est ce point de potentiel, une fois le redressement effectué qui est appelé “0V” sur les alimentations symétriques.</p>
 <div class="figure align-center" id="fig-transfo-symetrique">
 <img alt="../_images/Electromagnetisme_3_Transfo.jpg" src="../_images/Electromagnetisme_3_Transfo.jpg" />
 </div>
 </div>
-</details></div>
-<div class="section" id="modelisation-du-transformateur-reel">
-<h4>Modélisation du transformateur réel<a class="headerlink" href="#modelisation-du-transformateur-reel" title="Permalink to this headline">¶</a></h4>
+<div class="topic">
+<p class="topic-title">Modélisation du transformateur réel</p>
 <p>Dans la pratique, le rendement ne peut être égale à 1 à cause des pertes interne. Rappelons que les pertes peuvent être dues:</p>
 <ul class="simple">
 <li><p>aux pertes par effet Joule dans les bobinages (perte cuivre) et dans l’entrefer (perte fer)</p></li>
@@ -741,6 +749,7 @@ Remarque<div class="summary-down docutils">
 <li><p>aux fuites de champ qui impliquent que même si le secondaire est à vide, le primaire peut débiter de l’énergie.</p></li>
 </ul>
 <p>Une étude plus complète conduirait à modéliser ces pertes par des dipôles “décorant” un modèle de transformateur parfait. Une telle modélisation (qui reste un modèle avec ses défauts) n’est pas à connaître par coeur en première année.</p>
+</div>
 </div>
 </div>
 </div>
@@ -759,7 +768,7 @@ Remarque<div class="summary-down docutils">
 </div>
 </details><div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>Exercice : Etude des rails de Laplace</strong></p>
+<p><strong>Méthode : Etude des rails de Laplace</strong></p>
 <p>On néglige tout phénomène d’auto-induction.</p>
 <ol class="simple">
 <li><p>Prévoir qualitativement l’évolution du rail mobile.</p></li>
@@ -769,7 +778,8 @@ Remarque<div class="summary-down docutils">
 <li><p>Faire un bilan de puissance électrique dans le circuit et un bilan de puissance mécanique. Comparer notamment la puissance apportée au mobile par les forces de Laplace et la puissance cédée par le circuit par effet d’induction.</p></li>
 </ol>
 </div>
-<p><em>Commentaires sur les hypothèse de modélisation</em></p>
+<div class="topic">
+<p class="topic-title">Commentaires sur les hypothèse de modélisation</p>
 <ul class="simple">
 <li><p>Le champ magnétique créé par l’aimant est uniforme et suivant l’axe normal au plan du circuit électrique ainsi réalisé. On a choisit de l’orientation comme suivant le schéma.</p>
 <ul>
@@ -794,20 +804,12 @@ Remarque<div class="summary-down docutils">
 </li>
 </ul>
 </div>
-<div class="section" id="induction-et-forces-de-laplace">
-<h3>Induction et forces de Laplace<a class="headerlink" href="#induction-et-forces-de-laplace" title="Permalink to this headline">¶</a></h3>
-<p>On pourrait croire, à suivre le fil des chapitres que le phénomène d’induction et les force de Laplace sont deux choses différentes. Ce n’est que partiellement vrai. Si, dans le cas d’un circuit fixe, leur lien n’apparaît pas de prime abord. Les deux phénomènes sont possèdent un lien profond: le flux du champ magnétique. Observations:</p>
-<ul class="simple">
-<li><p>Le phénomène d’induction est dû à la variation du flux du champ magnétique à travers le circuit.</p></li>
-<li><p>Les forces de Laplace, dans le cas de régime stationnaire tendent à maximiser le flux du champ magnétique à travers le circuit.</p></li>
-</ul>
-<p>Il vient que le déplacement du circuit dû aux seules forces de Laplace impliquera une modification du flux du champ magnétique et donc un phénomène d’induction! A l’inverse, le phénomène d’induction dans un circuit, impliquant la modification de l’intensité dans le circuit (voire son apparition) modifiera (ou créera) la force de Laplace exercée par le champ magnétique sur le circuit. Attention néanmoins, ce raisonnement ne constitue ni une preuve des relations de puissance établies précédemment, ni une généralité. Ainsi, il peut très bien y avoir un phénomène d’induction dans un circuit fixe. Il ne peut donc y avoir transfert de puissance électrique-mécanique.</p>
 </div>
 <div class="section" id="spire-en-rotation">
 <h3>Spire en rotation<a class="headerlink" href="#spire-en-rotation" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>Exercice : Spire rectangulaire en rotation</strong></p>
+<p><strong>Méthode : Spire rectangulaire en rotation</strong></p>
 <p>Considérons une spire rectangulaire de côté a et b en rotation autour d’un axe Oz. L’ensemble est soumis à un champ magnétique uniforme et constant dirigé dans la direction Ox.</p>
 <ol class="simple">
 <li><p>Expliquer pourquoi, si l’on veut maintenir la spire en rotation uniforme, elle doit être entraîner par un moteur.</p></li>
@@ -941,8 +943,18 @@ Remarque<div class="summary-down docutils">
 </div>
 </div>
 </div>
-<div class="section" id="travaux-diriges">
-<h2>Travaux dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="s-entrainer">
+<h2>S’entrainer<a class="headerlink" href="#s-entrainer" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="applications">
+<h3>Applications<a class="headerlink" href="#applications" title="Permalink to this headline">¶</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Exercice : Deux bobines réelles en inductance mutuelle.</strong></p>
+<p>On considère deux bobines d’auto-inductance L, de résistance R et de coefficient d’inductance mutuelle M. La première est court-circuitées et la seconde reliée à un générateur délivrant une tension <span class="math notranslate nohighlight">\(E(t) = E_0 \cos \omega t\)</span>. Déterminer les équations couplées pour les amplitudes complexes des intensités dans chaque circuit.</p>
+</div>
+</div>
+<div class="section" id="entrainement">
+<h3>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this headline">¶</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Pince ampèremétrique</strong></p>
@@ -1015,6 +1027,7 @@ Remarque<div class="summary-down docutils">
 <li><p>Déterminer l’évolution des vitesses angulaires de chaque machine en négligeant tout phénomène d’auto-induction. Représenter leur évolution et commenter les valeurs finales obtenues. Effectuer un bilan énergétique</p></li>
 <li><p>Reprendre l’étude précédente en tenant compte des phénomènes d’auto-induction modélisés par une inductance L identique pour chaque moteur.</p></li>
 </ol>
+</div>
 </div>
 </div>
 </div>
