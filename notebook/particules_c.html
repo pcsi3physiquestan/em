@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mouvement de particules chargées &#8212; Electromagnétisme</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,39 +19,38 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/em/notebook/particules_c.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,27 @@
     <link rel="next" title="Actions d’un champ magnétique. Forces de Laplace" href="actions_b.html" />
     <link rel="prev" title="Entrainement" href="champ_b_td.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -70,10 +87,12 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
+      
       
       
       <h1 class="site-logo" id="site-title">Electromagnétisme</h1>
@@ -82,16 +101,17 @@
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../em.html">
-   Electromagnétisme
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../em.html">
+                    Electromagnétisme
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="champ_b.html">
    Champ magnétique. Introduction
@@ -137,94 +157,181 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/notebook/particules_c.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notebook/particules_c.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/particules_c.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/particules_c.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebook/particules_c.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/notebook/particules_c.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#influences-des-particules-chargees-immobiles-et-mobiles-force-de-lorentz">
    Influences des particules chargées immobiles et mobiles: force de Lorentz
@@ -312,27 +419,130 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Mouvement de particules chargées</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#influences-des-particules-chargees-immobiles-et-mobiles-force-de-lorentz">
+   Influences des particules chargées immobiles et mobiles: force de Lorentz
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#force-de-coulomb-champ-electrostatique">
+     Force de Coulomb: Champ électrostatique
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#interaction-entre-deux-charges-statiques">
+       Interaction entre deux charges statiques
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#circulation-de-charge-champ-magnetique">
+     Circulation de charge: champ magnétique.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#force-de-lorentz-ordre-de-grandeur">
+     Force de Lorentz. Ordre de grandeur
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#force-de-lorentz">
+   Force de Lorentz
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expression-principe-fondamental-de-la-dynamique">
+     Expression. Principe fondamental de la dynamique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analyse-energetique">
+     Analyse énergétique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mouvement-d-une-particule-chargee-dans-un-champ-electrostatique-uniforme">
+   Mouvement d’une particule chargée dans un champ électrostatique uniforme
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#applications">
+     Applications
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mouvement-d-une-particule-chargee-dans-un-champ-magnetique-uniforme-et-constant">
+   Mouvement d’une particule chargée dans un champ magnétique uniforme et constant.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#etude-de-la-trajectoire-pulsation-cyclotron">
+     Etude de la trajectoire. Pulsation cyclotron
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exemple-d-utilisation-cyclotron-et-spectrometrie-de-masse-en-ligne">
+     Exemple d’utilisation: cyclotron et spectrométrie de masse (en ligne)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cas-d-un-champ-magnetique-non-uniforme-hp-en-ligne">
+     Cas d’un champ magnétique non uniforme. (HP - en ligne)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#entrainement">
+   Entrainement
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="section" id="mouvement-de-particules-chargees">
-<h1>Mouvement de particules chargées<a class="headerlink" href="#mouvement-de-particules-chargees" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="mouvement-de-particules-chargees">
+<h1>Mouvement de particules chargées<a class="headerlink" href="#mouvement-de-particules-chargees" title="Permalink to this headline">#</a></h1>
 <div class="topic">
 <p class="topic-title">Remarque</p>
 <p>On a déjà vu en mécanique que des particules chargées pouvaient être soumises à une force particulière: l’interaction électrostatique. Cette interaction résulte simplement d’interactions entre charges qu’elles soient mobiles ou immobiles. En réalité, on observe que pour des particules chargées en mouvement, l’interaction devient plus complexe: on parle d’interaction électromagnétique. Du point de vue classique, cette interaction est regroupée dans ce qu’on appelle la force de Lorentz. Celle-ci permet de décrire de nombreux phénomènes électromagnétiques, notamment quand on s’intéresse à un grand nombre de particules chargées à une échelle pas trop petite. Il apparaît alors que la force de Lorentz dépend de la position relative des charges ainsi que de leur mouvement relatif. Nous allons faire apparaître naturellement deux champs vectoriels: l’un dit électrique en relation avec l’interaction électrique de Coulomb déjà connue et l’autre, en relation avec les interactions de charges en mouvement sera appelé champ magnétique. Le but du cours d’électromagnétisme de première année est de savoir comment calculer ces champs à  partir des données de leur cause: les distributions de positions et de vitesses (= courant électrique) des charges. On peut noter qu’à l’échelle atomique, l’utilisation des champs électromagnétiques demande le passage à la mécanique quantique et la théorie des champs qui n’est évidemment pas au programme de première année.</p>
 </div>
 <div class="section" id="influences-des-particules-chargees-immobiles-et-mobiles-force-de-lorentz">
-<h2>Influences des particules chargées immobiles et mobiles: force de Lorentz<a class="headerlink" href="#influences-des-particules-chargees-immobiles-et-mobiles-force-de-lorentz" title="Permalink to this headline">¶</a></h2>
+<h2>Influences des particules chargées immobiles et mobiles: force de Lorentz<a class="headerlink" href="#influences-des-particules-chargees-immobiles-et-mobiles-force-de-lorentz" title="Permalink to this headline">#</a></h2>
 <div class="section" id="force-de-coulomb-champ-electrostatique">
-<h3>Force de Coulomb: Champ électrostatique<a class="headerlink" href="#force-de-coulomb-champ-electrostatique" title="Permalink to this headline">¶</a></h3>
+<h3>Force de Coulomb: Champ électrostatique<a class="headerlink" href="#force-de-coulomb-champ-electrostatique" title="Permalink to this headline">#</a></h3>
 <div class="section" id="interaction-entre-deux-charges-statiques">
-<h4>Interaction entre deux charges statiques<a class="headerlink" href="#interaction-entre-deux-charges-statiques" title="Permalink to this headline">¶</a></h4>
+<h4>Interaction entre deux charges statiques<a class="headerlink" href="#interaction-entre-deux-charges-statiques" title="Permalink to this headline">#</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Force électrostatique de Coulomb</strong></p>
@@ -364,7 +574,7 @@
 </div>
 </div>
 <div class="section" id="circulation-de-charge-champ-magnetique">
-<h3>Circulation de charge: champ magnétique.<a class="headerlink" href="#circulation-de-charge-champ-magnetique" title="Permalink to this headline">¶</a></h3>
+<h3>Circulation de charge: champ magnétique.<a class="headerlink" href="#circulation-de-charge-champ-magnetique" title="Permalink to this headline">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Champ magnétique (Rappel)</strong></p>
@@ -376,7 +586,7 @@
 </div>
 </div>
 <div class="section" id="force-de-lorentz-ordre-de-grandeur">
-<h3>Force de Lorentz. Ordre de grandeur<a class="headerlink" href="#force-de-lorentz-ordre-de-grandeur" title="Permalink to this headline">¶</a></h3>
+<h3>Force de Lorentz. Ordre de grandeur<a class="headerlink" href="#force-de-lorentz-ordre-de-grandeur" title="Permalink to this headline">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Force de Lorentz</strong></p>
@@ -406,9 +616,9 @@
 </div>
 </div>
 <div class="section" id="force-de-lorentz">
-<h2>Force de Lorentz<a class="headerlink" href="#force-de-lorentz" title="Permalink to this headline">¶</a></h2>
+<h2>Force de Lorentz<a class="headerlink" href="#force-de-lorentz" title="Permalink to this headline">#</a></h2>
 <div class="section" id="expression-principe-fondamental-de-la-dynamique">
-<h3>Expression. Principe fondamental de la dynamique<a class="headerlink" href="#expression-principe-fondamental-de-la-dynamique" title="Permalink to this headline">¶</a></h3>
+<h3>Expression. Principe fondamental de la dynamique<a class="headerlink" href="#expression-principe-fondamental-de-la-dynamique" title="Permalink to this headline">#</a></h3>
 <p>La force dépend de la vitesse et semble donc dépendre du référentiel. Il n’en est rien à condition de se placer dans un cadre de mécanique relativiste. Nous supposerons pour simplifier que tous les mouvements étudiés s’effectuent dans un référentiel galiléen.</p>
 <p><strong>Principe fondamental de la dynamique:</strong> Appliqué à la particule M de masse m et de charge q, il s’énonce évidemment:</p>
 <div class="math notranslate nohighlight">
@@ -417,7 +627,7 @@ m \frac{d \overrightarrow{v}}{dt} = q (\overrightarrow{E} + \overrightarrow{v} \
 \]</div>
 </div>
 <div class="section" id="analyse-energetique">
-<h3>Analyse énergétique<a class="headerlink" href="#analyse-energetique" title="Permalink to this headline">¶</a></h3>
+<h3>Analyse énergétique<a class="headerlink" href="#analyse-energetique" title="Permalink to this headline">#</a></h3>
 <p><strong>On ne s’intéresse ici qu’à des champs statiques.</strong></p>
 <p>La force magnétique ne travaille pas au contraire de la force électrostatique. C’est-à-dire que le champ magnétique n’agit que sur la direction de la vitesse et non son module. Seul le champ électrostatique peut modifier le module de la vitesse d’une particule.</p>
 <div class="admonition important">
@@ -428,9 +638,9 @@ m \frac{d \overrightarrow{v}}{dt} = q (\overrightarrow{E} + \overrightarrow{v} \
 </div>
 </div>
 <div class="section" id="mouvement-d-une-particule-chargee-dans-un-champ-electrostatique-uniforme">
-<h2>Mouvement d’une particule chargée dans un champ électrostatique uniforme<a class="headerlink" href="#mouvement-d-une-particule-chargee-dans-un-champ-electrostatique-uniforme" title="Permalink to this headline">¶</a></h2>
+<h2>Mouvement d’une particule chargée dans un champ électrostatique uniforme<a class="headerlink" href="#mouvement-d-une-particule-chargee-dans-un-champ-electrostatique-uniforme" title="Permalink to this headline">#</a></h2>
 <div class="section" id="applications">
-<h3>Applications<a class="headerlink" href="#applications" title="Permalink to this headline">¶</a></h3>
+<h3>Applications<a class="headerlink" href="#applications" title="Permalink to this headline">#</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Méthode : Accélération de particules</strong></p>
@@ -462,11 +672,11 @@ Cette unité est très utile à l’échelle microscopique.</p>
 </div>
 </div>
 <div class="section" id="mouvement-d-une-particule-chargee-dans-un-champ-magnetique-uniforme-et-constant">
-<h2>Mouvement d’une particule chargée dans un champ magnétique uniforme et constant.<a class="headerlink" href="#mouvement-d-une-particule-chargee-dans-un-champ-magnetique-uniforme-et-constant" title="Permalink to this headline">¶</a></h2>
+<h2>Mouvement d’une particule chargée dans un champ magnétique uniforme et constant.<a class="headerlink" href="#mouvement-d-une-particule-chargee-dans-un-champ-magnetique-uniforme-et-constant" title="Permalink to this headline">#</a></h2>
 <p>Dans toute cette partie, on considère une particule de masse <span class="math notranslate nohighlight">\(m\)</span> et de charge <span class="math notranslate nohighlight">\(q\)</span> plongée dans un champ magnétique placé suivant l’axe Oz. On suppose qu’il n’y a aucune autre force en jeu.
 On peut placer la particule au milieu d’un solénoïde de grande dimension.</p>
 <div class="section" id="etude-de-la-trajectoire-pulsation-cyclotron">
-<h3>Etude de la trajectoire. Pulsation cyclotron<a class="headerlink" href="#etude-de-la-trajectoire-pulsation-cyclotron" title="Permalink to this headline">¶</a></h3>
+<h3>Etude de la trajectoire. Pulsation cyclotron<a class="headerlink" href="#etude-de-la-trajectoire-pulsation-cyclotron" title="Permalink to this headline">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Définition : Pulsation cyclotron</p>
@@ -544,7 +754,7 @@ On se place donc dans un système de coordonnées cylindriques d’axe Oz confon
 </div>
 </div>
 <div class="section" id="exemple-d-utilisation-cyclotron-et-spectrometrie-de-masse-en-ligne">
-<h3>Exemple d’utilisation: cyclotron et spectrométrie de masse (en ligne)<a class="headerlink" href="#exemple-d-utilisation-cyclotron-et-spectrometrie-de-masse-en-ligne" title="Permalink to this headline">¶</a></h3>
+<h3>Exemple d’utilisation: cyclotron et spectrométrie de masse (en ligne)<a class="headerlink" href="#exemple-d-utilisation-cyclotron-et-spectrometrie-de-masse-en-ligne" title="Permalink to this headline">#</a></h3>
 <div class="topic">
 <p class="topic-title">Le cyclotron</p>
 <p>La déviation ainsi obtenue est utilisée  dans le cyclotron. Il s’agit d’un accélérateur de particules chargées qui conjugue les effets des deux champs. Les particules évoluent dans deux demi-cylindre, appelés dees, de rayon R dans lesquels règnent un champ magnétique uniforme perpendiculaire à la face circulaire. Entre les deux dees se trouve  une petite épaisseur dans laquelle règne un champ électrique uniforme mais qui varier au cours du temps (de manière périodique). Après un premier temps de chauffe, les électrons, sortant d’un dee sont accélérés par le champ électrique en direction de l’autre dee. Les particules vont effectuer des demi-cercles dans chaque dee, revenant ainsi dans dans l’espace d’accélération. Entre-temps, le champ électrique a varié et s’est inversé de sorte que les particules vont être à nouveau accélérer. La distance entre les deux dees étant faible devant R, on peut supposer que le champ E est constant durant le passage des particules.</p>
@@ -558,7 +768,7 @@ On se place donc dans un système de coordonnées cylindriques d’axe Oz confon
 </div>
 </div>
 <div class="section" id="cas-d-un-champ-magnetique-non-uniforme-hp-en-ligne">
-<h3>Cas d’un champ magnétique non uniforme. (HP - en ligne)<a class="headerlink" href="#cas-d-un-champ-magnetique-non-uniforme-hp-en-ligne" title="Permalink to this headline">¶</a></h3>
+<h3>Cas d’un champ magnétique non uniforme. (HP - en ligne)<a class="headerlink" href="#cas-d-un-champ-magnetique-non-uniforme-hp-en-ligne" title="Permalink to this headline">#</a></h3>
 <div class="topic">
 <p class="topic-title">B non uniforme</p>
 <p>On s’intéresse ici à des champs magnétiques dont les variations sont faibles.</p>
@@ -569,13 +779,13 @@ On se place donc dans un système de coordonnées cylindriques d’axe Oz confon
 </div>
 </div>
 <div class="section" id="entrainement">
-<h2>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this headline">¶</a></h2>
+<h2>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this headline">#</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Spectrographe de masse</strong></p>
 <div class="figure align-center" id="fig-spec-masse-td">
 <img alt="../_images/Mecanique_TD7_EX1_1.jpeg" src="../_images/Mecanique_TD7_EX1_1.jpeg" />
-<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Spectromètre de masse</span><a class="headerlink" href="#fig-spec-masse-td" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Spectromètre de masse</span><a class="headerlink" href="#fig-spec-masse-td" title="Permalink to this image">#</a></p>
 </div>
 <p>Le principe d’un spectrographe de masse est représenté \cref{fig_spec_masse_td}. Dans un chambre une chambre d’ionisation (1) on produit des ions  de masse m et de charge <span class="math notranslate nohighlight">\(q=2e\)</span>. Ces ions pénètrent par le trou <span class="math notranslate nohighlight">\(T_1\)</span> d’une plaque <span class="math notranslate nohighlight">\(P_1\)</span> dans une enceinte (A); leur vitesse en <span class="math notranslate nohighlight">\(T_1\)</span> est négligeable. Dans l’enceinte (A), ces ions sont accélérés par une tension <span class="math notranslate nohighlight">\(U=V_{P1} - V_{P2}\)</span>, puis sortent de (A) par un trou <span class="math notranslate nohighlight">\(T_2\)</span> percé dans la plaque <span class="math notranslate nohighlight">\(P_2\)</span>. Ils pénètrent alors dans une enceinte (D) où règne un champ magnétique B uniforme et constant perpendiculaire au plan de la figure. La vitesse des ions en <span class="math notranslate nohighlight">\(T_2\)</span> est notée <span class="math notranslate nohighlight">\(v_0\)</span>. On néglige le poids.</p>
 <p><em>Données : <span class="math notranslate nohighlight">\(e=1.6 \times 10^{-19} \rm{C}\)</span>; <span class="math notranslate nohighlight">\(U=4000\rm{V}\)</span>; <span class="math notranslate nohighlight">\(B=0.1\rm{T}\)</span>; unité de masse atomique: <span class="math notranslate nohighlight">\(m_0 = 1.67 \times 10^{-27} \rm{kg}\)</span>.</em></p>
@@ -585,6 +795,11 @@ On se place donc dans un système de coordonnées cylindriques d’axe Oz confon
 <li><p>L’élément zinc contient deux isotopes de nombres de masse <span class="math notranslate nohighlight">\(A_1=68\)</span> et <span class="math notranslate nohighlight">\(A_2 = 70\)</span>. On souhaite recueillir en O l’isotope <span class="math notranslate nohighlight">\(A_1\)</span>. Calculer numériquement la distance <span class="math notranslate nohighlight">\(l=T_2 O\)</span> et évaluer la largeur maximale de la fente du collecteur.</p></li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Accélération par un champ électrique.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Trajectoire dans un champ magnétique.</em></p></li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Focalisation par un champ électrique</strong></p>
@@ -596,19 +811,29 @@ On se place donc dans un système de coordonnées cylindriques d’axe Oz confon
 <li><p>Quelles sont les valeurs optimales à donner à <span class="math notranslate nohighlight">\(\alpha\)</span> et E pour réaliser la focalisation de ces électrons, sachant que le faisceau incident présente une faible dispersion angulaire <span class="math notranslate nohighlight">\(\Delta \alpha &lt;&lt; \alpha\)</span>?</p></li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Déviation par un champ électrique.</em></p></li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Focalisation par un secteur magnétique</strong></p>
 <div class="figure align-center" id="fig-focalisation-chp-magnetique">
 <img alt="../_images/Mecanique_TD7_EX3_1.jpeg" src="../_images/Mecanique_TD7_EX3_1.jpeg" />
 </div>
-<p>On considère un secteur magnétique d’angle <span class="math notranslate nohighlight">\(90 ^{\circ}\)</span> définissant la zone d’action d’un champ magnétique B. permanent et uniforme dans lequel pénètrent des ions positifs monochargés de masse m et accélérés sous une tension de valeur absolue V. On note e la charge élémentaire.</p>
+<p>(Plus délicat)On considère un secteur magnétique d’angle <span class="math notranslate nohighlight">\(90 ^{\circ}\)</span> définissant la zone d’action d’un champ magnétique B. permanent et uniforme dans lequel pénètrent des ions positifs monochargés de masse m et accélérés sous une tension de valeur absolue V. On note e la charge élémentaire.</p>
 <ol class="simple">
 <li><p>Calculer le module de la vitesse <span class="math notranslate nohighlight">\(v_0\)</span> des ions à l’entrée du secteur magnétique, en supposant qu’ils sont émis sans vitesse avant l’accélération sous la tension V et préciser le sens de variation du potentiel au cours de l’accélération.</p></li>
 <li><p>Le secteur magnétique est conçu pour une trajectoire circulaire moyenne de rayon R fixée par construction. On notera O le centre de la trajectoire et Oxy le plan du cercle, le secteur magnétique occupant le premier quadrant. Indiquer, en fonction de R, e, m et V, l’expression du champ magnétique correspondant à cette trajectoire.</p></li>
 <li><p>Les ions issus d’une fente A située à une distance d de la face d’entrée du secteur magnétique et forment un faisceau peu dispersé en angle autour de la direction Ax perpendiculaire à la face à la face d’entrée du dispositif. Montrer que, pour un rapport e/m donné qui impose le choix de B, les ions provenant de A dont la vitesse est perpendiculaire à B sont focalisés en un point A’ que l’on déterminera. Peut-on parler de stigmatisme?</p></li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Accélération par un champ électrique.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Trajectoire dans un champ magnétique.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Développement limité.</em></p></li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Conduction dans un métal en présence d’un champ magnétique</strong></p>
@@ -630,6 +855,10 @@ j_z = \gamma E_z
 <li><p>Si la conduction ne peut avoir lieu que suivant Ox, montrer que la présence du champ B impose la présence d’un champ électrique (appelé champ de Hall) et déterminer sa direction. Calculer la constante de Hall: <span class="math notranslate nohighlight">\(\frac{E_y}{j_x B}\)</span>.</p></li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Force de Lorentz.</em></p></li>
+</ul>
 </div>
 </div>
 
@@ -655,34 +884,48 @@ j_z = \gamma E_z
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="champ_b_td.html" title="previous page">Entrainement</a>
-    <a class='right-next' id="next-link" href="actions_b.html" title="next page">Actions d’un champ magnétique. Forces de Laplace</a>
-
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="champ_b_td.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Entrainement</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="actions_b.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Actions d’un champ magnétique. Forces de Laplace</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By C. Lacpatia<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By C. Lacpatia<br/>
+  
+      &copy; Copyright 2021.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-  
+
   </body>
 </html>

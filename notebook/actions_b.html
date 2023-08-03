@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Actions d’un champ magnétique. Forces de Laplace &#8212; Electromagnétisme</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,39 +19,38 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/em/notebook/actions_b.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,10 +58,27 @@
     <link rel="next" title="Induction et application" href="induction.html" />
     <link rel="prev" title="Mouvement de particules chargées" href="particules_c.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -70,10 +87,12 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
+      
       
       
       <h1 class="site-logo" id="site-title">Electromagnétisme</h1>
@@ -82,16 +101,17 @@
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../em.html">
-   Electromagnétisme
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../em.html">
+                    Electromagnétisme
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="champ_b.html">
    Champ magnétique. Introduction
@@ -137,94 +157,181 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/notebook/actions_b.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notebook/actions_b.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/actions_b.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/actions_b.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebook/actions_b.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/notebook/actions_b.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#position-du-probleme-en-ligne">
    Position du problème (en ligne)
@@ -291,19 +398,101 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Actions d’un champ magnétique. Forces de Laplace</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#position-du-probleme-en-ligne">
+   Position du problème (en ligne)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#force-de-laplace">
+   Force de Laplace
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modelisation-generale-action-sur-un-circuit">
+     Modélisation générale. Action sur un circuit
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#champ-magnetique-uniforme-action-resultante-sur-un-circuit-indeformable">
+     Champ magnétique uniforme. Action résultante sur un circuit indéformable
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#resultante-des-forces">
+       Résultante des forces
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#moment-resultant-des-forces-de-laplace-en-un-point-o-fixe">
+       Moment résultant des forces de Laplace en un point O fixe
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#puissance-des-forces-de-laplace">
+       Puissance des forces de Laplace
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#si-le-champ-n-est-pas-uniforme-hp-en-ligne">
+     Si le champ n’est pas uniforme (HP - en ligne)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#action-sur-un-dipole-magnetique">
+     Action sur un dipôle magnétique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#utilisation-des-forces-de-laplace-en-ligne">
+     Utilisation des forces de Laplace (en ligne)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methode-action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable">
+     Méthode : Action d’un champ magnétique uniforme sur un circuit déformable
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#travaux-diriges">
+   Travaux dirigés
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="section" id="actions-d-un-champ-magnetique-forces-de-laplace">
-<h1>Actions d’un champ magnétique. Forces de Laplace<a class="headerlink" href="#actions-d-un-champ-magnetique-forces-de-laplace" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="actions-d-un-champ-magnetique-forces-de-laplace">
+<h1>Actions d’un champ magnétique. Forces de Laplace<a class="headerlink" href="#actions-d-un-champ-magnetique-forces-de-laplace" title="Permalink to this headline">#</a></h1>
 <div class="section" id="position-du-probleme-en-ligne">
-<h2>Position du problème (en ligne)<a class="headerlink" href="#position-du-probleme-en-ligne" title="Permalink to this headline">¶</a></h2>
+<h2>Position du problème (en ligne)<a class="headerlink" href="#position-du-probleme-en-ligne" title="Permalink to this headline">#</a></h2>
 <div class="topic">
 <p class="topic-title">Observations</p>
 <ul class="simple">
@@ -324,9 +513,9 @@
 </div>
 </div>
 <div class="section" id="force-de-laplace">
-<h2>Force de Laplace<a class="headerlink" href="#force-de-laplace" title="Permalink to this headline">¶</a></h2>
+<h2>Force de Laplace<a class="headerlink" href="#force-de-laplace" title="Permalink to this headline">#</a></h2>
 <div class="section" id="modelisation-generale-action-sur-un-circuit">
-<h3>Modélisation générale. Action sur un circuit<a class="headerlink" href="#modelisation-generale-action-sur-un-circuit" title="Permalink to this headline">¶</a></h3>
+<h3>Modélisation générale. Action sur un circuit<a class="headerlink" href="#modelisation-generale-action-sur-un-circuit" title="Permalink to this headline">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Force de Laplace sur un élément infinitésimal</strong></p>
@@ -355,7 +544,7 @@
 \]</div>
 </div>
 <div class="topic">
-<p class="topic-title"><strong>Exercice : Les forces de Laplace travaillent</strong></p>
+<p class="topic-title"><strong>Exercice : Les forces de Laplace travaillent</strong>  </p>
 <ol class="simple">
 <li><p>Pourquoi est-ce surprenant que les forces de Laplace travaillent?</p></li>
 <li><p>Dans un morceau de conducteur parallélépipèdique parcouru par une intensité I (sur sa longueur), déterminer l’influence qualitative d’un champ magnétique B sur la trajectoire des charges.</p></li>
@@ -370,7 +559,7 @@
 </div>
 </div>
 <div class="section" id="champ-magnetique-uniforme-action-resultante-sur-un-circuit-indeformable">
-<h3>Champ magnétique uniforme. Action résultante sur un circuit indéformable<a class="headerlink" href="#champ-magnetique-uniforme-action-resultante-sur-un-circuit-indeformable" title="Permalink to this headline">¶</a></h3>
+<h3>Champ magnétique uniforme. Action résultante sur un circuit indéformable<a class="headerlink" href="#champ-magnetique-uniforme-action-resultante-sur-un-circuit-indeformable" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><strong>Principe de traitement:</strong> l’utilisation des forces de Laplace permet de traiter le circuit comme un solide.</p></li>
 <li><p><strong>Position du problème:</strong> On considère un circuit fermé <span class="math notranslate nohighlight">\(\Gamma\)</span> dans un champ magnétique uniforme <span class="math notranslate nohighlight">\(\overrightarrow{B_0}\)</span>. On traitera successivement les trois cas suivants:</p>
@@ -383,7 +572,7 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 </li>
 </ul>
 <div class="section" id="resultante-des-forces">
-<h4>Résultante des forces<a class="headerlink" href="#resultante-des-forces" title="Permalink to this headline">¶</a></h4>
+<h4>Résultante des forces<a class="headerlink" href="#resultante-des-forces" title="Permalink to this headline">#</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Force de Lapalce résultante. Champ uniforme</strong></p>
@@ -403,7 +592,7 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 </div>
 </div>
 <div class="section" id="moment-resultant-des-forces-de-laplace-en-un-point-o-fixe">
-<h4>Moment résultant des forces de Laplace en un point O fixe<a class="headerlink" href="#moment-resultant-des-forces-de-laplace-en-un-point-o-fixe" title="Permalink to this headline">¶</a></h4>
+<h4>Moment résultant des forces de Laplace en un point O fixe<a class="headerlink" href="#moment-resultant-des-forces-de-laplace-en-un-point-o-fixe" title="Permalink to this headline">#</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Moment de Laplace résultante. Champ uniforme</strong></p>
@@ -463,7 +652,7 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 </div>
 </div>
 <div class="section" id="puissance-des-forces-de-laplace">
-<h4>Puissance des forces de Laplace<a class="headerlink" href="#puissance-des-forces-de-laplace" title="Permalink to this headline">¶</a></h4>
+<h4>Puissance des forces de Laplace<a class="headerlink" href="#puissance-des-forces-de-laplace" title="Permalink to this headline">#</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Puissance des forces de Laplace. Circuit à <span class="math notranslate nohighlight">\(I\)</span> constant</strong></p>
@@ -473,7 +662,7 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 </div>
 </div>
 <div class="section" id="si-le-champ-n-est-pas-uniforme-hp-en-ligne">
-<h3>Si le champ n’est pas uniforme (HP - en ligne)<a class="headerlink" href="#si-le-champ-n-est-pas-uniforme-hp-en-ligne" title="Permalink to this headline">¶</a></h3>
+<h3>Si le champ n’est pas uniforme (HP - en ligne)<a class="headerlink" href="#si-le-champ-n-est-pas-uniforme-hp-en-ligne" title="Permalink to this headline">#</a></h3>
 <div class="topic">
 <p class="topic-title">Cas non uniforme</p>
 <p>La résultante des forces n’est plus nulle. Dans le cas général, le moment des forces est différent et la force ne dérive pas d’un potentiel. Néanmoins, si le champ varie lentement devant la taille du circuit (cas semblable à l’approximation dipolaire), le moment et la puissance des forces reste globalement valables (circuit indéformable) et on peut même trouver une expression (HP) à la résultante des forces.</p>
@@ -483,7 +672,7 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 </div>
 </div>
 <div class="section" id="action-sur-un-dipole-magnetique">
-<h3>Action sur un dipôle magnétique<a class="headerlink" href="#action-sur-un-dipole-magnetique" title="Permalink to this headline">¶</a></h3>
+<h3>Action sur un dipôle magnétique<a class="headerlink" href="#action-sur-un-dipole-magnetique" title="Permalink to this headline">#</a></h3>
 <p>Les affirmations précédentes lorsque le champ n’est pas uniforme font apparaître les cas “où le champ varie sur des distances grandes devant la taille du circuit”. Cela correspond à considérer la taille du circuit comme très petite, soit se placer dans le cadre de l’approximation dipolaire. Ainsi, la majorité des résultats trouvés précédemment vont se généraliser à un dipôle magnétique quelconque dans le cadre de l’approximation dipolaire.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -500,7 +689,7 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 </div>
 </div>
 <div class="section" id="utilisation-des-forces-de-laplace-en-ligne">
-<h3>Utilisation des forces de Laplace (en ligne)<a class="headerlink" href="#utilisation-des-forces-de-laplace-en-ligne" title="Permalink to this headline">¶</a></h3>
+<h3>Utilisation des forces de Laplace (en ligne)<a class="headerlink" href="#utilisation-des-forces-de-laplace-en-ligne" title="Permalink to this headline">#</a></h3>
 <div class="topic">
 <p class="topic-title">Moteur synchrone</p>
 <p>Une machine synchrone est un dispositif permettant de transformer:</p>
@@ -518,10 +707,10 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 </div>
 </div>
 <div class="section" id="methode-action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable">
-<h3>Méthode : Action d’un champ magnétique uniforme sur un circuit déformable<a class="headerlink" href="#methode-action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable" title="Permalink to this headline">¶</a></h3>
+<h3>Méthode : Action d’un champ magnétique uniforme sur un circuit déformable<a class="headerlink" href="#methode-action-d-un-champ-magnetique-uniforme-sur-un-circuit-deformable" title="Permalink to this headline">#</a></h3>
 <div class="figure align-center" id="fig-rail-laplace">
 <img alt="../_images/em_rail_laplace.jpg" src="../_images/em_rail_laplace.jpg" />
-<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Rails de Laplace</span><a class="headerlink" href="#fig-rail-laplace" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Rails de Laplace</span><a class="headerlink" href="#fig-rail-laplace" title="Permalink to this image">#</a></p>
 </div>
 <p>Position du problème: Nous allons étudier l’effet des forces de Laplace sur un circuit pouvant se déformer. Le circuit en question est appelé “rails de Laplace”.</p>
 <p>Soit deux rails conducteurs parallèles distants d’une distance a. On repère les points des rails sur un axe Ox. Au point <span class="math notranslate nohighlight">\(x=0\)</span>, on a relié à chaque rail un générateur qui délivre une tension E constante. Au point <span class="math notranslate nohighlight">\(x=x_0\)</span>, on place une tige conductrice de masse m qui joint les deux rails. Sa vitesse initiale est suivant Ox et vaut <span class="math notranslate nohighlight">\(v(t=0)=v_0\)</span>. L’ensemble est plongé dans un champ magnétique   créé par un aimant.</p>
@@ -545,7 +734,7 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 </div>
 </div>
 <div class="section" id="travaux-diriges">
-<h2>Travaux dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h2>
+<h2>Travaux dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">#</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Définition de l’Ampère</strong></p>
@@ -555,6 +744,10 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 <li><p>Commenter le caractère attractif/répulsif de la force d’interaction suivant les sens de parcours des intensités.</p></li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Force de Laplace.</em></p></li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Equilibre d’un losange conducteur</strong></p>
@@ -566,6 +759,11 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 <li><p>Etudier les positions d’équilibre du système et leur stabilité par une étude énergétique. On admettra que la force de Lapalce dérive d’une énergie potentielle dont l’expression est <span class="math notranslate nohighlight">\(Ep = - I \Phi\)</span> où <span class="math notranslate nohighlight">\(\Phi\)</span> est le flux du champ magnéique à travers le losange.</p></li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Système conservatif.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Equilibre et stabilité.</em></p></li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Pression magnétique sur un supraconducteur</strong></p>
@@ -582,6 +780,10 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 <li><p>En déduire la force surfacique de Laplace exercée par le champ magnétique sur la surface du supraconductrice. Commetner le terme utilisé de pression magnétique.</p></li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Action de Laplace.</em></p></li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Interaction entre un aimant et une spire</strong></p>
@@ -591,6 +793,11 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 <li><p>En utilisant le moment magnétique de la spire <span class="math notranslate nohighlight">\(S_2\)</span>, retrouver l’expression précédente.</p></li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Action de Laplace.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Dipole magnétique.</em></p></li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Pression magnétique sur un conducteur</strong></p>
@@ -606,6 +813,12 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 <li><p>Au Laboratoire National des Champs Magnétiques Intenses (Toulouse), on réalise des bobines non destructives (c’est-à-dire qu’elles ne sont pas détruites après la génération du champ magnétique) pouvant aller jusqu’à 80T. Déterminer la pression magnétique subit par le bobinage. Commenter.</p></li>
 </ol>
 </div>
+<p><em>Point utile pour cet exercice</em></p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Champ magnétique d’une bobine longue.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Action de Laplace.</em></p></li>
+<li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Intensité et densité de courant.</em></p></li>
+</ul>
 </div>
 </div>
 
@@ -631,34 +844,48 @@ Dans tous les cas, on se place dans l’ARQS, c’est-à-dire que l’intensité
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="particules_c.html" title="previous page">Mouvement de particules chargées</a>
-    <a class='right-next' id="next-link" href="induction.html" title="next page">Induction et application</a>
-
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="particules_c.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Mouvement de particules chargées</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="induction.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Induction et application</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By C. Lacpatia<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By C. Lacpatia<br/>
+  
+      &copy; Copyright 2021.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-  
+
   </body>
 </html>
