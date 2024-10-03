@@ -332,6 +332,19 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creer-un-champ-magnetique-uniforme-en-ligne">Créer un champ magnétique uniforme (en ligne)</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-du-dipole-magnetique">Principe du dipôle magnétique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approximation-dipolaire-carte-de-champ-magnetique">Approximation dipolaire. Carte de champ magnétique</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-du-dipole-magnetique">Cas du dipôle magnétique.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-d-un-multi-poles-hp-en-ligne">Cas d’un “multi-pôles” (HP - en ligne)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ordres-de-grandeurs-de-champs-crees">Ordres de grandeurs de champs créés</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#champ-magnetique-par-un-aimant-droit">Champ magnétique par un aimant droit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#champ-cree-par-un-circuit-electrique-en-ligne">Champ créé par un circuit électrique (en ligne)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symetrie-des-champs-magnetiques">Symétrie des champs magnétiques</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#les-distributions-de-courant">Les distributions de courant</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exemples-de-distribution-en-ligne">Exemples de distribution (en ligne)</a></li>
@@ -344,19 +357,6 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-de-curie">Principe de Curie</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ordres-de-grandeurs-de-champs-crees">Ordres de grandeurs de champs créés</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#champ-magnetique-par-un-aimant-droit">Champ magnétique par un aimant droit</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#champ-cree-par-un-circuit-electrique-en-ligne">Champ créé par un circuit électrique (en ligne)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-du-dipole-magnetique">Principe du dipôle magnétique</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approximation-dipolaire-carte-de-champ-magnetique">Approximation dipolaire. Carte de champ magnétique</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-du-dipole-magnetique">Cas du dipôle magnétique.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-d-un-multi-poles-hp-en-ligne">Cas d’un “multi-pôles” (HP - en ligne)</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -555,6 +555,137 @@ Le flux du champ magnétique est conservé, c’est-à-dire qu’il est toujours
 </aside>
 </section>
 </section>
+<section id="principe-du-dipole-magnetique">
+<h2>Principe du dipôle magnétique<a class="headerlink" href="#principe-du-dipole-magnetique" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Principe</p>
+<p>De prime abord, on associe la création d’un champ magnétique à un déplacement de particules chargées, c’est-à-dire à des courants. On dispose ainsi de lois (loi de Biot et Savart ou théorème d’Ampère) qui permettent d’établir la cartographie de champ magnétique, connaissant les courants. Le problème est que la seule approche par les courants limite beaucoup l’étude des “objets magnétiques”, entendons par là, des objets créant un champ magnétique. En effet, les aimants courants ne sont pas des circuits électriques dans lesquels on fait parcourir un courant qu’on peut quantifier. De plus, si l’on pourrait modéliser un tel comportement par des mouvements microscopiques (mouvement orbital des électrons par exemple, cf. TD), les ordres de grandeurs montrent que cette modélisation est insuffisante pour caractériser la majorité des phénomènes magnétiques dans la matières. On doit admettre deux points:</p>
+<ul class="simple">
+<li><p>La matière peut créer des champs magnétiques (ex: les aimants) dont l’origine n’est pas forcément lié à un déplacement <strong>physique</strong> de charges, même microscopique.</p></li>
+<li><p>Que le champ magnétique créé par des matériaux magnétiques soit lié à un mouvement (microscopique ou macroscopique) ou à une “autre cause” (…), les distances caractéristiques mises en jeu permettent de supposer que les champs “qui nous intéressent” sont souvent créés à grandes distances de la cause.</p></li>
+</ul>
+</aside>
+<section id="approximation-dipolaire-carte-de-champ-magnetique">
+<h3>Approximation dipolaire. Carte de champ magnétique<a class="headerlink" href="#approximation-dipolaire-carte-de-champ-magnetique" title="Permalink to this heading">#</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Approximation dipolaire</strong></p>
+<p>Soit un champ magnétique créé par un dispositif particulier (aimant, circuit, phénomène microscopique…) situé autour d’un point O. On se place dans le cadre de l’approximation dipolaire si l’on considère que le point M où l’on calcule/étudie le champ magnétique est “loin” du dispositif, c’est-à-dire que la distance OM est grande devant la taille caractéristique L du dispositif.</p>
+</div>
+<aside class="topic">
+<p class="topic-title">Exemples</p>
+<ul class="simple">
+<li><p>Soit une spire de rayon 1cm parcourue par un courant I. On pourra se placer dans le cadre de l’approximation dipolaire si l’on considère des point M situé à une distance OM &gt;&gt;1cm (on pourra prendre O au centre de la spire).</p></li>
+<li><p>Soit un atome constitué d’électrons tournant autour du noyau. Ce sont des particules chargées en mouvement qui créent donc un champ magnétique. On peut définir un “rayon” de l’atome comme une zone au sein de laquelle est confiné (dans une vision classique) l’électron. A une distance d grande devant ce rayon, on pourra considérer qu’on est dans le cadre de l’approximation dipolaire.</p></li>
+<li><p>Le cas d’un aimant droit est particulier, car ce sont en réalité des phénomènes microscopiques qui sont à l’origine du magnétisme de l’aimant. Même si l’aimant est grand, l’échelle mise en jeu dans les phénomènes magnétiques est très petite, c’est pourquoi on arrive à se placer dans le cadre de l’approximation dipolaire à des distances qui paraissent petites devant la taille de l’aimant.</p></li>
+</ul>
+</aside>
+<aside class="topic">
+<p class="topic-title">Champ magnétique dans le cadre de l’approximation dipolaire</p>
+<p>Dans le cadre de l’approximation dipolaire, les dispositifs magnétiques, possèdent malgré leur grande variété de réalisation des cartes de champs de forme relativement similaire. On pourra distinguer plusieurs “classes de dispositifs” :</p>
+<ul class="simple">
+<li><p>les monopôles magnétiques… qui n’existent en réalité pas (plus précisément, on n’en connaît pas même si la théorie quantique prévoit qu’ils peuvent exister).</p></li>
+<li><p>les dipôles magnétiques: ce sont les plus courants</p></li>
+<li><p>les quadripôles magnétiques, les octopôles magnétiques… (on peut augmenter le nombre de pôles mais toujours par paire).</p></li>
+</ul>
+</aside>
+<section id="cas-du-dipole-magnetique">
+<h4>Cas du dipôle magnétique.<a class="headerlink" href="#cas-du-dipole-magnetique" title="Permalink to this heading">#</a></h4>
+<p>Malgré la grande diversité des dipôles magnétiques, le champ magnétique créé <strong>dans le cadre de l’approximation dipolaire</strong> est toujours le même.</p>
+<figure class="align-center" id="fig-dipole-magneto">
+<img alt="../_images/em_carte_champ_dipole_magnetostatique.jpg" src="../_images/em_carte_champ_dipole_magnetostatique.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Dipôle magnétostatique</span><a class="headerlink" href="#fig-dipole-magneto" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Champ magnétique créé par un dipôle magnétique
+A un dipôle magnétique, on peut associer un <strong>moment dipolaire magnétique</strong> <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span> tel que le champ magnétique créé en un point P par le dipôle situé au point O dans le cadre de l’approximation dipôlaire s’écrit:</p>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{B}(M) = \frac{\mu_0}{4 \pi} \frac{3 (\overrightarrow{M} \cdot \overrightarrow{r}) \overrightarrow{r} - r^2 \overrightarrow{M}}{r^5}
+\]</div>
+<p>avec <span class="math notranslate nohighlight">\(\overrightarrow{r} = \overrightarrow{OP}\)</span></p>
+</div>
+<p>La carte de champ fait apparaître deux lobes partant du point O où se trouve le dipôle et une orientation communes des lignes de champs. Le moment dipolaire <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span> qu’on place généralement à l’endroit où se trouve le dipôle donne l’orientation des lignes de champ. Les lignes de champ partent du pôle nord magnétique et arrivent au pôle sud magnétique.</p>
+<p>Les dipôles magnétiques regroupent un ensemble de dispositifs très variés (matériau aimanté droit, circuit parcouru par un courant…) à différentes échelles (microscopiques ou macroscopiques) dont le champ magnétique créé à grande distance (approximation dipolaire) possèdent la même géométrie et dont l’intensité et l’orientation peut être définie simplement à l’aide d’une grandeur: le moment dipolaire (vectoriel).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Cas d’une spire circulaire</strong></p>
+<p>On considère une spire circulaire de rayon <span class="math notranslate nohighlight">\(R\)</span> parcourue par un courant <span class="math notranslate nohighlight">\(I\)</span>. A une distance <span class="math notranslate nohighlight">\(r &gt;&gt; R\)</span> du centre de la spire, on peut considérer qu’on se place dans le cadre de l’approximation dipolaire. Le moment magnétique de la spire est:
+$<span class="math notranslate nohighlight">\(
+\overrightarrow{M} = \pi R^2 I \overrightarrow{n}
+\)</span>$</p>
+<p>où <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> est le vecteur normal à la spire orienté en cohérence avec le sens de l’intensité <span class="math notranslate nohighlight">\(I\)</span> orientée dans le circuit. On peut réécrire cette expression sous la forme:</p>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{M} = I \overrightarrow{S}
+\]</div>
+<p>où <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> est le vecteur surface associé à la spire (\ref{enc:enc_vecteur_surface_et_moment_dipolaire_d_un_circuit}).</p>
+</div>
+<aside class="topic">
+<p class="topic-title">Vecteur surface</p>
+<p>Pour un contour fermé <span class="math notranslate nohighlight">\(\Gamma\)</span>, on définit le vecteur surface <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> associé par:</p>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{S} = \iint_{S(\Gamma)} \overrightarrow{dS}
+\]</div>
+<p>soit la somme des vecteurs surfaces de chaque petit morceau de la surface <span class="math notranslate nohighlight">\(S(\Gamma)\)</span> définie par le contour. Ces éléments sont orientés soit arbitrairement, soit — très souvent — en cohérence avec l’orientation du contour (règle du tire-bouchon).</p>
+<p>Si dans le cas général, le calcul de <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> peut être relativement complexe, <strong>on ne retiendra que</strong> le cas simple d’une surface plane. Alors:</p>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{S} = S \overrightarrow{n}
+\]</div>
+<p>où S est la surface délimité par le contour et <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> le vecteur normal à la surface dans le sens en cohérence avec l’orientation du contour s’il y en a.</p>
+</aside>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Spire plane de forme quelconque (Admise)</strong></p>
+<p>Soit une spire plane parcourue par une intensité <span class="math notranslate nohighlight">\(I\)</span>. On note <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> le vecteur surface orienté en cohérence avec l’intensité <span class="math notranslate nohighlight">\(I\)</span>. Le moment dipolaire magnétique de la spire dans le cadre de l’approximation dipolaire est:</p>
+<div class="math notranslate nohighlight">
+\[
+\overrightarrow{M} = I \overrightarrow{S}
+\]</div>
+</div>
+</section>
+<section id="cas-d-un-multi-poles-hp-en-ligne">
+<h4>Cas d’un “multi-pôles” (HP - en ligne)<a class="headerlink" href="#cas-d-un-multi-poles-hp-en-ligne" title="Permalink to this heading">#</a></h4>
+<aside class="topic">
+<p class="topic-title">Multipoles</p>
+<figure class="align-center" id="fig-multipole">
+<img alt="../_images/em_quadrupolechamp.jpg" src="../_images/em_quadrupolechamp.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Exemple de carte de champ de multipôles</span><a class="headerlink" href="#fig-multipole" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+</section>
+</section>
+</section>
+<section id="ordres-de-grandeurs-de-champs-crees">
+<h2>Ordres de grandeurs de champs créés<a class="headerlink" href="#ordres-de-grandeurs-de-champs-crees" title="Permalink to this heading">#</a></h2>
+<section id="champ-magnetique-par-un-aimant-droit">
+<h3>Champ magnétique par un aimant droit<a class="headerlink" href="#champ-magnetique-par-un-aimant-droit" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Aimants néodyme: 0,3 à 1 T</p></li>
+<li><p>IRM (électro-aimant): 6T</p></li>
+<li><p>Champ magnétiue terrestre : <span class="math notranslate nohighlight">\(0.5 \times 10^{-5} \rm{T} = 0.5 \rm{gauss}\)</span></p></li>
+</ul>
+</section>
+<section id="champ-cree-par-un-circuit-electrique-en-ligne">
+<h3>Champ créé par un circuit électrique (en ligne)<a class="headerlink" href="#champ-cree-par-un-circuit-electrique-en-ligne" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
+<p class="topic-title">Théorème d’Ampère (pas à connaître en première année)</p>
+<p>La circulation du champ magnétique sur un contour orienté (C) fermé est le produit de <span class="math notranslate nohighlight">\(\mu_0\)</span> par la somme algébrique des intensités des courants enlacés par ce contour, les intensités dont l’orientation n’est pas en cohérence avec celle du contour (règle du tire- bouchon) étant changées de signe:</p>
+<div class="math notranslate nohighlight">
+\[
+\oint_{(C)} \overrightarrow{B}\cdot \overrightarrow{dl} = \mu_0 \sum\limits_{i} \alpha_i I_i
+\]</div>
+<p>où <span class="math notranslate nohighlight">\(\alpha_i = \pm 1\)</span> suivant que l’intensité <span class="math notranslate nohighlight">\(I_i\)</span> est orientée en cohérence avec le contour.</p>
+</aside>
+</section>
+</section>
 <section id="symetrie-des-champs-magnetiques">
 <h2>Symétrie des champs magnétiques<a class="headerlink" href="#symetrie-des-champs-magnetiques" title="Permalink to this heading">#</a></h2>
 <section id="les-distributions-de-courant">
@@ -670,137 +801,6 @@ Lorsque certaines causes produisent certains effets, les éléments de symétrie
 </div>
 </section>
 </section>
-<section id="ordres-de-grandeurs-de-champs-crees">
-<h2>Ordres de grandeurs de champs créés<a class="headerlink" href="#ordres-de-grandeurs-de-champs-crees" title="Permalink to this heading">#</a></h2>
-<section id="champ-magnetique-par-un-aimant-droit">
-<h3>Champ magnétique par un aimant droit<a class="headerlink" href="#champ-magnetique-par-un-aimant-droit" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Aimants néodyme: 0,3 à 1 T</p></li>
-<li><p>IRM (électro-aimant): 6T</p></li>
-<li><p>Champ magnétiue terrestre : <span class="math notranslate nohighlight">\(0.5 \times 10^{-5} \rm{T} = 0.5 \rm{gauss}\)</span></p></li>
-</ul>
-</section>
-<section id="champ-cree-par-un-circuit-electrique-en-ligne">
-<h3>Champ créé par un circuit électrique (en ligne)<a class="headerlink" href="#champ-cree-par-un-circuit-electrique-en-ligne" title="Permalink to this heading">#</a></h3>
-<aside class="topic">
-<p class="topic-title">Théorème d’Ampère (pas à connaître en première année)</p>
-<p>La circulation du champ magnétique sur un contour orienté (C) fermé est le produit de <span class="math notranslate nohighlight">\(\mu_0\)</span> par la somme algébrique des intensités des courants enlacés par ce contour, les intensités dont l’orientation n’est pas en cohérence avec celle du contour (règle du tire- bouchon) étant changées de signe:</p>
-<div class="math notranslate nohighlight">
-\[
-\oint_{(C)} \overrightarrow{B}\cdot \overrightarrow{dl} = \mu_0 \sum\limits_{i} \alpha_i I_i
-\]</div>
-<p>où <span class="math notranslate nohighlight">\(\alpha_i = \pm 1\)</span> suivant que l’intensité <span class="math notranslate nohighlight">\(I_i\)</span> est orientée en cohérence avec le contour.</p>
-</aside>
-</section>
-</section>
-<section id="principe-du-dipole-magnetique">
-<h2>Principe du dipôle magnétique<a class="headerlink" href="#principe-du-dipole-magnetique" title="Permalink to this heading">#</a></h2>
-<aside class="topic">
-<p class="topic-title">Principe</p>
-<p>De prime abord, on associe la création d’un champ magnétique à un déplacement de particules chargées, c’est-à-dire à des courants. On dispose ainsi de lois (loi de Biot et Savart ou théorème d’Ampère) qui permettent d’établir la cartographie de champ magnétique, connaissant les courants. Le problème est que la seule approche par les courants limite beaucoup l’étude des “objets magnétiques”, entendons par là, des objets créant un champ magnétique. En effet, les aimants courants ne sont pas des circuits électriques dans lesquels on fait parcourir un courant qu’on peut quantifier. De plus, si l’on pourrait modéliser un tel comportement par des mouvements microscopiques (mouvement orbital des électrons par exemple, cf. TD), les ordres de grandeurs montrent que cette modélisation est insuffisante pour caractériser la majorité des phénomènes magnétiques dans la matières. On doit admettre deux points:</p>
-<ul class="simple">
-<li><p>La matière peut créer des champs magnétiques (ex: les aimants) dont l’origine n’est pas forcément lié à un déplacement <strong>physique</strong> de charges, même microscopique.</p></li>
-<li><p>Que le champ magnétique créé par des matériaux magnétiques soit lié à un mouvement (microscopique ou macroscopique) ou à une “autre cause” (…), les distances caractéristiques mises en jeu permettent de supposer que les champs “qui nous intéressent” sont souvent créés à grandes distances de la cause.</p></li>
-</ul>
-</aside>
-<section id="approximation-dipolaire-carte-de-champ-magnetique">
-<h3>Approximation dipolaire. Carte de champ magnétique<a class="headerlink" href="#approximation-dipolaire-carte-de-champ-magnetique" title="Permalink to this heading">#</a></h3>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Approximation dipolaire</strong></p>
-<p>Soit un champ magnétique créé par un dispositif particulier (aimant, circuit, phénomène microscopique…) situé autour d’un point O. On se place dans le cadre de l’approximation dipolaire si l’on considère que le point M où l’on calcule/étudie le champ magnétique est “loin” du dispositif, c’est-à-dire que la distance OM est grande devant la taille caractéristique L du dispositif.</p>
-</div>
-<aside class="topic">
-<p class="topic-title">Exemples</p>
-<ul class="simple">
-<li><p>Soit une spire de rayon 1cm parcourue par un courant I. On pourra se placer dans le cadre de l’approximation dipolaire si l’on considère des point M situé à une distance OM &gt;&gt;1cm (on pourra prendre O au centre de la spire).</p></li>
-<li><p>Soit un atome constitué d’électrons tournant autour du noyau. Ce sont des particules chargées en mouvement qui créent donc un champ magnétique. On peut définir un “rayon” de l’atome comme une zone au sein de laquelle est confiné (dans une vision classique) l’électron. A une distance d grande devant ce rayon, on pourra considérer qu’on est dans le cadre de l’approximation dipolaire.</p></li>
-<li><p>Le cas d’un aimant droit est particulier, car ce sont en réalité des phénomènes microscopiques qui sont à l’origine du magnétisme de l’aimant. Même si l’aimant est grand, l’échelle mise en jeu dans les phénomènes magnétiques est très petite, c’est pourquoi on arrive à se placer dans le cadre de l’approximation dipolaire à des distances qui paraissent petites devant la taille de l’aimant.</p></li>
-</ul>
-</aside>
-<aside class="topic">
-<p class="topic-title">Champ magnétique dans le cadre de l’approximation dipolaire</p>
-<p>Dans le cadre de l’approximation dipolaire, les dispositifs magnétiques, possèdent malgré leur grande variété de réalisation des cartes de champs de forme relativement similaire. On pourra distinguer plusieurs “classes de dispositifs” :</p>
-<ul class="simple">
-<li><p>les monopôles magnétiques… qui n’existent en réalité pas (plus précisément, on n’en connaît pas même si la théorie quantique prévoit qu’ils peuvent exister).</p></li>
-<li><p>les dipôles magnétiques: ce sont les plus courants</p></li>
-<li><p>les quadripôles magnétiques, les octopôles magnétiques… (on peut augmenter le nombre de pôles mais toujours par paire).</p></li>
-</ul>
-</aside>
-<section id="cas-du-dipole-magnetique">
-<h4>Cas du dipôle magnétique.<a class="headerlink" href="#cas-du-dipole-magnetique" title="Permalink to this heading">#</a></h4>
-<p>Malgré la grande diversité des dipôles magnétiques, le champ magnétique créé <strong>dans le cadre de l’approximation dipolaire</strong> est toujours le même.</p>
-<figure class="align-center" id="fig-dipole-magneto">
-<img alt="../_images/em_carte_champ_dipole_magnetostatique.jpg" src="../_images/em_carte_champ_dipole_magnetostatique.jpg" />
-<figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Dipôle magnétostatique</span><a class="headerlink" href="#fig-dipole-magneto" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Champ magnétique créé par un dipôle magnétique
-A un dipôle magnétique, on peut associer un <strong>moment dipolaire magnétique</strong> <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span> tel que le champ magnétique créé en un point P par le dipôle situé au point O dans le cadre de l’approximation dipôlaire s’écrit:</p>
-<div class="math notranslate nohighlight">
-\[
-\overrightarrow{B}(M) = \frac{\mu_0}{4 \pi} \frac{3 (\overrightarrow{M} \cdot \overrightarrow{r}) \overrightarrow{r} - r^2 \overrightarrow{M}}{r^5}
-\]</div>
-<p>avec <span class="math notranslate nohighlight">\(\overrightarrow{r} = \overrightarrow{OP}\)</span></p>
-</div>
-<p>La carte de champ fait apparaître deux lobes partant du point O où se trouve le dipôle et une orientation communes des lignes de champs. Le moment dipolaire <span class="math notranslate nohighlight">\(\overrightarrow{M}\)</span> qu’on place généralement à l’endroit où se trouve le dipôle donne l’orientation des lignes de champ. Les lignes de champ partent du pôle nord magnétique et arrivent au pôle sud magnétique.</p>
-<p>Les dipôles magnétiques regroupent un ensemble de dispositifs très variés (matériau aimanté droit, circuit parcouru par un courant…) à différentes échelles (microscopiques ou macroscopiques) dont le champ magnétique créé à grande distance (approximation dipolaire) possèdent la même géométrie et dont l’intensité et l’orientation peut être définie simplement à l’aide d’une grandeur: le moment dipolaire (vectoriel).</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Cas d’une spire circulaire</strong></p>
-<p>On considère une spire circulaire de rayon <span class="math notranslate nohighlight">\(R\)</span> parcourue par un courant <span class="math notranslate nohighlight">\(I\)</span>. A une distance <span class="math notranslate nohighlight">\(r &gt;&gt; R\)</span> du centre de la spire, on peut considérer qu’on se place dans le cadre de l’approximation dipolaire. Le moment magnétique de la spire est:
-$<span class="math notranslate nohighlight">\(
-\overrightarrow{M} = \pi R^2 I \overrightarrow{n}
-\)</span>$</p>
-<p>où <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> est le vecteur normal à la spire orienté en cohérence avec le sens de l’intensité <span class="math notranslate nohighlight">\(I\)</span> orientée dans le circuit. On peut réécrire cette expression sous la forme:</p>
-<div class="math notranslate nohighlight">
-\[
-\overrightarrow{M} = I \overrightarrow{S}
-\]</div>
-<p>où <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> est le vecteur surface associé à la spire (\ref{enc:enc_vecteur_surface_et_moment_dipolaire_d_un_circuit}).</p>
-</div>
-<aside class="topic">
-<p class="topic-title">Vecteur surface</p>
-<p>Pour un contour fermé <span class="math notranslate nohighlight">\(\Gamma\)</span>, on définit le vecteur surface <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> associé par:</p>
-<div class="math notranslate nohighlight">
-\[
-\overrightarrow{S} = \iint_{S(\Gamma)} \overrightarrow{dS}
-\]</div>
-<p>soit la somme des vecteurs surfaces de chaque petit morceau de la surface <span class="math notranslate nohighlight">\(S(\Gamma)\)</span> définie par le contour. Ces éléments sont orientés soit arbitrairement, soit — très souvent — en cohérence avec l’orientation du contour (règle du tire-bouchon).</p>
-<p>Si dans le cas général, le calcul de <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> peut être relativement complexe, <strong>on ne retiendra que</strong> le cas simple d’une surface plane. Alors:</p>
-<div class="math notranslate nohighlight">
-\[
-\overrightarrow{S} = S \overrightarrow{n}
-\]</div>
-<p>où S est la surface délimité par le contour et <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> le vecteur normal à la surface dans le sens en cohérence avec l’orientation du contour s’il y en a.</p>
-</aside>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Spire plane de forme quelconque (Admise)</strong></p>
-<p>Soit une spire plane parcourue par une intensité <span class="math notranslate nohighlight">\(I\)</span>. On note <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> le vecteur surface orienté en cohérence avec l’intensité <span class="math notranslate nohighlight">\(I\)</span>. Le moment dipolaire magnétique de la spire dans le cadre de l’approximation dipolaire est:</p>
-<div class="math notranslate nohighlight">
-\[
-\overrightarrow{M} = I \overrightarrow{S}
-\]</div>
-</div>
-</section>
-<section id="cas-d-un-multi-poles-hp-en-ligne">
-<h4>Cas d’un “multi-pôles” (HP - en ligne)<a class="headerlink" href="#cas-d-un-multi-poles-hp-en-ligne" title="Permalink to this heading">#</a></h4>
-<aside class="topic">
-<p class="topic-title">Multipoles</p>
-<figure class="align-center" id="fig-multipole">
-<img alt="../_images/em_quadrupolechamp.jpg" src="../_images/em_quadrupolechamp.jpg" />
-<figcaption>
-<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Exemple de carte de champ de multipôles</span><a class="headerlink" href="#fig-multipole" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</aside>
-</section>
-</section>
-</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -880,6 +880,19 @@ $<span class="math notranslate nohighlight">\(
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creer-un-champ-magnetique-uniforme-en-ligne">Créer un champ magnétique uniforme (en ligne)</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-du-dipole-magnetique">Principe du dipôle magnétique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approximation-dipolaire-carte-de-champ-magnetique">Approximation dipolaire. Carte de champ magnétique</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-du-dipole-magnetique">Cas du dipôle magnétique.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-d-un-multi-poles-hp-en-ligne">Cas d’un “multi-pôles” (HP - en ligne)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ordres-de-grandeurs-de-champs-crees">Ordres de grandeurs de champs créés</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#champ-magnetique-par-un-aimant-droit">Champ magnétique par un aimant droit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#champ-cree-par-un-circuit-electrique-en-ligne">Champ créé par un circuit électrique (en ligne)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symetrie-des-champs-magnetiques">Symétrie des champs magnétiques</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#les-distributions-de-courant">Les distributions de courant</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exemples-de-distribution-en-ligne">Exemples de distribution (en ligne)</a></li>
@@ -892,19 +905,6 @@ $<span class="math notranslate nohighlight">\(
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-de-curie">Principe de Curie</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ordres-de-grandeurs-de-champs-crees">Ordres de grandeurs de champs créés</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#champ-magnetique-par-un-aimant-droit">Champ magnétique par un aimant droit</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#champ-cree-par-un-circuit-electrique-en-ligne">Champ créé par un circuit électrique (en ligne)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-du-dipole-magnetique">Principe du dipôle magnétique</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approximation-dipolaire-carte-de-champ-magnetique">Approximation dipolaire. Carte de champ magnétique</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-du-dipole-magnetique">Cas du dipôle magnétique.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-d-un-multi-poles-hp-en-ligne">Cas d’un “multi-pôles” (HP - en ligne)</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
