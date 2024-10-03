@@ -1,47 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Champ magnétique. Introduction &#8212; Electromagnétisme</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>Champ magnétique. Introduction &#8212; Electromagnétisme</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -51,58 +64,98 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebook/champ_b';</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/em/notebook/champ_b.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Champs magnétiques. Méthodes et exercices." href="champ_b_methodes.html" />
     <link rel="prev" title="Electromagnétisme" href="../em.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-    <div class="container-fluid" id="banner"></div>
-
     
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-      
-      
-      <h1 class="site-logo" id="site-title">Electromagnétisme</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+<a class="navbar-brand logo" href="../em.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Electromagnétisme</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -112,524 +165,218 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
-   Champ magnétique. Introduction
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="champ_b_methodes.html">
-     Champs magnétiques. Méthodes et exercices.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="champ_b_activite.html">
-     Origine et ordre de grandeur du moment magnétique
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="champ_b_td.html">
-     Entrainement
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="particules_c.html">
-   Mouvement de particules chargées
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="actions_b.html">
-   Actions d’un champ magnétique. Forces de Laplace
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="induction.html">
-   Induction et application
-  </a>
- </li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Champ magnétique. Introduction</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="champ_b_methodes.html">Champs magnétiques. Méthodes et exercices.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="champ_b_activite.html">Activité : Origine et ordre de grandeur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="champ_b_td.html">Entrainement</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="particules_c.html">Mouvement de particules chargées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions_b.html">Actions d’un champ magnétique. Forces de Laplace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="induction.html">Induction et application</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/champ_b.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebook/champ_b.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/notebook/champ_b.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="../_sources/notebook/champ_b.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#observation-experimentale">
-   Observation expérimentale
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#observations-en-ligne">
-     Observations (en ligne)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#interpretation-en-terme-de-champ-magnetique">
-     Interprétation en terme de champ magnétique
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cartes-de-champ-magnetiques">
-   Cartes de champ magnétiques
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lignes-de-champ-caracterisation-experimentale">
-     Lignes de champ. Caractérisation expérimentale
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#caracteristiques-generales">
-     Caractéristiques générales
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conservation-du-flux-du-champ-magnetique">
-     Conservation du flux du champ magnétique
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#creer-un-champ-magnetique-uniforme-en-ligne">
-     Créer un champ magnétique uniforme (en ligne)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#symetrie-des-champs-magnetiques">
-   Symétrie des champs magnétiques
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#les-distributions-de-courant">
-     Les distributions de courant
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#exemples-de-distribution-en-ligne">
-       Exemples de distribution (en ligne)
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#notions-de-symetries-et-d-invariance">
-     Notions de symétries et d’invariance
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#invariance">
-       Invariance
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#symetrie-et-anti-symetrie-planaire-d-un-vecteur">
-       Symétrie et anti-symétrie planaire d’un vecteur
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#symetrie-et-anti-symetrie-planaire-d-un-pseudo-vecteur">
-       Symétrie et anti-symétrie planaire d’un pseudo-vecteur
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#principe-de-curie">
-     Principe de Curie
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ordres-de-grandeurs-de-champs-crees">
-   Ordres de grandeurs de champs créés
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#champ-magnetique-par-un-aimant-droit">
-     Champ magnétique par un aimant droit
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#champ-cree-par-un-circuit-electrique-en-ligne">
-     Champ créé par un circuit électrique (en ligne)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#principe-du-dipole-magnetique">
-   Principe du dipôle magnétique
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#approximation-dipolaire-carte-de-champ-magnetique">
-     Approximation dipolaire. Carte de champ magnétique
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cas-du-dipole-magnetique">
-       Cas du dipôle magnétique.
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cas-d-un-multi-poles-hp-en-ligne">
-       Cas d’un “multi-pôles” (HP - en ligne)
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Champ magnétique. Introduction</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#observation-experimentale">
-   Observation expérimentale
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#observations-en-ligne">
-     Observations (en ligne)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#interpretation-en-terme-de-champ-magnetique">
-     Interprétation en terme de champ magnétique
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cartes-de-champ-magnetiques">
-   Cartes de champ magnétiques
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lignes-de-champ-caracterisation-experimentale">
-     Lignes de champ. Caractérisation expérimentale
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#caracteristiques-generales">
-     Caractéristiques générales
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conservation-du-flux-du-champ-magnetique">
-     Conservation du flux du champ magnétique
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#creer-un-champ-magnetique-uniforme-en-ligne">
-     Créer un champ magnétique uniforme (en ligne)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#symetrie-des-champs-magnetiques">
-   Symétrie des champs magnétiques
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#les-distributions-de-courant">
-     Les distributions de courant
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#exemples-de-distribution-en-ligne">
-       Exemples de distribution (en ligne)
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#notions-de-symetries-et-d-invariance">
-     Notions de symétries et d’invariance
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#invariance">
-       Invariance
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#symetrie-et-anti-symetrie-planaire-d-un-vecteur">
-       Symétrie et anti-symétrie planaire d’un vecteur
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#symetrie-et-anti-symetrie-planaire-d-un-pseudo-vecteur">
-       Symétrie et anti-symétrie planaire d’un pseudo-vecteur
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#principe-de-curie">
-     Principe de Curie
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ordres-de-grandeurs-de-champs-crees">
-   Ordres de grandeurs de champs créés
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#champ-magnetique-par-un-aimant-droit">
-     Champ magnétique par un aimant droit
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#champ-cree-par-un-circuit-electrique-en-ligne">
-     Champ créé par un circuit électrique (en ligne)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#principe-du-dipole-magnetique">
-   Principe du dipôle magnétique
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#approximation-dipolaire-carte-de-champ-magnetique">
-     Approximation dipolaire. Carte de champ magnétique
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cas-du-dipole-magnetique">
-       Cas du dipôle magnétique.
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cas-d-un-multi-poles-hp-en-ligne">
-       Cas d’un “multi-pôles” (HP - en ligne)
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Champ magnétique. Introduction</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observation-experimentale">Observation expérimentale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-en-ligne">Observations (en ligne)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation-en-terme-de-champ-magnetique">Interprétation en terme de champ magnétique</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cartes-de-champ-magnetiques">Cartes de champ magnétiques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lignes-de-champ-caracterisation-experimentale">Lignes de champ. Caractérisation expérimentale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristiques-generales">Caractéristiques générales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-du-flux-du-champ-magnetique">Conservation du flux du champ magnétique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creer-un-champ-magnetique-uniforme-en-ligne">Créer un champ magnétique uniforme (en ligne)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symetrie-des-champs-magnetiques">Symétrie des champs magnétiques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#les-distributions-de-courant">Les distributions de courant</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exemples-de-distribution-en-ligne">Exemples de distribution (en ligne)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notions-de-symetries-et-d-invariance">Notions de symétries et d’invariance</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#invariance">Invariance</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#symetrie-et-anti-symetrie-planaire-d-un-vecteur">Symétrie et anti-symétrie planaire d’un vecteur</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#symetrie-et-anti-symetrie-planaire-d-un-pseudo-vecteur">Symétrie et anti-symétrie planaire d’un pseudo-vecteur</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-de-curie">Principe de Curie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ordres-de-grandeurs-de-champs-crees">Ordres de grandeurs de champs créés</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#champ-magnetique-par-un-aimant-droit">Champ magnétique par un aimant droit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#champ-cree-par-un-circuit-electrique-en-ligne">Champ créé par un circuit électrique (en ligne)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-du-dipole-magnetique">Principe du dipôle magnétique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approximation-dipolaire-carte-de-champ-magnetique">Approximation dipolaire. Carte de champ magnétique</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-du-dipole-magnetique">Cas du dipôle magnétique.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-d-un-multi-poles-hp-en-ligne">Cas d’un “multi-pôles” (HP - en ligne)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="champ-magnetique-introduction">
-<h1>Champ magnétique. Introduction<a class="headerlink" href="#champ-magnetique-introduction" title="Permalink to this headline">#</a></h1>
-<div class="section" id="observation-experimentale">
-<h2>Observation expérimentale<a class="headerlink" href="#observation-experimentale" title="Permalink to this headline">#</a></h2>
-<div class="section" id="observations-en-ligne">
-<h3>Observations (en ligne)<a class="headerlink" href="#observations-en-ligne" title="Permalink to this headline">#</a></h3>
-<div class="topic">
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="champ-magnetique-introduction">
+<h1>Champ magnétique. Introduction<a class="headerlink" href="#champ-magnetique-introduction" title="Permalink to this heading">#</a></h1>
+<section id="observation-experimentale">
+<h2>Observation expérimentale<a class="headerlink" href="#observation-experimentale" title="Permalink to this heading">#</a></h2>
+<section id="observations-en-ligne">
+<h3>Observations (en ligne)<a class="headerlink" href="#observations-en-ligne" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
 <p class="topic-title">Observations</p>
 <p>On observe différents cas d’influence d’objets sur d’autres dont l’action ne correspond pas à des forces déjà présentées en mécanique:</p>
 <ul class="simple">
@@ -637,19 +384,21 @@ title="Print to PDF"
 <li><p>De même un aimant peut dévier un jet d’électrons</p></li>
 <li><p>Un aimant peut entraîner le déplacement d’un autre aimant ou d’un circuit parcouru par un courant</p></li>
 </ul>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Il est évident que les actions réciproques à celle citées existent aussi.</p>
-</div>
+</aside>
 <p>Malgré la diversité des actions envisagées, leur étude peut-être modélisée de la même manière: on va introduire un intermédiaire entre la cause (aimant ou circuit électrique) et la conséquence (mouvement d’un aimant/déviation de particules chargées). Cet intermédiaire est le <strong>champ magnétique</strong>. Son unité sera le <strong>Tesla (T)</strong>.</p>
-<div class="figure align-center" id="fig-champ-magnetique">
+<figure class="align-center" id="fig-champ-magnetique">
 <img alt="../_images/em_action_magnetique.jpg" src="../_images/em_action_magnetique.jpg" />
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Introduction de l’intermédiaire “champ magnétique”</span><a class="headerlink" href="#fig-champ-magnetique" title="Permalink to this image">#</a></p>
-</div>
-</div>
-</div>
-<div class="section" id="interpretation-en-terme-de-champ-magnetique">
-<h3>Interprétation en terme de champ magnétique<a class="headerlink" href="#interpretation-en-terme-de-champ-magnetique" title="Permalink to this headline">#</a></h3>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Introduction de l’intermédiaire “champ magnétique”</span><a class="headerlink" href="#fig-champ-magnetique" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+</section>
+<section id="interpretation-en-terme-de-champ-magnetique">
+<h3>Interprétation en terme de champ magnétique<a class="headerlink" href="#interpretation-en-terme-de-champ-magnetique" title="Permalink to this heading">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Champ magnétique</strong></p>
@@ -660,38 +409,46 @@ title="Print to PDF"
 \]</div>
 <p>où <span class="math notranslate nohighlight">\(\overrightarrow{B}(M)\)</span> est un champ vectoriel dont les caractéristiques ne dépendent que du circuit ou de l’aimant. On l’appelle champ magnétique et son unité est le Tesla (T). M est le point où se trouve la particule de charge <span class="math notranslate nohighlight">\(q\)</span>.</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Notion de champ magnétique</p>
 <p>Comme on le verra par la suite, l’action d’un champ magnétique se généralisera à des dispositifs globalement neutres comme d’autres circuits électriques ou d’autres aimants. On parlera alors de force de Laplace.</p>
 <p>La notion de champ peut paraître très abstraite. Elle est pourtant cruciale. Pour comprendre sa première utilité, on peut faire le parallèle avec le champ de gravitation. Si son intervention n’est pas nécessaire pour calculer la force exercée par une masse sur une autre masse, sa définition permet de découplé l’étude de la cause (première masse) de la seconde. On peut donc ainsi travailler sur l’action d’un champ de gravitation donné (qu’on pourra même déterminer expérimentalement) sur une particule massique, un corps solide… sans se soucier de ce qui le crée. Pour le champ magnétique, c’est le même principe. Vu la diversité des façons de créer un champ magnétique, son intervention est encore plus utile. De plus, des études plus poussées en électromagnétisme montrerait que cet outils a pris aujourd’hui une place prépondérante dans des domaines comme la théorie des champs.</p>
-</div>
-</div>
-</div>
-<div class="section" id="cartes-de-champ-magnetiques">
-<h2>Cartes de champ magnétiques<a class="headerlink" href="#cartes-de-champ-magnetiques" title="Permalink to this headline">#</a></h2>
-<div class="section" id="lignes-de-champ-caracterisation-experimentale">
-<h3>Lignes de champ. Caractérisation expérimentale<a class="headerlink" href="#lignes-de-champ-caracterisation-experimentale" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+</section>
+<section id="cartes-de-champ-magnetiques">
+<h2>Cartes de champ magnétiques<a class="headerlink" href="#cartes-de-champ-magnetiques" title="Permalink to this heading">#</a></h2>
+<section id="lignes-de-champ-caracterisation-experimentale">
+<h3>Lignes de champ. Caractérisation expérimentale<a class="headerlink" href="#lignes-de-champ-caracterisation-experimentale" title="Permalink to this heading">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Ligne de champ magnétique</strong></p>
 <p>Une ligne de champ magnétique est une courbe avec laquelle le champ magnétique est colinéaire en tout point de la-dite courbe.</p>
 </div>
-<div class="figure align-center" id="fig-fil-infini">
+<figure class="align-center" id="fig-fil-infini">
 <img alt="../_images/em_fil_infini.jpg" src="../_images/em_fil_infini.jpg" />
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Exemple : Carte de champ pour un fil infini</span><a class="headerlink" href="#fig-fil-infini" title="Permalink to this image">#</a></p>
-</div>
-<div class="figure align-center" id="fig-deux-fils-champ-b">
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Exemple : Carte de champ pour un fil infini</span><a class="headerlink" href="#fig-fil-infini" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-deux-fils-champ-b">
 <img alt="../_images/Electromagnetisme_1_Deuxfils.jpg" src="../_images/Electromagnetisme_1_Deuxfils.jpg" />
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Exemple : Carte de champ de deux fils. L’intensité est identique dans les deux fils mais n’est pas dans le même sens: elle sort de la feuille pour le fil de gauche et entre dans la feuille pour le fil de droite</span><a class="headerlink" href="#fig-deux-fils-champ-b" title="Permalink to this image">#</a></p>
-</div>
-<div class="figure align-center" id="fig-dipole-magneto-aimant">
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Exemple : Carte de champ de deux fils. L’intensité est identique dans les deux fils mais n’est pas dans le même sens: elle sort de la feuille pour le fil de gauche et entre dans la feuille pour le fil de droite</span><a class="headerlink" href="#fig-deux-fils-champ-b" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-dipole-magneto-aimant">
 <img alt="../_images/em_carte_champ_dipole_magnetostatique.jpg" src="../_images/em_carte_champ_dipole_magnetostatique.jpg" />
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Exemple : Carte de champ pour un petit aimant droit</span><a class="headerlink" href="#fig-dipole-magneto-aimant" title="Permalink to this image">#</a></p>
-</div>
-<div class="figure align-center" id="fig-spire-solen-champ-b">
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Exemple : Carte de champ pour un petit aimant droit</span><a class="headerlink" href="#fig-dipole-magneto-aimant" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-spire-solen-champ-b">
 <img alt="../_images/Electromagnetisme_1_Spire_Solene.jpg" src="../_images/Electromagnetisme_1_Spire_Solene.jpg" />
-<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Champ magnétique pour une spire circulaire et une bobine longue.</span><a class="headerlink" href="#fig-spire-solen-champ-b" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Champ magnétique pour une spire circulaire et une bobine longue.</span><a class="headerlink" href="#fig-spire-solen-champ-b" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="tip admonition">
 <p class="admonition-title">Exemple : Bobine infinie (à connaitre)</p>
 <p>On peut montrer que le champ magnétique est nulle à l’extérieur du solenoïde et uniforme à l’intérieur:</p>
@@ -701,13 +458,13 @@ title="Print to PDF"
 \]</div>
 <p>où n est le nombre de spire par unité de longuer, I l’intensité qui parcourt les spires et <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span> le vecteur axial <strong>orienté en cohérence</strong> avec I.</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Matérialisation expérimentale</p>
 <p>Les aimants, sur des liaisons pivots quasi-parfaites ou de la limaille de fer aura tendance à l’aligner le long des lignes de champ: on peut ainsi caractériser les lignes de champ magnétiques.</p>
-</div>
-</div>
-<div class="section" id="caracteristiques-generales">
-<h3>Caractéristiques générales<a class="headerlink" href="#caracteristiques-generales" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+<section id="caracteristiques-generales">
+<h3>Caractéristiques générales<a class="headerlink" href="#caracteristiques-generales" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Principe de symétrie (cf. suite)</p></li>
 <li><p>Orientation du champ proche du circuit: règle du tire-bouchon basé sur l’intensité.</p></li>
@@ -715,14 +472,14 @@ title="Print to PDF"
 <li><p>En un point où deux lignes se croisent, le champ est nécessairement nul.</p></li>
 <li><p>Une ligne de champ qui boucle sur elle-même enlace nécessairement des courants. Le sens total de parcours des courants enlacés (calculés comme une somme algébrique) peut-être déterminé par la règle du tire-bouchon.</p></li>
 </ul>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Ce dernier point est un aspect qualitatif d’un théorème utile pour calculer un champ magnétique créé par une distribution de courant: le théorème d’Ampère (cf. deuxième année).</p>
-</div>
-</div>
-<div class="section" id="conservation-du-flux-du-champ-magnetique">
-<h3>Conservation du flux du champ magnétique<a class="headerlink" href="#conservation-du-flux-du-champ-magnetique" title="Permalink to this headline">#</a></h3>
-<div class="topic">
+</aside>
+</section>
+<section id="conservation-du-flux-du-champ-magnetique">
+<h3>Conservation du flux du champ magnétique<a class="headerlink" href="#conservation-du-flux-du-champ-magnetique" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
 <p class="topic-title">Rappel : Orientation d’une surface</p>
 <ul class="simple">
 <li><p>En géométrie vectorielle, une surface plane est orientée par un vecteur appelé vecteur surface dont la norme est égale à l’aire de la surface considérée et l’orientation est perpendiculaire à la surface.</p>
@@ -737,7 +494,7 @@ title="Print to PDF"
 </li>
 <li><p><em>Sens d’orientation d’une surface fermée</em>: Soit une surface <span class="math notranslate nohighlight">\(\Sigma\)</span> fermée, on oriente la surface, par convention, <strong>vers l’extérieur</strong>.</p></li>
 </ul>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Flux du champ magnétique</strong></p>
@@ -755,15 +512,17 @@ Le flux du champ magnétique est conservé, c’est-à-dire qu’il est toujours
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Cas d’un tube de champ</p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>C’est cette application qui explique le terme de “conservation du flux”.</p>
-</div>
+</aside>
 <p>Un tube de champ est une surface fermée, orientée de l’intérieur vers l’extérieur, constituée d’une surface latérale (<span class="math notranslate nohighlight">\(S_L\)</span>) uniquement formée de lignes de champ et de deux surfaces quelconques (<span class="math notranslate nohighlight">\(S_1\)</span>) et (<span class="math notranslate nohighlight">\(S_2\)</span>) la fermant à ses extrémités.</p>
-<div class="figure align-center" id="fig-tube-de-champ-magn-tique">
+<figure class="align-center" id="fig-tube-de-champ-magn-tique">
 <img alt="../_images/em_tube_champ.jpg" src="../_images/em_tube_champ.jpg" />
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Tube de champ magnétique</span><a class="headerlink" href="#fig-tube-de-champ-magn-tique" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Tube de champ magnétique</span><a class="headerlink" href="#fig-tube-de-champ-magn-tique" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Le flux du champ magnétique à travers un tube de champ se ramène au seul flux à traversd la surface <span class="math notranslate nohighlight">\((C_1)\)</span> et la surface <span class="math notranslate nohighlight">\((C_2)\)</span> (car <span class="math notranslate nohighlight">\(\overrightarrow{dS} est perpendiculaire aux lignes de champ sur la surface latérale). La conservation du flux du champ magnétiques s'écrit donc (\)</span>\overrightarrow{dS_1}<span class="math notranslate nohighlight">\( et \)</span>\overrightarrow{dS_2}$ sont orientés dans le même sens):</p>
 <div class="math notranslate nohighlight">
 \[
@@ -773,33 +532,33 @@ Le flux du champ magnétique est conservé, c’est-à-dire qu’il est toujours
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Conséquence de la conservation du flux</strong></p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Les réciproques de ces affirmations sont aussi vraies (influence de l’intensité du champ sur la section du tube de champ associé).</p>
-</div>
+</aside>
 <ul class="simple">
 <li><p>Lorsque les lignes de champ magnétique se resserrent, l’intensité du champ magnétique augmente.</p></li>
 <li><p>Lorsque les lignes de champ magnétique s’écartent, l’intensité du champ magnétique diminue.</p></li>
 <li><p>Si les lignes de champ forme un tube de section constant, alors le champ est uniforme.</p></li>
 </ul>
 </div>
-</div>
-<div class="section" id="creer-un-champ-magnetique-uniforme-en-ligne">
-<h3>Créer un champ magnétique uniforme (en ligne)<a class="headerlink" href="#creer-un-champ-magnetique-uniforme-en-ligne" title="Permalink to this headline">#</a></h3>
-<div class="topic">
+</section>
+<section id="creer-un-champ-magnetique-uniforme-en-ligne">
+<h3>Créer un champ magnétique uniforme (en ligne)<a class="headerlink" href="#creer-un-champ-magnetique-uniforme-en-ligne" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
 <p class="topic-title">Champ magnétique uniforme</p>
 <p>Si l’on ne peut créer un champ magnétique uniforme dans tout l’espace, on peut par contre créer un champ magnétique dont les variations (intensité ET orientation) sont relativement faibles sur une zone donnée. On utilise généralement deux dispositifs:</p>
 <ul class="simple">
 <li><p>les bobines de Helmoltz: ce sont deux spires parallèles et coaxiales de rayon R distantes de R. On peut montrer que le champ magnétique au milieu des bobine varie peu.</p></li>
 <li><p>une bobine longue: on peut montrer que le champ magnétique est globalement uniforme à l’intérieur de la bobine tant qu’on reste loin des bords.</p></li>
 </ul>
-</div>
-</div>
-</div>
-<div class="section" id="symetrie-des-champs-magnetiques">
-<h2>Symétrie des champs magnétiques<a class="headerlink" href="#symetrie-des-champs-magnetiques" title="Permalink to this headline">#</a></h2>
-<div class="section" id="les-distributions-de-courant">
-<h3>Les distributions de courant<a class="headerlink" href="#les-distributions-de-courant" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+</section>
+<section id="symetrie-des-champs-magnetiques">
+<h2>Symétrie des champs magnétiques<a class="headerlink" href="#symetrie-des-champs-magnetiques" title="Permalink to this heading">#</a></h2>
+<section id="les-distributions-de-courant">
+<h3>Les distributions de courant<a class="headerlink" href="#les-distributions-de-courant" title="Permalink to this heading">#</a></h3>
 <p>On a vu que les courants sont responsables du champ magnétiques. Il faut donc pouvoir décrire une <strong>distribution de courant</strong> dans l’espace pour ensuite pouvoir déterminer le champ magnétique en tout point.</p>
 <p>On a 3 types de description des courants :</p>
 <ul class="simple">
@@ -811,9 +570,9 @@ Le flux du champ magnétique est conservé, c’est-à-dire qu’il est toujours
 <p class="admonition-title">Attention</p>
 <p><span class="math notranslate nohighlight">\(\overrightarrow{j_s}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{j_v}\)</span> n’ont PAS la même unité.</p>
 </div>
-<div class="section" id="exemples-de-distribution-en-ligne">
-<h4>Exemples de distribution (en ligne)<a class="headerlink" href="#exemples-de-distribution-en-ligne" title="Permalink to this headline">#</a></h4>
-<div class="topic" id="exemple-dist">
+<section id="exemples-de-distribution-en-ligne">
+<h4>Exemples de distribution (en ligne)<a class="headerlink" href="#exemples-de-distribution-en-ligne" title="Permalink to this heading">#</a></h4>
+<aside class="topic" id="exemple-dist">
 <p class="topic-title">Exemples de distribution</p>
 <p><strong>Distribution linéique</strong></p>
 <ul class="simple">
@@ -829,26 +588,26 @@ Le flux du champ magnétique est conservé, c’est-à-dire qu’il est toujours
 <ul class="simple">
 <li><p>Nappe de courant : Une bande infinie de large <span class="math notranslate nohighlight">\(L\)</span>, d’épaisseur négligeable. On note <span class="math notranslate nohighlight">\(Ox\)</span> l’axe normal à la nappe et <span class="math notranslate nohighlight">\(Oy\)</span> l’axe correspondant à l’axe (infini) de la bande. Si la conduction a lieu suivant <span class="math notranslate nohighlight">\(Oy\)</span>, on la décrira par une distribution surfacique <span class="math notranslate nohighlight">\(\overrightarrow{j_s}(M) = j_0 \overrightarrow{e_y}\)</span> (cas d’une distribution homogène des courant sur la nappe).</p></li>
 </ul>
-</div>
-</div>
-</div>
-<div class="section" id="notions-de-symetries-et-d-invariance">
-<h3>Notions de symétries et d’invariance<a class="headerlink" href="#notions-de-symetries-et-d-invariance" title="Permalink to this headline">#</a></h3>
-<div class="section" id="invariance">
-<h4>Invariance<a class="headerlink" href="#invariance" title="Permalink to this headline">#</a></h4>
-<div class="margin sidebar">
+</aside>
+</section>
+</section>
+<section id="notions-de-symetries-et-d-invariance">
+<h3>Notions de symétries et d’invariance<a class="headerlink" href="#notions-de-symetries-et-d-invariance" title="Permalink to this heading">#</a></h3>
+<section id="invariance">
+<h4>Invariance<a class="headerlink" href="#invariance" title="Permalink to this heading">#</a></h4>
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>En pratique, les invariances que nous rencontreront  seront associée à une indépendance vis-à-vis d’une coordonnée.__</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Invariance</strong></p>
 <p>Soit une transformation de l’espace <span class="math notranslate nohighlight">\(\mathcal{T}\)</span>. On dit qu’elle laisse invariante un champ scalaire <span class="math notranslate nohighlight">\(C(M)\)</span> si et seulement si pour tout point M’ image des points M de l’espace, <span class="math notranslate nohighlight">\(C(M) =C(M')\)</span>.</p>
 </div>
 <p><em>On distingue principalement les invariances par translation et par rotation</em>.</p>
-</div>
-<div class="section" id="symetrie-et-anti-symetrie-planaire-d-un-vecteur">
-<h4>Symétrie et anti-symétrie planaire d’un vecteur<a class="headerlink" href="#symetrie-et-anti-symetrie-planaire-d-un-vecteur" title="Permalink to this headline">#</a></h4>
+</section>
+<section id="symetrie-et-anti-symetrie-planaire-d-un-vecteur">
+<h4>Symétrie et anti-symétrie planaire d’un vecteur<a class="headerlink" href="#symetrie-et-anti-symetrie-planaire-d-un-vecteur" title="Permalink to this heading">#</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Symétrie planaires</strong>
@@ -859,10 +618,10 @@ Soit un plan <span class="math notranslate nohighlight">\(\Pi\)</span>. On dit q
 <p><strong>Antisymétrie planaires</strong></p>
 <p>Soit un plan <span class="math notranslate nohighlight">\(\Pi\)</span>. On dit que le champ vectoriel <span class="math notranslate nohighlight">\(\overrightarrow{j}(M))\)</span> présente une anti-symétrie par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span> si et seulement si pour tout point M’ image de M par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span>, <span class="math notranslate nohighlight">\(\overrightarrow{j}(M')\)</span> est l’antisymétrique de <span class="math notranslate nohighlight">\(\overrightarrow{j}(M)\)</span> par rapport à <span class="math notranslate nohighlight">\(\Pi\)</span>, c’est-à-dire que <span class="math notranslate nohighlight">\(\overrightarrow{j}(M')\)</span> est <em>l’opposé</em> du symétrique de <span class="math notranslate nohighlight">\(\overrightarrow{j}(M)\)</span>.</p>
 </div>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Ces propriétés ne s’appliquent quà des points SUR les plans de symétrie/d’antisymétrie.</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Conséquence sur l’orientation du champ magnétique</strong></p>
@@ -871,23 +630,23 @@ Soit un plan <span class="math notranslate nohighlight">\(\Pi\)</span>. On dit q
 <li><p><strong>En tout point M d’un plan d’antisymétrie d’un champ de vecteur</strong>, le vecteur est <strong>perpendiculaire</strong> au plan.</p></li>
 </ul>
 </div>
-</div>
-<div class="section" id="symetrie-et-anti-symetrie-planaire-d-un-pseudo-vecteur">
-<h4>Symétrie et anti-symétrie planaire d’un pseudo-vecteur<a class="headerlink" href="#symetrie-et-anti-symetrie-planaire-d-un-pseudo-vecteur" title="Permalink to this headline">#</a></h4>
-<div class="margin sidebar">
+</section>
+<section id="symetrie-et-anti-symetrie-planaire-d-un-pseudo-vecteur">
+<h4>Symétrie et anti-symétrie planaire d’un pseudo-vecteur<a class="headerlink" href="#symetrie-et-anti-symetrie-planaire-d-un-pseudo-vecteur" title="Permalink to this heading">#</a></h4>
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Un pseudo-vecteur est en général issu d’un produit vectoriel entre deux vecteurs.</p>
-</div>
+</aside>
 <p>Les pseudo-vecteur sont des éléments mathématiques possédant les mêmes caractéristiques que les vecteurs (direction, sens, norme ou possibilité de projection dans une base orthonormée) MAIS qui n’auront pas les mêmes propriétés de symétrie. C’est le cas du moment cinétique et surtout <strong>du champ magnétique qui est un pseudo-vecteur.</strong></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Symétries  et antisymétries planaires</strong>
 Pour un pseudo-vecteur, les plans de symétries et d’anti-symétrie sont inversés.</p>
 </div>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Ces propriétés ne s’appliquent quà des points SUR les plans de symétrie/d’antisymétrie.</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Conséquence sur l’orientation du champ magnétique</strong></p>
@@ -896,34 +655,34 @@ Pour un pseudo-vecteur, les plans de symétries et d’anti-symétrie sont inver
 <li><p><strong>En tout point M d’un plan d’antisymétrie du champ magnétique</strong>, le champ magnétique est <strong>contenu</strong> dans le plan.</p></li>
 </ul>
 </div>
-</div>
-</div>
-<div class="section" id="principe-de-curie">
-<h3>Principe de Curie<a class="headerlink" href="#principe-de-curie" title="Permalink to this headline">#</a></h3>
-<div class="margin sidebar">
+</section>
+</section>
+<section id="principe-de-curie">
+<h3>Principe de Curie<a class="headerlink" href="#principe-de-curie" title="Permalink to this heading">#</a></h3>
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Un plan de symétrie n’a pas les mêmes conséquences sur <span class="math notranslate nohighlight">\(\overrightarrow{j}(M)\)</span> et sur <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span>.</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Principe de Curie</strong>
 Lorsque certaines causes produisent certains effets, les éléments de symétrie des causes doivent se retrouver dans les effets produits.</p>
 </div>
-</div>
-</div>
-<div class="section" id="ordres-de-grandeurs-de-champs-crees">
-<h2>Ordres de grandeurs de champs créés<a class="headerlink" href="#ordres-de-grandeurs-de-champs-crees" title="Permalink to this headline">#</a></h2>
-<div class="section" id="champ-magnetique-par-un-aimant-droit">
-<h3>Champ magnétique par un aimant droit<a class="headerlink" href="#champ-magnetique-par-un-aimant-droit" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="ordres-de-grandeurs-de-champs-crees">
+<h2>Ordres de grandeurs de champs créés<a class="headerlink" href="#ordres-de-grandeurs-de-champs-crees" title="Permalink to this heading">#</a></h2>
+<section id="champ-magnetique-par-un-aimant-droit">
+<h3>Champ magnétique par un aimant droit<a class="headerlink" href="#champ-magnetique-par-un-aimant-droit" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Aimants néodyme: 0,3 à 1 T</p></li>
 <li><p>IRM (électro-aimant): 6T</p></li>
 <li><p>Champ magnétiue terrestre : <span class="math notranslate nohighlight">\(0.5 \times 10^{-5} \rm{T} = 0.5 \rm{gauss}\)</span></p></li>
 </ul>
-</div>
-<div class="section" id="champ-cree-par-un-circuit-electrique-en-ligne">
-<h3>Champ créé par un circuit électrique (en ligne)<a class="headerlink" href="#champ-cree-par-un-circuit-electrique-en-ligne" title="Permalink to this headline">#</a></h3>
-<div class="topic">
+</section>
+<section id="champ-cree-par-un-circuit-electrique-en-ligne">
+<h3>Champ créé par un circuit électrique (en ligne)<a class="headerlink" href="#champ-cree-par-un-circuit-electrique-en-ligne" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
 <p class="topic-title">Théorème d’Ampère (pas à connaître en première année)</p>
 <p>La circulation du champ magnétique sur un contour orienté (C) fermé est le produit de <span class="math notranslate nohighlight">\(\mu_0\)</span> par la somme algébrique des intensités des courants enlacés par ce contour, les intensités dont l’orientation n’est pas en cohérence avec celle du contour (règle du tire- bouchon) étant changées de signe:</p>
 <div class="math notranslate nohighlight">
@@ -931,35 +690,35 @@ Lorsque certaines causes produisent certains effets, les éléments de symétrie
 \oint_{(C)} \overrightarrow{B}\cdot \overrightarrow{dl} = \mu_0 \sum\limits_{i} \alpha_i I_i
 \]</div>
 <p>où <span class="math notranslate nohighlight">\(\alpha_i = \pm 1\)</span> suivant que l’intensité <span class="math notranslate nohighlight">\(I_i\)</span> est orientée en cohérence avec le contour.</p>
-</div>
-</div>
-</div>
-<div class="section" id="principe-du-dipole-magnetique">
-<h2>Principe du dipôle magnétique<a class="headerlink" href="#principe-du-dipole-magnetique" title="Permalink to this headline">#</a></h2>
-<div class="topic">
+</aside>
+</section>
+</section>
+<section id="principe-du-dipole-magnetique">
+<h2>Principe du dipôle magnétique<a class="headerlink" href="#principe-du-dipole-magnetique" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
 <p class="topic-title">Principe</p>
 <p>De prime abord, on associe la création d’un champ magnétique à un déplacement de particules chargées, c’est-à-dire à des courants. On dispose ainsi de lois (loi de Biot et Savart ou théorème d’Ampère) qui permettent d’établir la cartographie de champ magnétique, connaissant les courants. Le problème est que la seule approche par les courants limite beaucoup l’étude des “objets magnétiques”, entendons par là, des objets créant un champ magnétique. En effet, les aimants courants ne sont pas des circuits électriques dans lesquels on fait parcourir un courant qu’on peut quantifier. De plus, si l’on pourrait modéliser un tel comportement par des mouvements microscopiques (mouvement orbital des électrons par exemple, cf. TD), les ordres de grandeurs montrent que cette modélisation est insuffisante pour caractériser la majorité des phénomènes magnétiques dans la matières. On doit admettre deux points:</p>
 <ul class="simple">
 <li><p>La matière peut créer des champs magnétiques (ex: les aimants) dont l’origine n’est pas forcément lié à un déplacement <strong>physique</strong> de charges, même microscopique.</p></li>
 <li><p>Que le champ magnétique créé par des matériaux magnétiques soit lié à un mouvement (microscopique ou macroscopique) ou à une “autre cause” (…), les distances caractéristiques mises en jeu permettent de supposer que les champs “qui nous intéressent” sont souvent créés à grandes distances de la cause.</p></li>
 </ul>
-</div>
-<div class="section" id="approximation-dipolaire-carte-de-champ-magnetique">
-<h3>Approximation dipolaire. Carte de champ magnétique<a class="headerlink" href="#approximation-dipolaire-carte-de-champ-magnetique" title="Permalink to this headline">#</a></h3>
+</aside>
+<section id="approximation-dipolaire-carte-de-champ-magnetique">
+<h3>Approximation dipolaire. Carte de champ magnétique<a class="headerlink" href="#approximation-dipolaire-carte-de-champ-magnetique" title="Permalink to this heading">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Approximation dipolaire</strong></p>
 <p>Soit un champ magnétique créé par un dispositif particulier (aimant, circuit, phénomène microscopique…) situé autour d’un point O. On se place dans le cadre de l’approximation dipolaire si l’on considère que le point M où l’on calcule/étudie le champ magnétique est “loin” du dispositif, c’est-à-dire que la distance OM est grande devant la taille caractéristique L du dispositif.</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Exemples</p>
 <ul class="simple">
 <li><p>Soit une spire de rayon 1cm parcourue par un courant I. On pourra se placer dans le cadre de l’approximation dipolaire si l’on considère des point M situé à une distance OM &gt;&gt;1cm (on pourra prendre O au centre de la spire).</p></li>
 <li><p>Soit un atome constitué d’électrons tournant autour du noyau. Ce sont des particules chargées en mouvement qui créent donc un champ magnétique. On peut définir un “rayon” de l’atome comme une zone au sein de laquelle est confiné (dans une vision classique) l’électron. A une distance d grande devant ce rayon, on pourra considérer qu’on est dans le cadre de l’approximation dipolaire.</p></li>
 <li><p>Le cas d’un aimant droit est particulier, car ce sont en réalité des phénomènes microscopiques qui sont à l’origine du magnétisme de l’aimant. Même si l’aimant est grand, l’échelle mise en jeu dans les phénomènes magnétiques est très petite, c’est pourquoi on arrive à se placer dans le cadre de l’approximation dipolaire à des distances qui paraissent petites devant la taille de l’aimant.</p></li>
 </ul>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Champ magnétique dans le cadre de l’approximation dipolaire</p>
 <p>Dans le cadre de l’approximation dipolaire, les dispositifs magnétiques, possèdent malgré leur grande variété de réalisation des cartes de champs de forme relativement similaire. On pourra distinguer plusieurs “classes de dispositifs” :</p>
 <ul class="simple">
@@ -967,14 +726,16 @@ Lorsque certaines causes produisent certains effets, les éléments de symétrie
 <li><p>les dipôles magnétiques: ce sont les plus courants</p></li>
 <li><p>les quadripôles magnétiques, les octopôles magnétiques… (on peut augmenter le nombre de pôles mais toujours par paire).</p></li>
 </ul>
-</div>
-<div class="section" id="cas-du-dipole-magnetique">
-<h4>Cas du dipôle magnétique.<a class="headerlink" href="#cas-du-dipole-magnetique" title="Permalink to this headline">#</a></h4>
+</aside>
+<section id="cas-du-dipole-magnetique">
+<h4>Cas du dipôle magnétique.<a class="headerlink" href="#cas-du-dipole-magnetique" title="Permalink to this heading">#</a></h4>
 <p>Malgré la grande diversité des dipôles magnétiques, le champ magnétique créé <strong>dans le cadre de l’approximation dipolaire</strong> est toujours le même.</p>
-<div class="figure align-center" id="fig-dipole-magneto">
+<figure class="align-center" id="fig-dipole-magneto">
 <img alt="../_images/em_carte_champ_dipole_magnetostatique.jpg" src="../_images/em_carte_champ_dipole_magnetostatique.jpg" />
-<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Dipôle magnétostatique</span><a class="headerlink" href="#fig-dipole-magneto" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Dipôle magnétostatique</span><a class="headerlink" href="#fig-dipole-magneto" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Champ magnétique créé par un dipôle magnétique
@@ -1001,7 +762,7 @@ $<span class="math notranslate nohighlight">\(
 \]</div>
 <p>où <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> est le vecteur surface associé à la spire (\ref{enc:enc_vecteur_surface_et_moment_dipolaire_d_un_circuit}).</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Vecteur surface</p>
 <p>Pour un contour fermé <span class="math notranslate nohighlight">\(\Gamma\)</span>, on définit le vecteur surface <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> associé par:</p>
 <div class="math notranslate nohighlight">
@@ -1015,7 +776,7 @@ $<span class="math notranslate nohighlight">\(
 \overrightarrow{S} = S \overrightarrow{n}
 \]</div>
 <p>où S est la surface délimité par le contour et <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> le vecteur normal à la surface dans le sens en cohérence avec l’orientation du contour s’il y en a.</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Spire plane de forme quelconque (Admise)</strong></p>
@@ -1025,22 +786,24 @@ $<span class="math notranslate nohighlight">\(
 \overrightarrow{M} = I \overrightarrow{S}
 \]</div>
 </div>
-</div>
-<div class="section" id="cas-d-un-multi-poles-hp-en-ligne">
-<h4>Cas d’un “multi-pôles” (HP - en ligne)<a class="headerlink" href="#cas-d-un-multi-poles-hp-en-ligne" title="Permalink to this headline">#</a></h4>
-<div class="topic">
+</section>
+<section id="cas-d-un-multi-poles-hp-en-ligne">
+<h4>Cas d’un “multi-pôles” (HP - en ligne)<a class="headerlink" href="#cas-d-un-multi-poles-hp-en-ligne" title="Permalink to this heading">#</a></h4>
+<aside class="topic">
 <p class="topic-title">Multipoles</p>
-<div class="figure align-center" id="fig-multipole">
+<figure class="align-center" id="fig-multipole">
 <img alt="../_images/em_quadrupolechamp.jpg" src="../_images/em_quadrupolechamp.jpg" />
-<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Exemple de carte de champ de multipôles</span><a class="headerlink" href="#fig-multipole" title="Permalink to this image">#</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Exemple de carte de champ de multipôles</span><a class="headerlink" href="#fig-multipole" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+</section>
+</section>
+</section>
 <div class="toctree-wrapper compound">
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1054,7 +817,7 @@ $<span class="math notranslate nohighlight">\(
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./notebook"
         },
         predefinedOutput: true
@@ -1062,50 +825,139 @@ $<span class="math notranslate nohighlight">\(
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../em.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Electromagnétisme</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../em.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Electromagnétisme</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="champ_b_methodes.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="champ_b_methodes.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Champs magnétiques. Méthodes et exercices.</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observation-experimentale">Observation expérimentale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-en-ligne">Observations (en ligne)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation-en-terme-de-champ-magnetique">Interprétation en terme de champ magnétique</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cartes-de-champ-magnetiques">Cartes de champ magnétiques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lignes-de-champ-caracterisation-experimentale">Lignes de champ. Caractérisation expérimentale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristiques-generales">Caractéristiques générales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-du-flux-du-champ-magnetique">Conservation du flux du champ magnétique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creer-un-champ-magnetique-uniforme-en-ligne">Créer un champ magnétique uniforme (en ligne)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symetrie-des-champs-magnetiques">Symétrie des champs magnétiques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#les-distributions-de-courant">Les distributions de courant</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exemples-de-distribution-en-ligne">Exemples de distribution (en ligne)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notions-de-symetries-et-d-invariance">Notions de symétries et d’invariance</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#invariance">Invariance</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#symetrie-et-anti-symetrie-planaire-d-un-vecteur">Symétrie et anti-symétrie planaire d’un vecteur</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#symetrie-et-anti-symetrie-planaire-d-un-pseudo-vecteur">Symétrie et anti-symétrie planaire d’un pseudo-vecteur</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-de-curie">Principe de Curie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ordres-de-grandeurs-de-champs-crees">Ordres de grandeurs de champs créés</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#champ-magnetique-par-un-aimant-droit">Champ magnétique par un aimant droit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#champ-cree-par-un-circuit-electrique-en-ligne">Champ créé par un circuit électrique (en ligne)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-du-dipole-magnetique">Principe du dipôle magnétique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approximation-dipolaire-carte-de-champ-magnetique">Approximation dipolaire. Carte de champ magnétique</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-du-dipole-magnetique">Cas du dipôle magnétique.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-d-un-multi-poles-hp-en-ligne">Cas d’un “multi-pôles” (HP - en ligne)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By C. Lacpatia<br/>
-  
-      &copy; Copyright 2021.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By C. Lacpatia
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

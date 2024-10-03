@@ -1,47 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Induction et application &#8212; Electromagnétisme</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>Induction et application &#8212; Electromagnétisme</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -51,57 +64,97 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebook/induction';</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/em/notebook/induction.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="prev" title="Actions d’un champ magnétique. Forces de Laplace" href="actions_b.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-    <div class="container-fluid" id="banner"></div>
-
     
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-      
-      
-      <h1 class="site-logo" id="site-title">Electromagnétisme</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+<a class="navbar-brand logo" href="../em.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Electromagnétisme</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -111,516 +164,214 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="champ_b.html">
-   Champ magnétique. Introduction
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="champ_b_methodes.html">
-     Champs magnétiques. Méthodes et exercices.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="champ_b_activite.html">
-     Origine et ordre de grandeur du moment magnétique
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="champ_b_td.html">
-     Entrainement
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="particules_c.html">
-   Mouvement de particules chargées
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="actions_b.html">
-   Actions d’un champ magnétique. Forces de Laplace
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Induction et application
-  </a>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="champ_b.html">Champ magnétique. Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="champ_b_methodes.html">Champs magnétiques. Méthodes et exercices.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="champ_b_activite.html">Activité : Origine et ordre de grandeur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="champ_b_td.html">Entrainement</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="particules_c.html">Mouvement de particules chargées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions_b.html">Actions d’un champ magnétique. Forces de Laplace</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Induction et application</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/induction.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebook/induction.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/notebook/induction.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="../_sources/notebook/induction.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#observation-experimentale-en-ligne">
-     Observation expérimentale (en ligne)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#loi-de-lenz">
-     Loi de Lenz
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#loi-de-faraday">
-     Loi de Faraday
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#champs-variables-et-circuits-fixes">
-   Champs variables et circuits fixes
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#principe-d-auto-induction">
-     Principe d’auto-induction
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#induction-mutuelle">
-     Induction mutuelle
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bilan-energetique">
-     Bilan énergétique
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#application-au-transformateur">
-     Application au transformateur
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#presentation-generale">
-       Présentation générale
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cas-du-transformateur-parfait">
-       Cas du transformateur parfait
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#differents-transformateurs-en-ligne">
-       Différents transformateurs (en ligne)
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#champs-constants-et-circuits-mobiles">
-   Champs constants et circuits mobiles
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#rails-de-laplace">
-     Rails de Laplace
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#spire-en-rotation">
-     Spire en rotation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cas-de-conducteur-courants-de-foucault">
-     Cas de conducteur. Courants de Foucault
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#moteurs-alternateurs-generatrices">
-     Moteurs, alternateurs, génératrices
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#machine-synchrone">
-       Machine synchrone
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#machine-asynchrone">
-       Machine asynchrone
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#machine-a-courant-continu">
-       Machine à courant continu
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#s-entrainer">
-   S’entrainer
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#applications">
-     Applications
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#entrainement">
-     Entrainement
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Induction et application</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#observation-experimentale-en-ligne">
-     Observation expérimentale (en ligne)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#loi-de-lenz">
-     Loi de Lenz
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#loi-de-faraday">
-     Loi de Faraday
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#champs-variables-et-circuits-fixes">
-   Champs variables et circuits fixes
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#principe-d-auto-induction">
-     Principe d’auto-induction
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#induction-mutuelle">
-     Induction mutuelle
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bilan-energetique">
-     Bilan énergétique
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#application-au-transformateur">
-     Application au transformateur
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#presentation-generale">
-       Présentation générale
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cas-du-transformateur-parfait">
-       Cas du transformateur parfait
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#differents-transformateurs-en-ligne">
-       Différents transformateurs (en ligne)
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#champs-constants-et-circuits-mobiles">
-   Champs constants et circuits mobiles
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#rails-de-laplace">
-     Rails de Laplace
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#spire-en-rotation">
-     Spire en rotation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cas-de-conducteur-courants-de-foucault">
-     Cas de conducteur. Courants de Foucault
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#moteurs-alternateurs-generatrices">
-     Moteurs, alternateurs, génératrices
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#machine-synchrone">
-       Machine synchrone
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#machine-asynchrone">
-       Machine asynchrone
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#machine-a-courant-continu">
-       Machine à courant continu
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#s-entrainer">
-   S’entrainer
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#applications">
-     Applications
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#entrainement">
-     Entrainement
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Induction et application</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observation-experimentale-en-ligne">Observation expérimentale (en ligne)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loi-de-lenz">Loi de Lenz</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loi-de-faraday">Loi de Faraday</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#champs-variables-et-circuits-fixes">Champs variables et circuits fixes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-d-auto-induction">Principe d’auto-induction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#induction-mutuelle">Induction mutuelle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bilan-energetique">Bilan énergétique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-au-transformateur">Application au transformateur</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-generale">Présentation générale</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-du-transformateur-parfait">Cas du transformateur parfait</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#differents-transformateurs-en-ligne">Différents transformateurs (en ligne)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#champs-constants-et-circuits-mobiles">Champs constants et circuits mobiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rails-de-laplace">Rails de Laplace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spire-en-rotation">Spire en rotation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-de-conducteur-courants-de-foucault">Cas de conducteur. Courants de Foucault</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moteurs-alternateurs-generatrices">Moteurs, alternateurs, génératrices</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-synchrone">Machine synchrone</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-asynchrone">Machine asynchrone</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-a-courant-continu">Machine à courant continu</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-entrainer">S’entrainer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#entrainement">Entrainement</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="induction-et-application">
-<h1>Induction et application<a class="headerlink" href="#induction-et-application" title="Permalink to this headline">#</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
-<div class="section" id="observation-experimentale-en-ligne">
-<h3>Observation expérimentale (en ligne)<a class="headerlink" href="#observation-experimentale-en-ligne" title="Permalink to this headline">#</a></h3>
-<div class="topic">
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="induction-et-application">
+<h1>Induction et application<a class="headerlink" href="#induction-et-application" title="Permalink to this heading">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<section id="observation-experimentale-en-ligne">
+<h3>Observation expérimentale (en ligne)<a class="headerlink" href="#observation-experimentale-en-ligne" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
 <p class="topic-title">Observations expérimentales</p>
 <p>Expérimentalement, on observe que:</p>
 <ul class="simple">
@@ -634,25 +385,25 @@ title="Print to PDF"
 <li><p>La tension créé dans la bobine au passage de l’aimant crée un courant qui crée un champ magnétique variable exerçant une force sur l’aimant. Cette force tend à ralentir l’aimant (ou la bobine).</p></li>
 <li><p>Dans le cas d’une bobine parcourue par une intensité variable. On observe que la tension induite dans la seconde bobine est variable aussi créant un courant variable dans la bobine. Le champ magnétique ainsi créé est aussi variable et va induire aussi une tension dans la première bobine. Cette tension tend à s’opposer aux variations de l’intensité dans la première bobine.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="loi-de-lenz">
-<h3>Loi de Lenz<a class="headerlink" href="#loi-de-lenz" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+<section id="loi-de-lenz">
+<h3>Loi de Lenz<a class="headerlink" href="#loi-de-lenz" title="Permalink to this heading">#</a></h3>
 <p>Dans tous les exemples données (en ligne), l’effet créé par la variation du flux du champ magnétique va lui-même engendrer un effet sur le flux du champ magnétique: cet effet est opposé à la cause initiale: on parle de <strong>loi de modération</strong>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Loi de Lenz</strong></p>
 <p>Un phénomène d’induction suit un loi de modération, c’est-à-dire que l’effet produit tend à s’opposer à la cause qui lui a donner naissance.</p>
 </div>
-</div>
-<div class="section" id="loi-de-faraday">
-<h3>Loi de Faraday<a class="headerlink" href="#loi-de-faraday" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="loi-de-faraday">
+<h3>Loi de Faraday<a class="headerlink" href="#loi-de-faraday" title="Permalink to this heading">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Loi de Faraday</strong></p>
 <p>Un circuit conducteur <span class="math notranslate nohighlight">\(\Gamma\)</span> plongé dans un champ magnétique <span class="math notranslate nohighlight">\(\overrightarrow{B}\)</span> est le siège d’une force électromotrice appelée force électromotrice induite: <span class="math notranslate nohighlight">\(e = - \frac{d \phi}{dt}\)</span> où <span class="math notranslate nohighlight">\(\phi\)</span> est le flux du champ magnétique à travers le circuit (dont la surface est orientée) et la f.e.m. induite est orientée dans le circuit en cohérence avec la surface orientée (règle du tire-bouchon).</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Remarque</p>
 <p>Il apparaît clairement dans cette loi la nécessité d’un flux variable. Cela peut se produire de deux façons (qui peuvent être simultanées):</p>
 <ul class="simple">
@@ -663,33 +414,35 @@ title="Print to PDF"
 <p>Les conventions d’orientation sont primordiales. D’autant que l’on va associer une représentation géométrique des circuits à leur schématisation électrique. Si l’on ne fait pas attention, tous les calculs sera faux et même physiquement aberrants (car la loi de modération de Lenz ne sera plus vérifié).</p>
 <p>Une f.e.m. tend à créer (si c’est la seule source) un courant qui circule dans le sens de la f.e.m. (puissance fournie positive), il vient que le champ magnétique induit par ces courants s’opposera à celui initial, on retrouve alors la loi de Lenz. Même si la fermeture du circuit va permettre la circulation d’un courant, il faut bien remarquer que la variation du flux magnétique crée une force électromotrice (tension en quelque sorte). Le courant n’est qu’une cause secondaire.</p>
 <p>La situation sur le schéma (à une maille) de la f.e.m. induite n’a pas d’importance. En réalité, il s’agit d’une f.e.m. résultant de l’action du champ magnétique sur l’ensemble du circuit. On pourrait associer à la loi de Faraday une équation locale (équation de Maxwell-Faraday) qui le montrerait en associant le champ magnétique au champ électrique (qui rappelons le est en lien directe avec le potentiel électrique dans un circuit).</p>
-</div>
-</div>
-</div>
-<div class="section" id="champs-variables-et-circuits-fixes">
-<h2>Champs variables et circuits fixes<a class="headerlink" href="#champs-variables-et-circuits-fixes" title="Permalink to this headline">#</a></h2>
-<div class="section" id="principe-d-auto-induction">
-<h3>Principe d’auto-induction<a class="headerlink" href="#principe-d-auto-induction" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+</section>
+<section id="champs-variables-et-circuits-fixes">
+<h2>Champs variables et circuits fixes<a class="headerlink" href="#champs-variables-et-circuits-fixes" title="Permalink to this heading">#</a></h2>
+<section id="principe-d-auto-induction">
+<h3>Principe d’auto-induction<a class="headerlink" href="#principe-d-auto-induction" title="Permalink to this heading">#</a></h3>
 <p><strong>Position du problème:</strong> Commençons par remarquer qu’un circuit électrique parcouru par un courant électrique engendre un champ magnétique et donc a priori un flux magnétique non nul à travers le circuit lui-même (on parle de <strong>flux propre</strong>). Si l’intensité qui circule dans le circuit est variable, alors le champ magnétique l’est aussi, donc son flux sera variable. Il devrait donc se produire un phénomène d’induction à travers le circuit, c’est-à-dire qu’une f.e.m. induite devrait s’opposer à la variation du courant (cause initiale). Cela se produit: c’est le <strong>phénomène d’auto-induction</strong>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Méthode : Cas d’une bobine de grande longueur</strong></p>
 <p>Soit une bobine de longueur D contenant N spires jointives circulaires de section S parcourues par un courant <span class="math notranslate nohighlight">\(i(t)\)</span>.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Déterminer le flux propre de la bobine, c’est-à-dire le flux du champ magnétique créé par la bobine à travers la bobine elle-même. On assimilera le champ magnétique créé à celui créé par une bobine infinie.</p></li>
 <li><p>Déterminer l’expression de la f.e.m. auto-induite et commenter son expression. Préciser la modélisation électrique du composant et ses caractéristiques.</p></li>
 <li><p>Estimer l’ordre de grandeur de l’inductance ainsi définie pour différentes valeurs de bobines. Commenter.</p></li>
 </ol>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Correction</p>
 <blockquote>
 <div><p><strong>On notera l’importance d’un schéma et des conventions d’orientation.</strong></p>
 </div></blockquote>
-<div class="figure align-center" id="fig-auto-inductance">
+<figure class="align-center" id="fig-auto-inductance">
 <img alt="../_images/em_auto_inductance.jpg" src="../_images/em_auto_inductance.jpg" />
-<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">Plan d’une spire</span><a class="headerlink" href="#fig-auto-inductance" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Plan d’une spire</span><a class="headerlink" href="#fig-auto-inductance" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <blockquote>
 <div><ul class="simple">
 <li><p>Le champ magnétique créé par une bobine infinie s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{B} = \mu_0 n I \overrightarrow{e_z}\)</span> avec <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span> en cohérence avec le sens de I et <span class="math notranslate nohighlight">\(n = \frac{N}{D}\)</span>. On choisit d’orienter les surfaces des spires suivant <span class="math notranslate nohighlight">\(+ \overrightarrow{e_z}\)</span> (<strong>c’est un choix</strong>). Le flux à travers une spire est donc:
@@ -708,11 +461,11 @@ On reconnaître l'équation d'évolution d'une inductance avec \)</span>L = \fra
 <li><p>Pour les bobines à air, on a <span class="math notranslate nohighlight">\(D \sim 10 \rm{cm}\)</span> et <span class="math notranslate nohighlight">\(S \sim 1 \rm{dm^{2}}\)</span> soit <span class="math notranslate nohighlight">\(L \sim \times 10^{-7} N^2\)</span>. Il faut donc 10 spires pour avoir <span class="math notranslate nohighlight">\(L = 1 \rm{mH}\)</span> et près de 3000 spires (sur 10 centimètres) pour avoir <span class="math notranslate nohighlight">\(L = 1 \rm{H}\)</span>. On pourra remarquer que les ordre de grandeur choisis ici ne valide PAS l’hypothèse d’une bobine longue. Dans ces conditions, le champ magnétiques chute très rapidement et l’inductance diminue aussi. Il est donc très compliqué de créer une bobine à air de forte inductance.</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="margin sidebar">
+</aside>
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>En pratique, on oriente cette effet en convention récepteur dans un circuit électrique, ce qui donne les équation d’évolution habituel d’une bobine. On pourra, comme en électrocinétique, conduire des bilans de puissance directement sur le circuit équivalent.</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Auto-inductance</strong></p>
@@ -723,30 +476,30 @@ On reconnaître l'équation d'évolution d'une inductance avec \)</span>L = \fra
 \]</div>
 <p>La loi de Faraday donne la fem auto-induide: <span class="math notranslate nohighlight">\(e = - L \frac{d I}{dt}\)</span> La valeur de l’inductance dépend de la géométrie du circuit.</p>
 </div>
-</div>
-<div class="section" id="induction-mutuelle">
-<h3>Induction mutuelle<a class="headerlink" href="#induction-mutuelle" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="induction-mutuelle">
+<h3>Induction mutuelle<a class="headerlink" href="#induction-mutuelle" title="Permalink to this heading">#</a></h3>
 <p><strong>Position du problème:</strong> Considérons deux bobines longues de même axe. On suppose que l’une est imbriquée dans l’autre, de sorte que l’approximation du champ créé par une bobine infinie reste valable. On note <span class="math notranslate nohighlight">\(I_i, D_i, S_i\)</span> et <span class="math notranslate nohighlight">\(N_i\)</span> les intensités, longueur, section et nombre de spire de la bobine i.</p>
 <p><strong>Champ propre et champ extérieur:</strong> Les phénomènes d’induction pour chaque bobine résultent de la superposition du champ magnétique propre à la bobine considéré et du champ magnétique créé par l’autre bobine. Ce dernier phénomène est appelé phénomène d’induction mutuelle. Dans le cas de deux bobines, ces deux champs peuvent être a priori de même ordre de grandeur, on ne peut donc négliger un champ devant l’autre.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Méthode : Flux mutuel entre deux bobines longues coaxiales</strong></p>
 <p>On suppose le champ magnétique créé par chaque bobine assimilable <strong>dans la bobine</strong> à celui d’une bobine longue à l’intérieur de la bobine (et est nul à l’extérieur). On pose <span class="math notranslate nohighlight">\(D_1 &gt; D_2\)</span> et <span class="math notranslate nohighlight">\(S_2 &gt; S_1\)</span>. On suppose que les intensités “tournent” dans le même sens en progressant suivant les Oz positifs.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Déterminer le flux du champ créé par la bobine 1 dans la bobine 2.</p></li>
 <li><p>Déterminer le flux du champ créé par la bobine 2 dans la bobine 1.</p></li>
 <li><p>En déduire une modélisation électrique de l’ensemble.</p></li>
 <li><p>Que se passe-t-il si on inverse l’enroulement du bobinage 2?</p></li>
 </ol>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Correction</p>
 <blockquote>
 <div><p><strong>On rappelle l’importance des conventions d’orientation.</strong></p>
 </div></blockquote>
-<div class="figure align-center" id="fig-induc-mutuelle-3d">
+<figure class="align-center" id="fig-induc-mutuelle-3d">
 <img alt="../_images/em_induc_mutelle_3d.jpg" src="../_images/em_induc_mutelle_3d.jpg" />
-</div>
+</figure>
 <blockquote>
 <div><ul class="simple">
 <li><p>On oriente le vecteur surface <span class="math notranslate nohighlight">\(\overrightarrow{S}\)</span> dans le sens des z positifs. Le champ magnétique créé par la bobine 1 est <span class="math notranslate nohighlight">\(\overrightarrow{B_1} = \mu_0 \frac{N_1}{D_1} I_1 \overrightarrow{e_z}\)</span> à l’intérieur de la bobine 1. Comme cette bobine est plus longue, le champ magnétique est non nul dans chaque spire de la bobine 2. Par contre, le flux magnétique n’est non nul que dans la surface <span class="math notranslate nohighlight">\(S_1\)</span> car <span class="math notranslate nohighlight">\(S_2 &gt; S_1\)</span>. Il vient:
@@ -769,21 +522,25 @@ e_2 = - \mu_0 \frac{N_1 N_2}{D_1} S_1 \frac{d I_1}{dt}
 <li><p>L’intensité <span class="math notranslate nohighlight">\(I_2\)</span> tourne alors dans le sens contrainre à <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span>. Il vient que <span class="math notranslate nohighlight">\(e_1\)</span> change de signe. On peut garder la même expression en changeant de sens la tension (\cref{fig_mutuelle_modele_inv}).</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="figure align-center" id="fig-mutuelle-modele">
+</aside>
+<figure class="align-center" id="fig-mutuelle-modele">
 <img alt="../_images/em_mutuelle_modele.jpg" src="../_images/em_mutuelle_modele.jpg" />
-<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Cas des intensités tournant dans le même sens</span><a class="headerlink" href="#fig-mutuelle-modele" title="Permalink to this image">#</a></p>
-</div>
-<div class="figure align-center" id="fig-mutuelle-modele-inv">
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Cas des intensités tournant dans le même sens</span><a class="headerlink" href="#fig-mutuelle-modele" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-mutuelle-modele-inv">
 <img alt="../_images/em_mutuelle_modele_inv.jpg" src="../_images/em_mutuelle_modele_inv.jpg" />
-<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Cas des intensités tournant dans des sens opposés</span><a class="headerlink" href="#fig-mutuelle-modele-inv" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Cas des intensités tournant dans des sens opposés</span><a class="headerlink" href="#fig-mutuelle-modele-inv" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Inductance mutuelle</strong></p>
 <p>Généralisation (Admise): Soit deux circuits <span class="math notranslate nohighlight">\(\Gamma_1\)</span> et <span class="math notranslate nohighlight">\(\Gamma_2\)</span> parcourue par des courants d’intensité respectives <span class="math notranslate nohighlight">\(I_1\)</span> et <span class="math notranslate nohighlight">\(I_2\)</span>. Le flux du champ magnétique total à travers le circuit 1 (réciproquement 2) se décompose en deux parties: le flux propre et le flux mutuel. Ce dernier est proportionnel à l’intensité <span class="math notranslate nohighlight">\(I_2\)</span> (réciproquement <span class="math notranslate nohighlight">\(I_1\)</span>). Le coefficient de proportionnalité est appelé coefficient d’inductance mutuelle <span class="math notranslate nohighlight">\(M_{2 \rightarrow 1}\)</span> (respectivement <span class="math notranslate nohighlight">\(M_{1 \rightarrow 2}\)</span>):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d82ce0eb-8bb1-4eab-9c4f-ed94195ee7eb">
-<span class="eqno">(5)<a class="headerlink" href="#equation-d82ce0eb-8bb1-4eab-9c4f-ed94195ee7eb" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-30fe0d8e-6646-48ed-a2d9-8f52963755af">
+<span class="eqno">(5)<a class="headerlink" href="#equation-30fe0d8e-6646-48ed-a2d9-8f52963755af" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \begin{bmatrix}
 \phi_1\\
 \phi_2
@@ -798,10 +555,10 @@ I_1\\
 I_2
 \end{bmatrix}
 \end{equation}\]</div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Remarque</p>
 <p>Les coefficients dépendent la géométrie de chaque circuit et de leur disposition relative. Ils peuvent être négatifs à priori (on peut s’en convaincre en observant ce qui se passe si l’on inverse le sens de branche d’une des bobines dans l’exercice~\ref{exe:exe_flux_mutuel_entre_deux_bobines_longues_coaxiales}: le coefficient d’inductance mutuel est).</p>
-</div>
+</aside>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -818,13 +575,13 @@ I_2
 <p><strong>Fondamental : Inductance mutuelle de circuit en influence totale</strong></p>
 <p>Lorsque deux circuits sont en influence totale, <span class="math notranslate nohighlight">\(M = \sqrt{L_1 L_2}\)</span>. L’inductance mutuelle entre les deux circuits est alors maximale.</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Remarque</p>
 <p>Avoir une inductance mutuelle maximale est extrêmement intéressant car dans ces conditions, le premier circuit exerce une influence maximale par induction sur le second (et réciproquement). En général, on utilise l’inductance mutuelle pour transmettre une information ou de l’énergie. Dans les deux cas, l’influence totale permet de minimiser les pertes. Lorsqu’il n’y a pas influence totale, le transfert d’énergie n’est pas maximale, cela correspond à une fuite des lignes de champ magnétique.</p>
-</div>
-</div>
-<div class="section" id="bilan-energetique">
-<h3>Bilan énergétique<a class="headerlink" href="#bilan-energetique" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+<section id="bilan-energetique">
+<h3>Bilan énergétique<a class="headerlink" href="#bilan-energetique" title="Permalink to this heading">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Energie emmagasinée</strong></p>
@@ -834,7 +591,7 @@ I_2
 E_{mag} = \frac{1}{2}L_1 I_1^2 + \frac{1}{2}L_2 I_2 ^2 + M I_1 I_2
 \]</div>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Démonstration</p>
 <blockquote>
 <div><p><strong>Démonstration :</strong> Considérons le système complet constitué des deux bobines. La puissance reçue par la bobine 1 s’écrit: <span class="math notranslate nohighlight">\(P_1 = i_1 (L_1 \frac{di_1}{dt} + M \frac{di_2}{dt})\)</span>. De même la puissance reçue par la bobine 2 s’écrit: <span class="math notranslate nohighlight">\(P_2 = i_2 (L_2 \frac{di_2}{dt} + M \frac{di_1}{dt})\)</span>. La puissance totale reçue s’écrit donc:</p>
@@ -845,8 +602,8 @@ P &amp;= L_1 i_1 \frac{di_1}{dt} + L_2 i_2 \frac{di_2}{dt} + M (i_1 \frac{di_2}{
 \end{align*}\]</div>
 <p>On peut écrire la puissance reçue sous la forme d’une dérivée temporelle d’une grandeur: l’énergie emmagasinée.</p>
 </div></blockquote>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title"><strong>Interprétation:</strong></p>
 <p>L’énergie est donné à un instant t pour une configuration d’intensité <span class="math notranslate nohighlight">\((I_1,I_2)\)</span>. Si dans le circuit 1, l’intensité venait à diminuer pour atteindre 0, sa variation engendrerait:</p>
 <ul class="simple">
@@ -866,8 +623,8 @@ L’induction mutuelle peut permettre:</p>
 <li><p>Outre les transformateurs étudié ci-dessous, on peut citer certains stimulateurs cardiaques dont les batteries sont rechargées en moyen d’une autre bobine en influence mutuelle. On évite ainsi le recours à une opération chirurgicale.</p></li>
 </ul>
 </div>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Complément : Coefficient d’induction mutuelle</p>
 <p>Les résultats précédents montre que le coefficients d’induction mutuelle ne peut être supérieur aux inductances mise en jeu. Pour l’augmenter il faut:</p>
 <ul class="simple">
@@ -877,20 +634,22 @@ L’induction mutuelle peut permettre:</p>
 <li><p>mais ces matériaux sont aussi conducteurs. Il peut donc se produire un phénomène d’induction qui génère des courants internes au matériau (<strong>courants de Foucault</strong>). Ils entrainent des pertes énergétiques dans le circuit magnétique.</p></li>
 <li><p>augmenter significativement les valeurs des inductances. Pour ce faire, on utilise des noyaux de matériaux magnétiques (“fer doux”). Comme précédemment, l’augmentation de la perméabilité magnétique canaliser les lignes de champ et peut augmenter significativement l’inductance (cas d’une bobine longue).</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="application-au-transformateur">
-<h3>Application au transformateur<a class="headerlink" href="#application-au-transformateur" title="Permalink to this headline">#</a></h3>
-<div class="section" id="presentation-generale">
-<h4>Présentation générale<a class="headerlink" href="#presentation-generale" title="Permalink to this headline">#</a></h4>
+</aside>
+</section>
+<section id="application-au-transformateur">
+<h3>Application au transformateur<a class="headerlink" href="#application-au-transformateur" title="Permalink to this heading">#</a></h3>
+<section id="presentation-generale">
+<h4>Présentation générale<a class="headerlink" href="#presentation-generale" title="Permalink to this heading">#</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Transformateur électrique</strong></p>
 <p>Un transformateur électrique est une machine électrique permettant de modifier les valeurs de tension et d’intensité du courant délivrées par une source d’énergie électrique alternative, en un système de tension et de courant de valeurs différentes, mais de même fréquence et de même forme. Nous étudions ici des transformateurs statiques c’est-à-dire dans lesquelles le transfert d’énergie entre les deux circuits s’effectue par induction par le biais d’un circuit magnétiques qui canalise le flux du champ magnétique d’un circuit vers l’autre.</p>
-<div class="figure align-center" id="fig-transfo-schema-reel">
+<figure class="align-center" id="fig-transfo-schema-reel">
 <img alt="../_images/em_schema_transfo_reel.png" src="../_images/em_schema_transfo_reel.png" />
-<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">Schéma électrique d’un transformateur</span><a class="headerlink" href="#fig-transfo-schema-reel" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Schéma électrique d’un transformateur</span><a class="headerlink" href="#fig-transfo-schema-reel" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 <p><strong>Eléments de vocabulaire:</strong></p>
 <ul class="simple">
@@ -905,9 +664,9 @@ L’induction mutuelle peut permettre:</p>
 <li><p>La perméabilité magnétique (relative) du circuit magnétique. On rappelle que plus cette valeur est haute, plus les lignes de champ seront canalisées dans le circuit.</p></li>
 <li><p>Le rendement énergétique: <span class="math notranslate nohighlight">\(\rho = \frac{P_2}{P_1}\)</span>. C’est un élément important évidemment.</p></li>
 </ul>
-</div>
-<div class="section" id="cas-du-transformateur-parfait">
-<h4>Cas du transformateur parfait<a class="headerlink" href="#cas-du-transformateur-parfait" title="Permalink to this headline">#</a></h4>
+</section>
+<section id="cas-du-transformateur-parfait">
+<h4>Cas du transformateur parfait<a class="headerlink" href="#cas-du-transformateur-parfait" title="Permalink to this heading">#</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Transformateur parfait</strong></p>
@@ -917,20 +676,22 @@ L’induction mutuelle peut permettre:</p>
 <li><p>les circuits sont en influence totale (les fuites de champ magnétiques sont négligeables), c’est-à-dire que la perméabilité magnétique du circuit magnétique est quasi-infinie.</p></li>
 <li><p>les phénomènes d’auto-induction dans les bobinages sont négligeables.</p></li>
 </ul>
-<div class="figure align-center" id="fig-schema-transfo-ideal">
+<figure class="align-center" id="fig-schema-transfo-ideal">
 <img alt="../_images/em_schema_transfo_ideal.png" src="../_images/em_schema_transfo_ideal.png" />
-<p class="caption"><span class="caption-number">Fig. 16 </span><span class="caption-text">Schéma électrique du transformateur idéal</span><a class="headerlink" href="#fig-schema-transfo-ideal" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Schéma électrique du transformateur idéal</span><a class="headerlink" href="#fig-schema-transfo-ideal" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Lois des tensions</strong></p>
 <p>Le rapport de transformation d’un transformateur parfait est égal au rapport du nombre de spires de l’enroulement secondaire par celui de l’enroulement primaire et est indépendant de la charge placée sur le secondaire: <span class="math notranslate nohighlight">\(m = \frac{U_2}{U_1} = \frac{N_2}{N_1}\)</span></p>
 </div>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>On travaille ici en valeur absolue. Le signe de <span class="math notranslate nohighlight">\(U_1\)</span> et <span class="math notranslate nohighlight">\(U_2\)</span> dépend du sens de l’enroulement. En général, on précise ce sens sur le schéma du transformateur.</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Démonstration</p>
@@ -961,7 +722,7 @@ Dans un transformateur parfait, la puissance reçue par le circuit primaire est 
 <p>Démonstration</p>
 <p><strong>Sous l’hypothèse</strong> de perte d’un rendement énergétique égale à 1, la démonstration est directe.</p>
 </div>
-<div class="dropdown hint topic">
+<aside class="topic dropdown hint">
 <p class="topic-title">Complément : Rapport de transformation des courants (HP en première année)</p>
 <p>Puisque le champ magnétique circule le long du circuit magnétique. On peut calculer sa circulation le long d’une ligne de champ bouclée. Le théorème d’Ampère s’écrit:
 $<span class="math notranslate nohighlight">\(
@@ -972,11 +733,11 @@ Le signe plus/moins dépend de l'orientation du bobinage. Dans le cas d'un trans
 \frac{I_2}{I_1} = \pm \frac{N_1}{N_2} = \pm \frac{1}{m}
 \)</span>$
 Dans les représentation schématiques, le sens de l’enroulement est représenté par un point: il définit le sens à choisir pour l’instant de manière à avoir un rapport positif.</p>
-</div>
-</div>
-<div class="section" id="differents-transformateurs-en-ligne">
-<h4>Différents transformateurs (en ligne)<a class="headerlink" href="#differents-transformateurs-en-ligne" title="Permalink to this headline">#</a></h4>
-<div class="topic">
+</aside>
+</section>
+<section id="differents-transformateurs-en-ligne">
+<h4>Différents transformateurs (en ligne)<a class="headerlink" href="#differents-transformateurs-en-ligne" title="Permalink to this heading">#</a></h4>
+<aside class="topic">
 <p class="topic-title">Typologie</p>
 <p>Il existe plusieurs manières de classer les transformateurs. Si l’on ne s’intéresse qu’à la loi des tensions, on distinguera trois cas:</p>
 <ul class="simple">
@@ -984,15 +745,15 @@ Dans les représentation schématiques, le sens de l’enroulement est représen
 <li><p><strong>m&lt;1</strong> : Le transformateur abaisse la tension. On se sert de ces transformateurs à l’autre bout du réseau électrique, pour ramener les hautes tensions du réseau au valeurs “standards” (220V efficace en France). Ces transformateurs sont aussi utilisé pour abaisser la tension du secteur, par exemple dans les adaptateurs censés fournir des tensions continues beaucoup plus basses. Cela était d’autant plus nécessaire que les circuits de redressement (diodes et condensateurs - moins vrai aujourd’hui) ne pouvaient fonctionner à des tensions aussi élevées que celle du secteur.</p></li>
 <li><p><strong>m=1</strong> : on conserver la même valeur de tension. C’est transformateur ont une utilité particulière: il joue le rôle de transformateur d’isolement. En effet il n’y a pas de contact électrique (on dit “galvanique”) entre le primaire et le secondaire. Ainsi, si le primaire est reliée à la Terre, le secondaire ne le sera pas: c’est le principe d’isolement.</p></li>
 </ul>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Remarque</p>
 <p>Il existe aussi des transformateurs délivrant non pas une mais plusieurs tensions. Des fils de sortie sont reliés non seulement aux extrémités du bobinages mais aussi à des spires intérieures (cf. \cref{fig_transfo_symetrique}). Le nombre de spire varie alors suivant les branchements considérés et la tension de sortie aussi. On se sert notamment de tels transformateurs pour créer des alimentations symétriques. Un fil, sortie au milieu du transformateur aura un potentiel médian vis-à-vis des deux autres aux extrémités. C’est ce point de potentiel, une fois le redressement effectué qui est appelé “0V” sur les alimentations symétriques.</p>
-<div class="figure align-center" id="fig-transfo-symetrique">
+<figure class="align-center" id="fig-transfo-symetrique">
 <img alt="../_images/Electromagnetisme_3_Transfo.jpg" src="../_images/Electromagnetisme_3_Transfo.jpg" />
-</div>
-</div>
-<div class="topic">
+</figure>
+</aside>
+<aside class="topic">
 <p class="topic-title">Modélisation du transformateur réel</p>
 <p>Dans la pratique, le rendement ne peut être égale à 1 à cause des pertes interne. Rappelons que les pertes peuvent être dues:</p>
 <ul class="simple">
@@ -1001,14 +762,14 @@ Dans les représentation schématiques, le sens de l’enroulement est représen
 <li><p>aux fuites de champ qui impliquent que même si le secondaire est à vide, le primaire peut débiter de l’énergie.</p></li>
 </ul>
 <p>Une étude plus complète conduirait à modéliser ces pertes par des dipôles “décorant” un modèle de transformateur parfait. Une telle modélisation (qui reste un modèle avec ses défauts) n’est pas à connaître par coeur en première année.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="champs-constants-et-circuits-mobiles">
-<h2>Champs constants et circuits mobiles<a class="headerlink" href="#champs-constants-et-circuits-mobiles" title="Permalink to this headline">#</a></h2>
-<div class="section" id="rails-de-laplace">
-<h3>Rails de Laplace<a class="headerlink" href="#rails-de-laplace" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+</section>
+</section>
+<section id="champs-constants-et-circuits-mobiles">
+<h2>Champs constants et circuits mobiles<a class="headerlink" href="#champs-constants-et-circuits-mobiles" title="Permalink to this heading">#</a></h2>
+<section id="rails-de-laplace">
+<h3>Rails de Laplace<a class="headerlink" href="#rails-de-laplace" title="Permalink to this heading">#</a></h3>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Remarque<div class="sd-summary-down docutils">
@@ -1022,7 +783,7 @@ Remarque<div class="sd-summary-down docutils">
 <p class="admonition-title">Tip</p>
 <p><strong>Méthode : Etude des rails de Laplace</strong></p>
 <p>On néglige tout phénomène d’auto-induction.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Prévoir qualitativement l’évolution du rail mobile.</p></li>
 <li><p>Décrire les successions de cause qui conduisent à cette évolution.</p></li>
 <li><p>En déduire les équations du mouvement de la barre.</p></li>
@@ -1030,7 +791,7 @@ Remarque<div class="sd-summary-down docutils">
 <li><p>Faire un bilan de puissance électrique dans le circuit et un bilan de puissance mécanique. Comparer notamment la puissance apportée au mobile par les forces de Laplace et la puissance cédée par le circuit par effet d’induction.</p></li>
 </ol>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Commentaires sur les hypothèse de modélisation</p>
 <ul class="simple">
 <li><p>Le champ magnétique créé par l’aimant est uniforme et suivant l’axe normal au plan du circuit électrique ainsi réalisé. On a choisit de l’orientation comme suivant le schéma.</p>
@@ -1055,15 +816,15 @@ Remarque<div class="sd-summary-down docutils">
 </ul>
 </li>
 </ul>
-</div>
-</div>
-<div class="section" id="spire-en-rotation">
-<h3>Spire en rotation<a class="headerlink" href="#spire-en-rotation" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+<section id="spire-en-rotation">
+<h3>Spire en rotation<a class="headerlink" href="#spire-en-rotation" title="Permalink to this heading">#</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Méthode : Spire rectangulaire en rotation</strong></p>
 <p>Considérons une spire rectangulaire de côté a et b en rotation autour d’un axe Oz. L’ensemble est soumis à un champ magnétique uniforme et constant dirigé dans la direction Ox.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Expliquer pourquoi, si l’on veut maintenir la spire en rotation uniforme, elle doit être entraîner par un moteur.</p></li>
 <li><p>La spire possède une résistance <span class="math notranslate nohighlight">\(r\)</span>. Déterminer la puissance moyenne que doit fournir le moteur.</p></li>
 <li><p>On ouvre très légèrement la spire (de sorte que le flux de B reste inchangé) et on branche sur la spire une résistance <span class="math notranslate nohighlight">\(R&gt;&gt;r\)</span> au moyen de fil gainée protégée du champ magnétique. Déterminer la puissance moyenne fournie à la résistance <span class="math notranslate nohighlight">\(R\)</span>.</p></li>
@@ -1071,15 +832,15 @@ Remarque<div class="sd-summary-down docutils">
 <li><p>Préciser des applications possibles des cas de figure traités aux deux questions précédentes.</p></li>
 </ol>
 </div>
-</div>
-<div class="section" id="cas-de-conducteur-courants-de-foucault">
-<h3>Cas de conducteur. Courants de Foucault<a class="headerlink" href="#cas-de-conducteur-courants-de-foucault" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="cas-de-conducteur-courants-de-foucault">
+<h3>Cas de conducteur. Courants de Foucault<a class="headerlink" href="#cas-de-conducteur-courants-de-foucault" title="Permalink to this heading">#</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Courants de Foucaults</strong></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Cas de Lorentz: On considère un matériau conducteur tournant au voisinage d’un aimant dont le champ n’est pas uniforme.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Expliquer pourquoi il apparaît des courants induits dans le conducteur — on les appelle des courants de Foucault.</p></li>
 <li><p>Pourquoi ce phénomène va tendre à ralentir le mouvement du conducteur. Citer une application.</p></li>
 </ol>
@@ -1089,9 +850,9 @@ Remarque<div class="sd-summary-down docutils">
 1.* Commenter l’évolution thermodynamique du conducteur. Citer une application.</p></li>
 </ol>
 </div>
-</div>
-<div class="section" id="moteurs-alternateurs-generatrices">
-<h3>Moteurs, alternateurs, génératrices<a class="headerlink" href="#moteurs-alternateurs-generatrices" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="moteurs-alternateurs-generatrices">
+<h3>Moteurs, alternateurs, génératrices<a class="headerlink" href="#moteurs-alternateurs-generatrices" title="Permalink to this heading">#</a></h3>
 <p>On a vu sur l’exemple du rail de Laplace que le phénomène d’induction se traduisait du point du vue énergétique comme un transfère de puissance: soit d’une puissance électrique (fem induite) vers une puissance mécanique (force de Laplace). Soit à l’inverse d’une puissance mécanique vers une puissance électrique. La transformation d’un type de puissance vers un autre est appelé transduction.</p>
 <p>Nous allons étudié l’utilisation de la transduction sur deux cas: les moteurs et les alternateurs. Leur principe général de construction est basé sur:</p>
 <ul class="simple">
@@ -1099,15 +860,15 @@ Remarque<div class="sd-summary-down docutils">
 <li><p>un rotor, partie mobile en rotation autour d’un axe fixe: c’est sur le rotor qu’on place le système d’entraînement (alternateur) ou la charge (moteur).</p></li>
 </ul>
 <p>Le principe de construction dépend du type de machine construite: machine synchrone, machine asynchrone, machine à courant continu.</p>
-<div class="section" id="machine-synchrone">
-<h4>Machine synchrone<a class="headerlink" href="#machine-synchrone" title="Permalink to this headline">#</a></h4>
+<section id="machine-synchrone">
+<h4>Machine synchrone<a class="headerlink" href="#machine-synchrone" title="Permalink to this heading">#</a></h4>
 <p>Le principe de la machine synchrone a été déjà été expliqué, au moins dans son fonctionnement moteur. Précisons certains points:</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Machine asynchrone</strong></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Fonctionnement moteur</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Comment s’effectue le transfert de puissance entre le stator et le rotor?</p></li>
 <li><p>Proposer un modèle électrique du circuit du stator.</p></li>
 <li><p>Ecrire l’équation mécanique générale qui décrit le mouvement du rotor — on n’évaluera pas les différents termes. Si l’aimant est conducteur, quel autre phénomène peut entrer en jeu? Est-il favorable ou défavorable au comportement moteur?</p></li>
@@ -1115,20 +876,22 @@ Remarque<div class="sd-summary-down docutils">
 </ol>
 </li>
 <li><p>Fonctionnement générateur:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Justifier que si le stator n’est pas alimenté mais branché sur une charge, un couple moteur sur le rotor peut générer un courant électrique dans le stator: c’est le principe des alternateurs.</p></li>
 <li><p>L’auto-induction dans le stator pose-t-elle un problème en terme de rendement de puissance?</p></li>
 </ol>
 </li>
 </ol>
 </div>
-</div>
-<div class="section" id="machine-asynchrone">
-<h4>Machine asynchrone<a class="headerlink" href="#machine-asynchrone" title="Permalink to this headline">#</a></h4>
-<div class="figure align-center" id="fig-machine-asynchrone">
+</section>
+<section id="machine-asynchrone">
+<h4>Machine asynchrone<a class="headerlink" href="#machine-asynchrone" title="Permalink to this heading">#</a></h4>
+<figure class="align-center" id="fig-machine-asynchrone">
 <img alt="../_images/Electromagnetisme_3_Asynchrone.png" src="../_images/Electromagnetisme_3_Asynchrone.png" />
-<p class="caption"><span class="caption-number">Fig. 17 </span><span class="caption-text">Machine asynchrone</span><a class="headerlink" href="#fig-machine-asynchrone" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Machine asynchrone</span><a class="headerlink" href="#fig-machine-asynchrone" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Le moteur asynchrone est un peu similaire à la machine synchrone à un détail (pas si détail!) près: le rotor n’est plus un aimant permanent ou un circuit dont un générateur extérieur impose le courant (ce qui revient à réaliser un dipôle permanent) mais un circuit fermé/un conducteur (une <a class="reference internal" href="#fig-machine-asynchrone"><span class="std std-ref">“cage d’écureuil”</span></a>). La présence d’un champ magnétique tournant va créé un flux magnétique variable et donc un phénomène d’induction. Des courants vont circuler dans le rotor qui va alors subir une force de Laplace et se mettre en mouvement.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -1136,9 +899,9 @@ Remarque<div class="sd-summary-down docutils">
 <p>Pourquoi un régime stationnaire à la vitesse de synchronisme ne peut exister si le rotor est en charge?</p>
 </div>
 <p>C’est l’une des différences fondamentales avec la machine synchrone. Il vient notamment que la vitesse de rotation va dépendre de la charge (au contraire de la machine synchrone). Par contre, une machine asynchrone est beaucoup plus facile à démarrer.</p>
-</div>
-<div class="section" id="machine-a-courant-continu">
-<h4>Machine à courant continu<a class="headerlink" href="#machine-a-courant-continu" title="Permalink to this headline">#</a></h4>
+</section>
+<section id="machine-a-courant-continu">
+<h4>Machine à courant continu<a class="headerlink" href="#machine-a-courant-continu" title="Permalink to this heading">#</a></h4>
 <p>La machine à courant continu fonctionne, comme son nom l’indique… avec un courant continu. Elle peut:</p>
 <ul class="simple">
 <li><p>soit transformer l’énergie mécanique du rotor en courant dans les bobinages du rotor: il fonctionne comme génératrice.</p></li>
@@ -1150,15 +913,17 @@ Remarque<div class="sd-summary-down docutils">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Machine à courant continu simple: spire en rotation.</strong></p>
 <p>On considère comme rotor le cas d’une spire rectangulaire de longueur b et de largeur a conductrice. La spire est légèrement ouverte sur l’axe de symétrie Oz de la largeur (cf. \cref{fig_mcc}) de manière à pouvoir y brancher une source de courant. Elle est de plus fixée rigidement sur un arbre en liaison pivot d’axe Oz avec le stator. Ce dernier est constitué d’un aimant permanent. On considère ici un dipôle (les pôles sont représentées sur les schéma) qui assure un champ magnétique globalement axé dans la même direction dans toutes la zones où tourne la spire (du pôle Nord vers le pôle Sud).</p>
-<div class="figure align-center" id="fig-mcc">
+<figure class="align-center" id="fig-mcc">
 <img alt="../_images/Electromagnetisme_3_Continu.jpg" src="../_images/Electromagnetisme_3_Continu.jpg" />
-<p class="caption"><span class="caption-number">Fig. 18 </span><span class="caption-text">Machine à courant continu</span><a class="headerlink" href="#fig-mcc" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Machine à courant continu</span><a class="headerlink" href="#fig-mcc" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p><strong>Modèle du champ magnétique:</strong> On considère, pour simplifier que le champ magnétique est radiale (système de coordonnées cylindrique d’axe Oz) tel que: <span class="math notranslate nohighlight">\(B_r(r, \theta) = -B_r (r, \theta + \pi)\)</span> (on parle d’antisymétrique du champ). On note l’axe Ox, l’axe d’antisymétrie et l’origine des angles <span class="math notranslate nohighlight">\(\theta\)</span>. On supposera que de chaque côté de l’axe, le champ a une intensité constante.</p>
 <p>On note <span class="math notranslate nohighlight">\(\Gamma_{ext}\)</span> le couple extérieur (entraînement moteur, frottements, charge sur l’arbre…), <span class="math notranslate nohighlight">\(E_{ext}\)</span> la tension d’alimentation de la machine (qui sera nulle si la machine fonctionne en génératrice) R la résistance de la spire, <span class="math notranslate nohighlight">\(R_{ext}\)</span> la résistance de charge sur le circuit (en fonctionnement génératrice ou la résistance interne de l’alimentation en fonctionnement moteur). On note aussi <span class="math notranslate nohighlight">\(J\)</span> le moment du rotor sur l’axe Oz.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Fonctionnement moteur</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Montrer, sans calcul, qu’un tel champ magnétique assure, en présence d’un courant <span class="math notranslate nohighlight">\(i\)</span>, un couple de force qui va faire tourner la spire (effet moteur). Comment appelle-t-on cette force?</p></li>
 <li><p>Exprimer le moment de cette force motrice sous la forme: <span class="math notranslate nohighlight">\(\overrightarrow{\Gamma_L} = K i \overrightarrow{e_z}\)</span></p></li>
 <li><p>Lorsque la spire a fait un demi-tour, comment évolue le couple moteur? Justifier alors l’utilisation d’un commutateur (la pièce cylindrique coupée représentée avec les armatures A et B) pour permettre un couple moteur sur l’ensemble du tour.</p></li>
@@ -1170,7 +935,7 @@ Remarque<div class="sd-summary-down docutils">
 </ol>
 </li>
 <li><p>Fonctionnement générateur: On prend <span class="math notranslate nohighlight">\(E_{ext} = 0\)</span></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Expliquer pourquoi la rotation du rotor va imposer un courant dans le circuit.</p></li>
 <li><p>Les équations déterminée précédemment change-t-elle? Conclure.</p></li>
 </ol>
@@ -1192,36 +957,36 @@ Remarque<div class="sd-summary-down docutils">
 </ul>
 <p>On obtient alors les “équations d’une machine à courant continu”: <span class="math notranslate nohighlight">\(e = K \omega\)</span> et <span class="math notranslate nohighlight">\(\Gamma_L = Ki\)</span> avec la force électromotrice orientée en convention récepteur.</p>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="s-entrainer">
-<h2>S’entrainer<a class="headerlink" href="#s-entrainer" title="Permalink to this headline">#</a></h2>
-<div class="section" id="applications">
-<h3>Applications<a class="headerlink" href="#applications" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+</section>
+<section id="s-entrainer">
+<h2>S’entrainer<a class="headerlink" href="#s-entrainer" title="Permalink to this heading">#</a></h2>
+<section id="applications">
+<h3>Applications<a class="headerlink" href="#applications" title="Permalink to this heading">#</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Deux bobines réelles en inductance mutuelle.</strong></p>
 <p>On considère deux bobines d’auto-inductance L, de résistance R et de coefficient d’inductance mutuelle M. La première est court-circuitées et la seconde reliée à un générateur délivrant une tension <span class="math notranslate nohighlight">\(E(t) = E_0 \cos \omega t\)</span>. Déterminer les équations couplées pour les amplitudes complexes des intensités dans chaque circuit.</p>
 </div>
-</div>
-<div class="section" id="entrainement">
-<h3>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="entrainement">
+<h3>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this heading">#</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Pince ampèremétrique</strong></p>
 <p>On considère un tore de section carré de c^oté <span class="math notranslate nohighlight">\(a\)</span> et de rayon moyen <span class="math notranslate nohighlight">\(R\)</span> sur lequel on a enroulé <span class="math notranslate nohighlight">\(n\)</span> spires jointives, les deux extrémités du fil étant court-circuités. On note Oz l’axe du tore et dans un repère cylindrique, chaque spire est contenue dans un plan. Le circuit est parcouru par un courant d’intensité <span class="math notranslate nohighlight">\(I\)</span>.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Justifier que le champ magnétique a pour forme <span class="math notranslate nohighlight">\(\overrightarrow{B}(M) = B_{\theta}(r,z) \overrightarrow{e_{\theta}}\)</span></p></li>
 </ol>
 <p>Le champ magnétique créé par un tel dispositif est:</p>
 <p>*. nul à l’extérieur du tore
 *. <span class="math notranslate nohighlight">\(\overrightarrow{B}(r,z) = \frac{\mu_0 nI}{2 \pi r} \overrightarrow{e_{\theta}}\)</span> à l’intérieur du tore.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Déterminer le flux du champ magnétique à travers le tore. En déduire l’inductance propre du tore.</p></li>
 </ol>
 <p>On place sur l’axe Oz un fil infini parcouru par un courant <span class="math notranslate nohighlight">\(i\)</span>. La résistance totale du bobinage est noté <span class="math notranslate nohighlight">\(r\)</span> et et au lieu d’un court-circuit, le fil du tore est fermé sur un voltmètre d’impédance interne <span class="math notranslate nohighlight">\(R_V\)</span>.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Déterminer le flux mutuel du champ magnétique du fil infini à travers le tore.</p></li>
 <li><p>Si <span class="math notranslate nohighlight">\(i\)</span> varie, exprimer la force électromotrice d’induction dans le tore en fonction de <span class="math notranslate nohighlight">\(i\)</span> et <span class="math notranslate nohighlight">\(I\)</span> et des autres paramètres du tore. En déduire l’équation différentielle qui relie <span class="math notranslate nohighlight">\(i(t)\)</span> et <span class="math notranslate nohighlight">\(I(t)\)</span>.</p></li>
 <li><p>Déterminer <span class="math notranslate nohighlight">\(I(t)\)</span> en régime sinusoïdal forcé et en déduire la valeur mesurée par le voltmètre. Préciser l’intérêt d’un tel dispositif et ses limites.</p></li>
@@ -1237,7 +1002,7 @@ Remarque<div class="sd-summary-down docutils">
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Transimpédance</strong></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>On considère un transformateur parfait de rapport en tension m. Le primaire est relié à un générateur de Thévenin de f.e.m. <span class="math notranslate nohighlight">\(e_1(t)\)</span> et de résistance de sortie <span class="math notranslate nohighlight">\(R_g\)</span>. La sortie est reliée à une impédance <span class="math notranslate nohighlight">\(\underline{Z}\)</span>. Montrer que circuit est équivalent à celui d’une impédance <span class="math notranslate nohighlight">\(\underline{Z_{eq}}\)</span> branchée directement sur le générateur et dont on déterminera l’expression. On parle de transimpédance.</p></li>
 </ol>
 </div>
@@ -1253,7 +1018,7 @@ Remarque<div class="sd-summary-down docutils">
 <li><p>Pour une ligne de courant de rayon <span class="math notranslate nohighlight">\(r\)</span>, d’épaisseur <span class="math notranslate nohighlight">\(dr\)</span> et de largeur <span class="math notranslate nohighlight">\(dz\)</span>. Le courant qui circule peut s’écrire <span class="math notranslate nohighlight">\(I(r) = j(r) dr dz\)</span> où <span class="math notranslate nohighlight">\(j(r)\)</span> est appelée densité volumique de courant. On peut lui associer un vecteur donnant à la fois l’intensité et la direction/sens du courant: <span class="math notranslate nohighlight">\(\overrightarrow{j}(r) = j(r) \overrightarrow{e_{\theta}}\)</span></p></li>
 <li><p>La résistance <span class="math notranslate nohighlight">\(R(r)\)</span> d’une ligne de courant de rayon <span class="math notranslate nohighlight">\(r\)</span>, d’épaisseur dr et de largeur dz s’écrit: <span class="math notranslate nohighlight">\(R(r) = \frac{2 \pi r}{\gamma dr dz}\)</span>.</p></li>
 </ul>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Justifier qualitativement l’apparition de courants induits dans le conducteur.</p></li>
 <li><p>Commenter le sens du champ magnétique créé par les courants induit. A quel condition sur <span class="math notranslate nohighlight">\(j(r)\)</span> et <span class="math notranslate nohighlight">\(\frac{dB}{dt}\)</span> la loi de Lenz sera-t-elle vérifiée?</p></li>
 <li><p>Déterminer la force électromotrice induite sur une ligne de courant de rayon <span class="math notranslate nohighlight">\(r\)</span>, d’épaisseur <span class="math notranslate nohighlight">\(dr\)</span> et de largeur <span class="math notranslate nohighlight">\(dz\)</span>. En déduire la densité volumique de courant <span class="math notranslate nohighlight">\(j(r)\)</span> sur cette spire.</p></li>
@@ -1273,7 +1038,7 @@ Remarque<div class="sd-summary-down docutils">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Double rail de Laplace</strong></p>
 <p>On considère deux rails fixes et parallèles (distances a les séparant) conducteurs de résistance négligeable et de dimensions infinies. On place sur ces rails deux tiges perpendiculairement aux rails de sortent que chacune réalisent un contact avec les deux rails. Chaque tige possède alors une résistance r identique. L’ensemble est plongé dans un champ magnétique constant et uniforme d’axe Oz perpendiculaire au circuit rectangulaire formé par les tiges et les rails. A l’instant initiale, les deux tiges sont séparées d’une distance L et on communique une vitesse <span class="math notranslate nohighlight">\(v_0\)</span> (vers la gauche) à la tige de gauche, la tige de droite étant immobile.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Déterminer qualitativement le mouvement des deux tiges en fonction du temps.</p></li>
 <li><p>Retrouver ces conclusions par une étude quantitative.</p></li>
 </ol>
@@ -1287,7 +1052,7 @@ Remarque<div class="sd-summary-down docutils">
 <p class="admonition-title">Tip</p>
 <p><strong>Exercice : Couplage de machines à courant continu</strong></p>
 <p>Deux machines à courant continu à aimants permanents identiques sont électriquement connectées avec un interrupteur K en série entre les deux. On néglige tout frottement et on suppose que les machines fonctionnent à vide (pas de couple résistant). On note J le moment d’inertie des deux machines et R la résistance électrique propre de moteur. A <span class="math notranslate nohighlight">\(t=0\)</span>, on ferme l’interrupteur K alors que la machine 1 tourne à une vitesse angulaire et que la machine 2 est immobile.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Déterminer l’évolution des vitesses angulaires de chaque machine en négligeant tout phénomène d’auto-induction. Représenter leur évolution et commenter les valeurs finales obtenues. Effectuer un bilan énergétique</p></li>
 <li><p>Reprendre l’étude précédente en tenant compte des phénomènes d’auto-induction modélisés par une inductance L identique pour chaque moteur (cas pseudo-périodique).</p></li>
 </ol>
@@ -1296,9 +1061,9 @@ Remarque<div class="sd-summary-down docutils">
 <ul class="simple">
 <li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Machine à courant continu.</em></p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1312,7 +1077,7 @@ Remarque<div class="sd-summary-down docutils">
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./notebook"
         },
         predefinedOutput: true
@@ -1320,43 +1085,126 @@ Remarque<div class="sd-summary-down docutils">
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="actions_b.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Actions d’un champ magnétique. Forces de Laplace</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="actions_b.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Actions d’un champ magnétique. Forces de Laplace</p>
+      </div>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observation-experimentale-en-ligne">Observation expérimentale (en ligne)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loi-de-lenz">Loi de Lenz</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loi-de-faraday">Loi de Faraday</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#champs-variables-et-circuits-fixes">Champs variables et circuits fixes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-d-auto-induction">Principe d’auto-induction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#induction-mutuelle">Induction mutuelle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bilan-energetique">Bilan énergétique</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-au-transformateur">Application au transformateur</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-generale">Présentation générale</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-du-transformateur-parfait">Cas du transformateur parfait</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#differents-transformateurs-en-ligne">Différents transformateurs (en ligne)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#champs-constants-et-circuits-mobiles">Champs constants et circuits mobiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rails-de-laplace">Rails de Laplace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spire-en-rotation">Spire en rotation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-de-conducteur-courants-de-foucault">Cas de conducteur. Courants de Foucault</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moteurs-alternateurs-generatrices">Moteurs, alternateurs, génératrices</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-synchrone">Machine synchrone</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-asynchrone">Machine asynchrone</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-a-courant-continu">Machine à courant continu</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#s-entrainer">S’entrainer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#entrainement">Entrainement</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By C. Lacpatia<br/>
-  
-      &copy; Copyright 2021.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By C. Lacpatia
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
